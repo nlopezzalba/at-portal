@@ -1,19 +1,79 @@
 body{
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 a{
     text-decoration: none !important;
 }
 
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #aaa;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio label:before {
+    border-radius: 8px;
+}
+
+.GreenColor{
+    color: #7BA946;
+}
+
+.GreenBackground{
+    background-color: #7BA946;
+}
+
+.BlueColor{
+    color: #4274BC;
+}
+
+.BlueBackground{
+    background-color: #4274BC;
+}
+
+.NoPadding{
+    padding: 0!important;
+}
+
+.NoMargin{
+    margin: 0!important;
+}
+
 .Header{
+    height: 80px;
+    width: 100%;
+    padding: 0 50px 0 50px;
+}
+
+.Header--transparent{
     position: absolute;
     top: 0;
     left: 0;
-    height: 80px;
-    width: 100%;
     background-color: rgba(34,34,34,0.2);
-    padding: 0 50px 0 50px;
 }
 
 .Header-logo{
@@ -45,7 +105,7 @@ a{
 
 .HomeBackground{
     max-width: 100%;
-    display:block;
+    display: block;
     height: auto;
 }
 
@@ -63,7 +123,7 @@ a{
     font-size: 26px;
     font-weight: 700;
     text-align: center;
-    padding: 0 25px;
+    padding: 0 20px;
 }
 
 .MessageSection--titleFirst{
@@ -82,7 +142,7 @@ a{
 }
 
 .HomeButton{
-    padding: 6px 20px;
+    padding: 4px 20px 6px 20px;
     border-radius: 5px;
     border: 2px solid;
     font-size: 16px;
@@ -114,7 +174,7 @@ a{
 
 .HomeButton--white:hover{
     background: #ffffff;
-    color: #4274BC;
+    color: #4274BC !important;
 }
 
 .HomeButton--blue{
@@ -169,7 +229,6 @@ a{
 .Steps-icon{
     width: 30%;
     height: 100%;
-    background: #4274BC;
     display: table-cell;
     padding-right: 50px;
     text-align: right;
@@ -186,17 +245,17 @@ a{
 }
 
 .Steps-iconArrow{
-    margin: 25px 0;
     float: right;
     display: block;
     text-align: right;
+    padding-right: 15px;
 }
 
 .Steps-content{
     display: table-cell;
     width: 70%;
     height: 100%;
-    padding-left: 50px;
+    padding: 0 100px 0 50px;
     vertical-align: top;
 }
 
@@ -224,4 +283,51 @@ a{
 .BottomLogo{
     text-align: center;
     padding: 150px 0 20px 0;
+    display: block;
+}
+
+.MainContainer{
+    margin: 30px 50px;
+    padding: 0!important;
+    display: block;
+}
+
+.MainTitle{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.MainTitle--green{
+    color: #7BA946;
+}
+
+.MainTitle--blue{
+    color: #4274BC;
+}
+
+.Subtitle{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 5px;
+}
+
+.Content{
+    font-size: 16px;
+}
+
+.FormLabel{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.FormBox{
+    border-radius: 2px;
+}
+
+.FormBox:focus{
+    border-color: rgba(66, 116, 188, 0.5);
+    outline: 0;
+    -webkit-box-shadow: 0 0 8px rgba(66, 116, 188, 0.3);
+    box-shadow: 0 0 8px rgba(66, 116, 188, 0.3);
 }
