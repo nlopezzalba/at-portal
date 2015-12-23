@@ -1,0 +1,227 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.Header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(34,34,34,0.2);
+    padding: 0 50px 0 50px;
+}
+
+.Header-logo{
+    margin: 15px 0 0 0;
+}
+
+.Header-nav{
+    float: right;
+    margin-top: 28px;
+}
+
+.Header-item{
+    display: inline !important;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.Header-itemLink{
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.Header-itemLink:hover{
+    color: #7BA946 !important;
+    text-decoration: none;
+}
+
+.HomeBackground{
+    max-width: 100%;
+    display:block;
+    height: auto;
+}
+
+.MessageSection--first{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+
+.Message-Section{
+    text-align: center;
+}
+
+.MessageSection-title{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.MessageSection--titleFirst{
+    padding: 0 !important;
+}
+
+.MessageSection-text{
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.MessageSection--textFirst{
+    padding: 15px 0 0 0!important;
+}
+
+.HomeButton{
+    padding: 6px 20px;
+    border-radius: 5px;
+    border: 2px solid;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.HomeButton--black{
+    margin-top: 25px;
+    border: 2px solid #333333;
+    background: transparent;
+    color: #333333;
+    transition: background 0.3s ease;
+}
+
+.HomeButton--black:hover{
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    color: #4274BC;
+}
+
+.HomeButton--white{
+    margin-top: 25px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    transition: background 0.3s ease;
+}
+
+.HomeButton--white:hover{
+    background: #ffffff;
+    color: #4274BC;
+}
+
+.HomeButton--blue{
+    margin-top: 25px;
+    border: 2px solid #4274BC;
+    background: transparent;
+    color: #4274BC;
+    transition: background 0.3s ease;
+}
+
+.HomeButton--blue:hover{
+    background: #4274BC;
+    color: #ffffff;
+}
+
+.HomeButton--green{
+    margin-top: 25px;
+    border: 2px solid #7BA946;
+    background: transparent;
+    color: #7BA946;
+    transition: background 0.3s ease;
+}
+
+.HomeButton--green:hover{
+    background: #7BA946;
+    color: #ffffff;
+}
+
+.ArrowSeparator{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.ArrowSeparator--largeMargins{
+     margin: 150px 0 100px 0;
+ }
+
+.ArrowSeparator--steps{
+    text-align: right;
+    margin: 10px 40px 10px 100px;
+}
+
+.Steps{
+    display: table;
+    width: 100%;
+}
+
+.Steps-item{
+    display: table-row;
+}
+
+.Steps-icon{
+    width: 30%;
+    height: 100%;
+    background: #4274BC;
+    display: table-cell;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.Steps-iconFirst{
+    padding-top: 60px;
+}
+
+.Steps-iconImg{
+    margin: 25px 0 30px 0;
+    display: block;
+    float: right;
+}
+
+.Steps-iconArrow{
+    margin: 25px 0;
+    float: right;
+    display: block;
+    text-align: right;
+}
+
+.Steps-content{
+    display: table-cell;
+    width: 70%;
+    height: 100%;
+    padding-left: 50px;
+    vertical-align: top;
+}
+
+.Steps-contentFirst{
+    padding-top: 30px;
+}
+
+.Steps-title{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.Steps-title--green{
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #7BA946;
+}
+
+.Steps-text{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.BottomLogo{
+    text-align: center;
+    padding: 150px 0 20px 0;
+}
