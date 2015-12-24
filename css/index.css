@@ -24,6 +24,10 @@ input::selection{
     padding-right: 5px;
 }
 
+.WhiteColor{
+    color: #ffffff !important;
+}
+
 .GreenColor{
     color: #7BA946;
 }
@@ -32,12 +36,28 @@ input::selection{
     background-color: #7BA946;
 }
 
+.GreenBackground--medium{
+    background-color: rgba(123, 169, 70, 0.5);
+}
+
+.GreenBackground--low{
+    background-color: rgba(123, 169, 70, 0.25);
+}
+
 .BlueColor{
     color: #4274BC;
 }
 
 .BlueBackground{
     background-color: #4274BC;
+}
+
+.BlueBackground--medium{
+    background-color: rgba(66, 116, 188, 0.5);
+}
+
+.BlueBackground--low{
+    background-color: rgba(66, 116, 188, 0.25);
 }
 
 .NoPadding{
@@ -192,7 +212,7 @@ input::selection{
 
 .HomeButton--bigger{
     padding: 6px 30px 8px 30px !important;
-    margin-top: 15px;
+    margin: 15px 15px 0 0;
 }
 
 .ArrowSeparator{
@@ -304,10 +324,6 @@ input::selection{
     padding-bottom: 5px;
 }
 
-/*.Content{*/
-    /*font-size: 16px;*/
-/*}*/
-
 .FormLabel{
     font-size: 16px;
     font-weight: 400;
@@ -322,4 +338,45 @@ input::selection{
     outline: 0;
     -webkit-box-shadow: 0 0 8px rgba(66, 116, 188, 0.3);
     box-shadow: 0 0 8px rgba(66, 116, 188, 0.3);
+}
+
+.ProcessBox{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 25px 50px 0 50px;!important;
+}
+
+.ProcessBox-items{
+    margin-top: 10px;
+    display: inline;
+    padding: 18px 15px 15px 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+.ProcessBox-items--selected{
+    background-color: rgba(255,255,255, 0.25);
+}
+
+.ProcessBox-items--disabled{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.ProcessBox-icons{
+    width: auto;
+}
+
+.ProcessBox-titles{
+    width: auto;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px 0 0 0;
+}
+
+.ProcessBox-status{
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
 }
