@@ -1,5 +1,9 @@
+
+/*GENERAL*************************************************/
+
 body{
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
     overflow-x: hidden;
 }
 
@@ -7,36 +11,17 @@ a{
     text-decoration: none !important;
 }
 
-label {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 25px;
-    margin-right: 15px;
-    font-size: 13px;
+textarea:focus, input[radio]:focus{
+    outline: 0 !important;
 }
 
-input[type=radio] {
-    display: none;
+input::selection{
+    outline: none!important;
 }
 
-label:before {
-    content: "";
-    display: inline-block;
-
-    width: 16px;
-    height: 16px;
-
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    background-color: #aaa;
-    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-}
-
-.radio label:before {
-    border-radius: 8px;
+.glyphicon-plus{
+    font-size: 13px !important;
+    padding-right: 5px;
 }
 
 .GreenColor{
@@ -62,6 +47,8 @@ label:before {
 .NoMargin{
     margin: 0!important;
 }
+
+/*******************************************************/
 
 .Header{
     height: 80px;
@@ -123,7 +110,7 @@ label:before {
     font-size: 26px;
     font-weight: 700;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 20px 10px 20px;
 }
 
 .MessageSection--titleFirst{
@@ -133,7 +120,7 @@ label:before {
 .MessageSection-text{
     font-size: 16px;
     line-height: 22px;
-    padding-top: 15px;
+    padding-top: 5px;
     text-align: center;
 }
 
@@ -178,7 +165,7 @@ label:before {
 }
 
 .HomeButton--blue{
-    margin-top: 25px;
+    margin-top: 15px;
     border: 2px solid #4274BC;
     background: transparent;
     color: #4274BC;
@@ -191,7 +178,7 @@ label:before {
 }
 
 .HomeButton--green{
-    margin-top: 25px;
+    margin-top: 15px;
     border: 2px solid #7BA946;
     background: transparent;
     color: #7BA946;
@@ -201,6 +188,11 @@ label:before {
 .HomeButton--green:hover{
     background: #7BA946;
     color: #ffffff;
+}
+
+.HomeButton--bigger{
+    padding: 6px 30px 8px 30px !important;
+    margin-top: 15px;
 }
 
 .ArrowSeparator{
@@ -306,15 +298,15 @@ label:before {
 }
 
 .Subtitle{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 24px;
     padding-bottom: 5px;
 }
 
-.Content{
-    font-size: 16px;
-}
+/*.Content{*/
+    /*font-size: 16px;*/
+/*}*/
 
 .FormLabel{
     font-size: 16px;
