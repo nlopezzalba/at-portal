@@ -1,22 +1,26 @@
 
 /*GENERAL*************************************************/
 
+html {
+    height: 100%;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
 }
 
 a{
     text-decoration: none !important;
 }
 
-textarea:focus, input[radio]:focus{
-    outline: 0 !important;
-}
-
-input::selection{
-    outline: none!important;
+.form-control:focus{
+    border-color: #cccccc !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .glyphicon-plus{
@@ -44,6 +48,10 @@ input::selection{
 
 .Bold{
     font-weight: 700;
+}
+
+.CenterAligned{
+    text-align: center !important;
 }
 
 .WhiteColor{
@@ -259,14 +267,14 @@ input::selection{
 .HomeButton--gray:visited,
 .HomeButton--gray:active{
     margin: 15px 15px 0 0;
-    border: 2px solid #777777;
+    border: 2px solid #777777 !important;
     background: transparent;
     color: #777777;
     transition: background 0.3s ease;
 }
 
 .HomeButton--gray:hover{
-    background: #777777;
+    background: #777777 !important;
     color: #ffffff;
 }
 
@@ -276,7 +284,7 @@ input::selection{
 }
 
 .HomeButton--consent{
-    margin: 0!important;
+    margin: 15px !important;
     padding: 4px 15px 6px 15px;
 }
 
@@ -362,10 +370,33 @@ input::selection{
     margin-top: 10px;
 }
 
-.BottomLogo{
-    text-align: center;
-    padding: 150px 0 20px 0;
-    display: block;
+.Wrapper{
+    padding-bottom: 102px;
+}
+
+.Wrapper--homepage{
+    padding-bottom: 162px !important;
+}
+
+.Footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 102px;
+}
+
+.Footer-line{
+    margin: 10px 50px 20px 50px;
+}
+
+.Footer-logo{
+    padding: 0 0 20px 0;
+    float: right;
+    margin: 0 50px;
+}
+
+.Footer--homepage{
+    margin-top: 150px;
 }
 
 .MainContainer{
@@ -513,15 +544,15 @@ input::selection{
     position: absolute;
     top: 10px;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: 97%;
     height: 2px;
     background-color: #B7C8E1;
     z-index: 1000;
 }
 
 .Wizard-item{
-    width: 20%;
-    margin-right: -6px;
+    width: 15.9%;
 }
 
 .Wizard-item--last{
@@ -536,6 +567,23 @@ input::selection{
     z-index: 2000;
 }
 
+/*.Wizard-item{*/
+    /*width: 20%;*/
+    /*margin-right: -6px;*/
+/*}*/
+
+/*.Wizard-item--last{*/
+    /*width: 20px;*/
+/*}*/
+
+/*.Wizard-itemDot{*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*border-radius: 10px !important;*/
+    /*background-color: #B7C8E1;*/
+    /*z-index: 2000;*/
+/*}*/
+
 .Wizard-item--selected{
     background-color: rgba(66, 116, 188, 1);
 }
@@ -546,8 +594,20 @@ input::selection{
     cursor: default;
 }
 
+.Wizard-subtitle{
+    margin: 15px 0 0 0 !important;
+}
+
 .Wizard-content{
     margin: 25px 0 0 0;
+}
+
+.Wizard-list{
+    padding-left: 20px!important;
+}
+
+.Wizard-checkbox label{
+    display: block !important;
 }
 
 .Wizard-contentLine{
@@ -559,8 +619,7 @@ input::selection{
     border-radius: 5px !important;
 }
 
-.Wizard-pagerPrev a,
-.Wizard-pagerNext a{
+.Wizard-pager li a{
     border-radius: 5px !important;
     background: transparent !important;
     margin-top: 0 !important;
@@ -568,8 +627,21 @@ input::selection{
 }
 
 .Wizard-pager .disabled a{
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    cursor: default;
+    visibility: hidden;
+    display: none;
+}
+
+.Wizard-pagerSave,
+.Wizard-pagerConsent,
+.Wizard-pagerNotConsent{
+    float: right;
+    padding: 5px 20px !important;
+    border: 2px solid;
+    margin-top: 0;
+}
+
+.Wizard-pagerSave,
+.Wizard-pagerNotConsent{
+    margin-right: 15px;
 }
 
