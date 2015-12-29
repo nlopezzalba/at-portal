@@ -8,7 +8,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/build.css">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet'
@@ -34,7 +34,7 @@
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 NoPadding">
         <h1 class="MainTitle GreenColor">Welcome User!</h1>
         <h2 class="Subtitle">Every A-T patient can become a member of our research initiative. Enroll here and become a partner with leading researchers by sharing your medical and possibly genetic information for the study of A-T.</h2>
-        <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 HomeButton HomeButton--green HomeButton--bigger GreenBackground">
+        <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 HomeButton HomeButton--greenSelected HomeButton--bigger GreenBackground">
             New Member
         </a>
         <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 HomeButton HomeButton--green HomeButton--bigger">
@@ -45,7 +45,8 @@
 </div>
 <div class="row ProcessBox BlueBackground">
     <h1 class="MainTitle WhiteColor">New Member Enrollment Process</h1>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--selected">
+    <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--selected">
+        <div class="ProcessBox-progressBar ProcessBox-progressBar--selected"></div>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
                 <img src="images/step01-icon-mini.png" alt="Registration" class="NoPadding">
@@ -55,8 +56,9 @@
                 <small class="ProcessBox-status">In Progress</small>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+    </a>
+    <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+        <div class="ProcessBox-progressBar"></div>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
                 <img src="images/step02-icon-mini.png" alt="Consent" class="NoPadding">
@@ -66,8 +68,9 @@
                 <small class="ProcessBox-status">Pending</small>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+    </a>
+    <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+        <div class="ProcessBox-progressBar"></div>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
                 <img src="images/step03-icon-mini.png" alt="Medical History" class="NoPadding">
@@ -77,8 +80,9 @@
                 <small class="ProcessBox-status">Pending</small>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+    </a>
+        <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+        <div class="ProcessBox-progressBar"></div>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
                 <img src="images/step04-icon-mini.png" alt="Genomic Study" class="NoPadding">
@@ -88,6 +92,69 @@
                 <small class="ProcessBox-status">Pending</small>
             </div>
         </div>
+    </a>
+</div>
+
+<div class="row MainContainer">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 NoPadding">
+        <h1 class="MainTitle GreenColor">1. Registration</h1>
+        <h2 class="Subtitle">Some short text describing this step of the process.</h2>
+        <form>
+            <div class="row">
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
+                    <label for="UserName" class="FormItem-label">Patient First Name*</label>
+                    <input type="text" class="form-control FormItem-box" id="UserName">
+                </div>
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
+                    <label for="UserMiddleName" class="FormItem-label">Patient Middle Name*</label>
+                    <input type="text" class="form-control FormItem-box" id="UserMiddleName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
+                    <label for="UserLastName" class="FormItem-label">Patient Last Name*</label>
+                    <input type="text" class="form-control FormItem-box" id="UserLastName">
+                </div>
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
+                    <label for="PrefixSuffix" class="FormItem-label">Prefix/Suffix</label>
+                    <input type="text" class="form-control FormItem-box" id="PrefixSuffix">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
+                    <label for="DOB" class="FormItem-label">Patient DOB*</label>
+                    <input type="text" class="form-control FormItem-box" id="DOB">
+                </div>
+                <div class="form-group col-lg-8 col-md-8 col-sm-12 col-xs-12 FormItem">
+                    <label for="Address" class="FormItem-label">Patient Address*</label>
+                    <input type="text" class="form-control FormItem-box" id="Address">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
+                    <label for="Phone" class="FormItem-label">Patient Phone</label>
+                    <input type="text" class="form-control FormItem-box" id="Phone">
+                </div>
+                <div class="form-group col-lg-8 col-md-8 col-sm-12 col-xs-12 FormItem">
+                    <label for="Email" class="FormItem-label">Patient Email</label>
+                    <input type="text" class="form-control FormItem-box" id="Email">
+                </div>
+            </div>
+            <p class="FormItem-message">*Required field</p>
+            <fieldset>
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1">
+                    <label for="checkbox1">
+                        This patient was diagnosed with Ataxia-Telangiectasia
+                    </label>
+                </div>
+            </fieldset>
+            <hr class="FormItem-line">
+            <div class="row">
+                <a href="consent.html" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons HomeButton HomeButton--green">Register</a>
+                <a href="console.html" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons HomeButton HomeButton--gray">Cancel</a>
+            </div>
+        </form>
     </div>
 </div>
 

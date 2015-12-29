@@ -24,6 +24,28 @@ input::selection{
     padding-right: 5px;
 }
 
+.glyphicon-download{
+    font-size: 14px !important;
+    padding-right: 5px;
+}
+
+.glyphicon-chevron-left,
+.glyphicon-chevron-right{
+    font-size: 13px !important;
+}
+
+.glyphicon-chevron-left{
+    padding-right: 5px;
+}
+
+.glyphicon-chevron-right{
+    padding-left: 5px;
+}
+
+.Bold{
+    font-weight: 700;
+}
+
 .WhiteColor{
     color: #ffffff !important;
 }
@@ -41,7 +63,7 @@ input::selection{
 }
 
 .GreenBackground--low{
-    background-color: rgba(123, 169, 70, 0.25);
+    background-color: rgba(123, 169, 70, 0.2);
 }
 
 .BlueColor{
@@ -157,7 +179,9 @@ input::selection{
     text-align: center;
 }
 
-.HomeButton--black{
+.HomeButton--black,
+.HomeButton--black:visited,
+.HomeButton--black:active{
     margin-top: 25px;
     border: 2px solid #333333;
     background: transparent;
@@ -171,9 +195,11 @@ input::selection{
     color: #4274BC;
 }
 
-.HomeButton--white{
+.HomeButton--white,
+.HomeButton--white:visited,
+.HomeButton--white:active{
     margin-top: 25px;
-    border: 2px solid #ffffff;
+    border: 2px solid #ffffff !important;
     background: transparent;
     color: #ffffff;
     transition: background 0.3s ease;
@@ -184,35 +210,79 @@ input::selection{
     color: #4274BC !important;
 }
 
-.HomeButton--blue{
+.HomeButton--blue,
+.HomeButton--blue:visited,
+.HomeButton--blue:active{
     margin-top: 15px;
-    border: 2px solid #4274BC;
+    border: 2px solid #4274BC !important;
     background: transparent;
-    color: #4274BC;
+    color: #4274BC !important;
     transition: background 0.3s ease;
 }
 
 .HomeButton--blue:hover{
-    background: #4274BC;
-    color: #ffffff;
+    background: #4274BC !important;
+    color: #ffffff !important;
 }
 
-.HomeButton--green{
+.HomeButton--green,
+.HomeButton--green:visited,
+.HomeButton--green:active{
     margin-top: 15px;
-    border: 2px solid #7BA946;
+    border: 2px solid #7BA946 !important;
     background: transparent;
     color: #7BA946;
     transition: background 0.3s ease;
 }
 
 .HomeButton--green:hover{
-    background: #7BA946;
+    background: #7BA946 !important;
+    color: #ffffff;
+}
+
+.HomeButton--greenSelected,
+.HomeButton--greenSelected:visited,
+.HomeButton--greenSelected:active{
+     margin-top: 15px;
+     border: 2px solid #7BA946 !important;
+     background: #7BA946;
+     color: #FFFFFF;
+     cursor: default;
+ }
+
+.HomeButton--greenSelected:hover{
+    background: #7BA946 !important;
+    color: #FFFFFF;
+}
+
+.HomeButton--gray,
+.HomeButton--gray:visited,
+.HomeButton--gray:active{
+    margin: 15px 15px 0 0;
+    border: 2px solid #777777;
+    background: transparent;
+    color: #777777;
+    transition: background 0.3s ease;
+}
+
+.HomeButton--gray:hover{
+    background: #777777;
     color: #ffffff;
 }
 
 .HomeButton--bigger{
     padding: 6px 30px 8px 30px !important;
     margin: 15px 15px 0 0;
+}
+
+.HomeButton--consent{
+    margin: 0!important;
+    padding: 4px 15px 6px 15px;
+}
+
+.HomeButton--consentRight{
+    float: right;
+    margin: 40px 0 0 0 !important;
 }
 
 .ArrowSeparator{
@@ -267,7 +337,7 @@ input::selection{
     display: table-cell;
     width: 70%;
     height: 100%;
-    padding: 0 100px 0 50px;
+    padding: 0 150px 0 50px;
     vertical-align: top;
 }
 
@@ -320,47 +390,88 @@ input::selection{
 .Subtitle{
     font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 22px;
     padding-bottom: 5px;
+    margin-top: 10px;
 }
 
-.FormLabel{
-    font-size: 16px;
+.FormItem{
+    padding: 0 0 0 15px!important;
+}
+
+.FormItem-label{
+    font-size: 15px;
     font-weight: 400;
 }
 
-.FormBox{
+.FormItem-box{
     border-radius: 2px;
 }
 
-.FormBox:focus{
+.FormItem-box:focus{
     border-color: rgba(66, 116, 188, 0.5);
     outline: 0;
     -webkit-box-shadow: 0 0 8px rgba(66, 116, 188, 0.3);
     box-shadow: 0 0 8px rgba(66, 116, 188, 0.3);
 }
 
+.FormItem-message{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.FormItem-buttons{
+    float: right !important;
+}
+
+.FormItem-line{
+    margin: 10px -15px 10px 0!important;
+}
+
 .ProcessBox{
     width: 100%;
     height: auto;
     margin: 20px 0;
-    padding: 25px 50px 0 50px;!important;
+    padding: 15px 50px 0 50px;!important;
+    position: relative;
 }
 
 .ProcessBox-items{
     margin-top: 10px;
     display: inline;
     padding: 18px 15px 15px 15px;
-    border-radius: 5px 5px 0 0;
+    transition: background 0.3s ease;
+}
+
+.ProcessBox-items:hover{
+    background-color: rgba(255,255,255, 0.1);
 }
 
 .ProcessBox-items--selected{
-    background-color: rgba(255,255,255, 0.25);
+    background-color: rgba(0,0,0, 0.1);
 }
 
 .ProcessBox-items--disabled{
     opacity: 0.4;
     filter: alpha(opacity=40);
+    cursor: default;
+}
+
+.ProcessBox-items--disabled:hover{
+    background-color: transparent !important;
+}
+
+.ProcessBox-progressBar{
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255,255,255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ProcessBox-progressBar--selected{
+    background-color: rgba(255,255,255, 1);
 }
 
 .ProcessBox-icons{
@@ -380,3 +491,85 @@ input::selection{
     font-size: 14px;
     font-weight: 400;
 }
+
+.Wizard{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding: 40px 50px;
+}
+
+.Wizard-progressBar{
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+
+.Wizard-progressBar .active .Wizard-itemDot{
+    background: #4274BC !important;
+}
+
+.Wizard-progressBarLine{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #B7C8E1;
+    z-index: 1000;
+}
+
+.Wizard-item{
+    width: 20%;
+    margin-right: -6px;
+}
+
+.Wizard-item--last{
+    width: 20px;
+}
+
+.Wizard-itemDot{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px !important;
+    background-color: #B7C8E1;
+    z-index: 2000;
+}
+
+.Wizard-item--selected{
+    background-color: rgba(66, 116, 188, 1);
+}
+
+.Wizard-item--disabled{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: default;
+}
+
+.Wizard-content{
+    margin: 25px 0 0 0;
+}
+
+.Wizard-contentLine{
+    border-color: #cccccc;
+}
+
+.Wizard-pager{
+    margin-bottom: 0;
+    border-radius: 5px !important;
+}
+
+.Wizard-pagerPrev a,
+.Wizard-pagerNext a{
+    border-radius: 5px !important;
+    background: transparent !important;
+    margin-top: 0 !important;
+    font-weight: 700;
+}
+
+.Wizard-pager .disabled a{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: default;
+}
+

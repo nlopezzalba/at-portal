@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A-T Portal Console</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/build.css">
+    <link href="css/index.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet'
+          type='text/css'>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="Header GreenBackground">
+    <a href="index.html"><img src="images/at-portal-logo.png" alt="A-T Portal Logo" class="Header-logo"></a>
+    <nav class="Header-nav">
+        <ul>
+            <li class="Header-item"><a href="#" class="Header-itemLink">Learn more</a></li>
+            <li class="Header-item"><a href="index.html" class="Header-itemLink">Sign Out</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="row MainContainer">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 NoPadding">
+        <h1 class="MainTitle GreenColor">Welcome User!</h1>
+        <h2 class="Subtitle">Every A-T patient can become a member of our research initiative. Enroll here and become a partner with leading researchers by sharing your medical and possibly genetic information for the study of A-T.</h2>
+        <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 HomeButton HomeButton--greenSelected HomeButton--bigger GreenBackground">
+            Member Name
+        </a>
+        <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 HomeButton HomeButton--green HomeButton--bigger">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            Add Member
+        </a>
+    </div>
+</div>
+<div class="row ProcessBox BlueBackground">
+    <h1 class="MainTitle WhiteColor">Member Name Enrollment Process</h1>
+    <a href="register.html" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ">
+        <div class="ProcessBox-progressBar"></div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
+                <img src="images/step01-icon-mini.png" alt="Registration" class="NoPadding">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ProcessBox-titles WhiteColor">
+                Registration
+                <small class="ProcessBox-status">In Progress</small>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--selected">
+        <div class="ProcessBox-progressBar ProcessBox-progressBar--selected"></div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
+                <img src="images/step02-icon-mini.png" alt="Consent" class="NoPadding">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ProcessBox-titles WhiteColor">
+                Consent
+                <small class="ProcessBox-status">Pending</small>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+        <div class="ProcessBox-progressBar"></div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
+                <img src="images/step03-icon-mini.png" alt="Medical History" class="NoPadding">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ProcessBox-titles WhiteColor">
+                Medical History
+                <small class="ProcessBox-status">Pending</small>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+        <div class="ProcessBox-progressBar"></div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
+                <img src="images/step04-icon-mini.png" alt="Genomic Study" class="NoPadding">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ProcessBox-titles WhiteColor">
+                Genomic Study
+                <small class="ProcessBox-status">Pending</small>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="row MainContainer">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <h1 class="MainTitle GreenColor">2. Consent</h1>
+                <h2 class="Subtitle">Some short text describing this step of the process.</h2>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-8">
+                <a href="#" class="HomeButton HomeButton--gray HomeButton--consentRight"> <span class="glyphicon glyphicon-download" aria-hidden="true"></span>Download Complete Consent Form</a>
+            </div>
+        </div>
+
+        <div id="rootwizard" class="Wizard GreenBackground--low">
+            <ul class="Wizard-progressBar">
+                <div class="Wizard-progressBarLine"></div>
+                <li class="Wizard-item"><a href="#tab1" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                <li class="Wizard-item"><a href="#tab2" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                <li class="Wizard-item"><a href="#tab3" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                <li class="Wizard-item"><a href="#tab4" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                <li class="Wizard-item"><a href="#tab5" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                <li class="Wizard-item--last"><a href="#tab6" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+            </ul>
+
+            <div class="tab-content Wizard-content">
+                <div class="tab-pane" id="tab1">
+                    <div class="Content">
+                        <h2 class="Subtitle">Research Consent Form - Key Points</h2>
+                        <b>“The Global A-T Family Data Platform”</b> initiative is a patient-driven effort overseen by a panel of ataxia-telangiectasia (A-T) advocates that will empower A-T patients and their families to help directly transform research and treatment of the disease by sharing their genetic data and related health information with researchers around the world. If families also agree to allow researchers to re-contact them with follow-up research questions, the platform will enable the A-T community to have a continuous dialog with researchers and potentially accelerate progress in A-T research. The ultimate goal of this effort is to create an environment in which the A-T patient community and their families collect their clinical and genetic data and govern sharing this data with researchers to better understand the disease.<br><br>
+                        <span class="FormItem-message">Note: If you are a parent or guardian of an ataxia-telangiectasia patient, the words “you” and “your,” below, refer to your child.</span>
+                        <hr class="Wizard-contentLine">
+                        <div class="row NoMargin">
+                            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 NoPadding Bold">
+                                We encourage you to download and read the complete consent form carefully. Please contact us if you have any questions: support@atfamilies.org or USA 954.481.6611.<br>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 HomeButton HomeButton--gray HomeButton--consent">
+                                <span class="glyphicon glyphicon-download" aria-hidden="true"></span>Download Complete Consent Form
+                            </div>
+                        </div>
+                        <hr class="Wizard-contentLine">
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <h2 class="Subtitle"></h2>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <h2 class="Subtitle"></h2>
+                </div>
+                <div class="tab-pane" id="tab4">
+                    <h2 class="Subtitle"></h2>
+                </div>
+                <div class="tab-pane" id="tab5">
+                    <h2 class="Subtitle"></h2>
+                </div>
+                <div class="tab-pane" id="tab6">
+                    <h2 class="Subtitle"></h2>
+                </div>
+                <ul class="pager wizard Wizard-pager">
+                    <li class="previous Wizard-pagerPrev"><a href="#" class="HomeButton--blue"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Prev</a></li>
+                    <li class="next Wizard-pagerNext"><a href="#" class="HomeButton--blue">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="BottomLogo">
+    <img src="images/color-logo.png" alt="A-T Portal Logo">
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bootstrap.wizard.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-pills'});
+        window.prettyPrint && prettyPrint()
+    });
+</script>
+</body>
+</html>
