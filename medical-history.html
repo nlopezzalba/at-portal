@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A-T Portal Console</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/build.css">
+    <link href="css/index.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet'
+          type='text/css'>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="Header GreenBackground">
+    <a href="index.html"><img src="images/at-portal-logo.png" alt="A-T Portal Logo" class="Header-logo"></a>
+    <nav class="Header-nav">
+        <ul>
+            <li class="Header-item"><a href="#" class="Header-itemLink Header-itemLink--blueHo">Learn more</a></li>
+            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--blueHo">Sign Out</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="Wrapper">
+    <div class="MainContainer">
+        <div class="row NoMargin">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 NoPadding">
+                <h1 class="MainTitle GreenColor">Welcome User!</h1>
+
+                <h2 class="Subtitle Subtitle--light">Every A-T patient can become a member of our research initiative.
+                    Enroll here and become a partner with leading researchers by sharing your medical and possibly
+                    genetic information for the study of this disease.</h2>
+            </div>
+        </div>
+        <div class="row NoMargin">
+            <a href="#" class="col-lg-2 col-md-2 col-sm-3 col-xs-6 BtnFilled BtnFilled--green BtnFilled--big">
+                Member Name
+            </a>
+            <a href="#" class="col-lg-2 col-md-2 col-sm-3 col-xs-6 BtnBordered BtnBordered--green BtnBordered--big">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                Add Member
+            </a>
+        </div>
+    </div>
+
+    <div class="row ProcessBox BlueBackground">
+        <h1 class="MainTitle MainTitle--light WhiteColor">Member Name Enrollment Process</h1>
+        <a href="register.html" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ">
+            <div class="ProcessBox-progressBar"></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
+                    <img src="images/step01-icon-mini.png" alt="Registration" class="NoPadding">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ProcessBox-titles WhiteColor">
+                    Registration
+                    <small class="ProcessBox-status">Complete</small>
+                </div>
+            </div>
+        </a>
+        <a href="consent.html" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items">
+            <div class="ProcessBox-progressBar"></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
+                    <img src="images/step02-icon-mini.png" alt="Consent" class="NoPadding">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ProcessBox-titles WhiteColor">
+                    Consent
+                    <small class="ProcessBox-status">Complete</small>
+                </div>
+            </div>
+        </a>
+        <a href="medical-history.html"
+           class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--selected">
+            <div class="ProcessBox-progressBar ProcessBox-progressBar--selected"></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
+                    <img src="images/step03-icon-mini.png" alt="Medical History" class="NoPadding">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ProcessBox-titles WhiteColor">
+                    Medical History
+                    <small class="ProcessBox-status">In Progress</small>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ProcessBox-items ProcessBox-items--disabled">
+            <div class="ProcessBox-progressBar"></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ProcessBox-icons">
+                    <img src="images/step04-icon-mini.png" alt="Genomic Study" class="NoPadding">
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ProcessBox-titles WhiteColor">
+                    Genomic Study
+                    <small class="ProcessBox-status">Pending</small>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="row MainContainer">
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <div class="row NoMargin">
+                <h1 class="MainTitle GreenColor">3. Medical History</h1>
+
+                <h2 class="Subtitle Subtitle--light">Some short text describing this step of the process.</h2>
+            </div>
+
+            <div id="rootwizard" class="Wizard LightGrayBackground">
+                <ul class="Wizard-progressBar">
+                    <div class="Wizard-progressBarLine"></div>
+                    <li class="Wizard-item"><a href="#tab1" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                    <li class="Wizard-item"><a href="#tab2" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                    <li class="Wizard-item"><a href="#tab3" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                    <li class="Wizard-item"><a href="#tab4" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                    <li class="Wizard-item"><a href="#tab5" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                    <li class="Wizard-item"><a href="#tab6" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                    <li class="Wizard-item--last"><a href="#tab7" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                </ul>
+
+                <div class="tab-content Wizard-content">
+                    <div class="tab-pane" id="tab1">
+                        <h2 class="Subtitle Wizard-subtitle">Instructions:</h2>
+                        <span class="ParagraphText">
+                            Thank you for taking the time to enroll. This module will ask you questions specific to your Ataxia-Telangiectasia (A-T) diagnosis. The questions below were developed in partnership with the A-T Children’s Project. Please note this module:
+                            <ul class="Wizard-list">
+                                <li>Takes approximately 30 minutes to complete.</li>
+                                <li>Will refer to the person with the A-T diagnosis as “the participant”.</li>
+                                <li>Can be updated at any time by logging in on to the online portal.</li>
+                                <li>Once per year, we will ask you to update your module.</li>
+                            </ul>
+                        </span>
+                        <span class="FormItem-message">If you have any questions while completing this form, please send an email to support@atfamilies.org or call USA 954.481.6611 and ask to speak with one of the A-T Children’s Project study staff about this initiative and the data platform.</span>
+                        <hr class="Wizard-contentLine">
+                    </div>
+
+                    <div class="tab-pane" id="tab2">
+                        <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
+
+                        <form>
+                            <label for="01" class="FormItem-label Wizard-questions Bold">1. At what age was the
+                                participant diagnosed?</label>
+                            <input type="text" class="form-control FormItem-input" id="01">
+
+                            <label for="02" class="FormItem-label Wizard-questions Bold">2. At what age was the
+                                participant’s first symptom observed?</label>
+                            <input type="text" class="form-control FormItem-input" id="02">
+
+                            <label for="03" class="FormItem-label Wizard-questions Bold">3. At what age a neurologic
+                                problem was first suspected?</label>
+                            <input type="text" class="form-control FormItem-input" id="03">
+
+                            <div class="FormItem-label Wizard-questions"><span class="Bold">4. How was the diagnosis of A-T determined?</span>
+                                Select all that apply
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="04" id="04-a">
+                                        <label for="04-a">Functional ATM Kinase Assay</label><br>
+
+                                        <input type="checkbox" name="04" id="04-b">
+                                        <label for="04-b">Histology / Biopsy</label><br>
+
+                                        <input type="checkbox" name="04" id="04-c">
+                                        <label for="04-c">Imaging – CT</label><br>
+
+                                        <input type="checkbox" name="04" id="04-d">
+                                        <label for="04-d">Imaging – MRI</label><br>
+
+                                        <input type="checkbox" name="04" id="04-e">
+                                        <label for="04-e">Imaging – PET</label><br>
+
+                                        <input type="checkbox" name="04" id="04-f">
+                                        <label for="04-f">Physical Examination / Clinical Findings</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="04" id="04-g">
+                                        <label for="04-g">Serum Alpha- Fetoprotein (AFP)</label><br>
+
+                                        <input type="checkbox" name="04" id="04-h">
+                                        <label for="04-h">Radio-sensitivity Assay</label><br>
+
+                                        <input type="checkbox" name="04" id="04-i">
+                                        <label for="04-i">Western Blot for ATM Protein</label><br>
+
+                                        <input type="checkbox" name="04" id="04-j">
+                                        <label for="04-j">Genetic Laboratory Analysis / DNA Mutation
+                                            Analysis</label><br>
+
+                                        <input type="checkbox" name="04" id="04-k">
+                                        <label for="04-k">Unknown</label><br>
+
+                                        <input type="checkbox" name="04" id="04-l">
+                                        <label for="04-l">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<label for="04_01" class="FormItem-label Wizard-questions Bold">4.1. If you indicated-->
+                                <!--“Other” above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="04_01">-->
+
+                            <!--<label for="04_02" class="FormItem-label Wizard-questions Bold">4.2. If the exact ATM-->
+                                <!--mutation has been determined, please provide:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="04_02">-->
+
+                            <div class="Wizard-questions Bold">5. Who made the diagnosis?</div>
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <label for="05-a" class="FormItem-label Wizard-questions--minor">Physician
+                                        Name:</label>
+                                    <input type="text" class="form-control FormItem-input" id="05-a">
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                    <label for="05-b" class="FormItem-label Wizard-questions--minor">Physician Phone
+                                        number:</label>
+                                    <input type="text" class="form-control FormItem-input" id="05-b">
+                                </div>
+                            </div>
+
+                            <div class="Wizard-questions Bold">6. Where was the diagnosis made?</div>
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <label for="06-a" class="FormItem-label Wizard-questions--minor">Hospital/Institution:</label>
+                                    <input type="text" class="form-control FormItem-input" id="06-a">
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                    <label for="06-b" class="FormItem-label Wizard-questions--minor">City, Town or
+                                        Village:</label>
+                                    <input type="text" class="form-control FormItem-input" id="06-b">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <label for="06-c" class="FormItem-label Wizard-questions--minor">State/Province/Region:</label>
+                                    <input type="text" class="form-control FormItem-input" id="06-c">
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                    <label for="06-d" class="FormItem-label Wizard-questions--minor">Country:</label>
+                                    <input type="text" class="form-control FormItem-input" id="06-d">
+                                </div>
+                            </div>
+                        </form>
+                        <hr class="Wizard-contentLine">
+                    </div>
+
+                    <div class="tab-pane" id="tab3">
+                        <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
+                        <form>
+                            <div class="Wizard-questions Bold">7. Does the participant have a history of cancer?</div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="07" id="07-a">
+                                <label for="07-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="07" id="07-b">
+                                <label for="07-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="07" id="07-c">
+                                <label for="07-c">Don't know</label>
+                            </div>
+
+                            <!--<label for="07_01" class="FormItem-label Wizard-questions Bold">7.1. At what age was the-->
+                                <!--participant diagnosed with Cancer?</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="07_01">-->
+
+                            <!--<div class="FormItem-label Wizard-questions Bold">7.2. Please select the type of Cancer:-->
+                            <!--</div>-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<input type="checkbox" name="07_02" id="07_02-a">-->
+                                        <!--<label for="07_02-a">Leukemia</label><br>-->
+
+                                        <!--<input type="checkbox" name="07_02" id="07_02-b">-->
+                                        <!--<label for="07_02-b">Non-Hodgkin’s Lymphoma</label><br>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<input type="checkbox" name="07_02" id="07_02-c">-->
+                                        <!--<label for="07_02-c">Hodgkin’s Lymphoma</label><br>-->
+
+                                        <!--<input type="checkbox" name="checkbox1" id="07_02-d">-->
+                                        <!--<label for="07_02-d">Other</label><br>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <!--<label for="07_03" class="FormItem-label Wizard-questions Bold">7.3. If you indicated-->
+                                <!--“Other” above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="07_03">-->
+
+                            <!--<div class="FormItem-label Wizard-questions"><span class="Bold">7.4. Please indicate the status of the participant’s condition</span>-->
+                                <!--(Select one):-->
+                            <!--</div>-->
+                            <!--<div class="radio">-->
+                                <!--<input type="radio" name="07_03" id="07_03-a">-->
+                                <!--<label for="07_03-a">Currently has cancer and is not or is no longer undergoing-->
+                                    <!--treatment</label><br>-->
+
+                                <!--<input type="radio" name="07_03" id="07_03-b">-->
+                                <!--<label for="07_03-b">Currently has cancer and is undergoing treatment</label><br>-->
+
+                                <!--<input type="radio" name="07_03" id="07_03-c">-->
+                                <!--<label for="07_03-c">Currently in remission</label><br>-->
+
+                                <!--<input type="radio" name="07_03" id="07_03-d">-->
+                                <!--<label for="07_03-d">Cancer has recently recurred</label><br>-->
+                            <!--</div>-->
+
+                            <div class="FormItem-label Wizard-questions Bold">8. Ambulation: Please select the most
+                                accurate description of the participant’s current ability to walk:
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="08" id="08-a">
+                                <label for="08-a">Walks independently</label><br>
+
+                                <input type="radio" name="08" id="08-b">
+                                <label for="08-b">Walks independently most of the time but uses a walker, wheelchair, or
+                                    stroller when fatigued or at school</label><br>
+
+                                <input type="radio" name="08" id="08-c">
+                                <label for="08-c">Uses walker most of the time</label><br>
+
+                                <input type="radio" name="08" id="08-d">
+                                <label for="08-d">Uses manual wheelchair most of the time (self-propelled)</label><br>
+
+                                <input type="radio" name="08" id="08-e">
+                                <label for="08-e">Uses manual wheelchair mostly with assistance or uses power wheelchair
+                                    most of the time</label><br>
+                            </div>
+
+                            <!--<label for="08_01" class="FormItem-label Wizard-questions Bold">8.1. If participant is no-->
+                                <!--longer fully ambulatory, at what age did the he/she begin using a wheelchair?</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="08_01">-->
+
+                            <!--<label for="08_02" class="FormItem-label Wizard-questions Bold">8.2. If the participant is-->
+                                <!--no longer fully ambulatory, at what age did he/she depend completely on a-->
+                                <!--wheelchair?</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="08_02">-->
+                        </form>
+                        <hr class="Wizard-contentLine">
+                    </div>
+
+                    <div class="tab-pane" id="tab4">
+                        <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
+                        <form>
+                            <div class="Wizard-questions"><span class="Bold">9. Symptoms or conditions associated with A-T: </span>Please
+                                select all symptoms associated with A-T that the participant currently has or has had in
+                                the past, even if treating successfully with medication:
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="09" id="09-a">
+                                        <label for="09-a">Ataxic gait</label><br>
+
+                                        <input type="checkbox" name="09" id="09-b">
+                                        <label for="09-b">Eye movement difficulties</label><br>
+
+                                        <input type="checkbox" name="09" id="09-c">
+                                        <label for="09-c">Fatigue</label><br>
+
+                                        <input type="checkbox" name="09" id="09-d">
+                                        <label for="09-d">(Females only) Irregular periods</label><br>
+
+                                        <input type="checkbox" name="09" id="09-e">
+                                        <label for="09-e">Nausea</label><br>
+
+                                        <input type="checkbox" name="09" id="09-f">
+                                        <label for="09-f">Tremors</label><br>
+
+                                        <input type="checkbox" name="09" id="09-g">
+                                        <label for="09-g">Slurred speech</label><br>
+
+                                        <input type="checkbox" name="09" id="09-h">
+                                        <label for="09-h">Drooling</label><br>
+
+                                        <input type="checkbox" name="09" id="09-i">
+                                        <label for="09-i">Diabetes</label><br>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="09" id="09-j">
+                                        <label for="09-j">Scoliosis</label><br>
+
+                                        <input type="checkbox" name="09" id="09-k">
+                                        <label for="09-k">Slow to process and respond when speaking</label><br>
+
+                                        <input type="checkbox" name="09" id="09-l">
+                                        <label for="09-l">Swallowing difficulties due to aspiration of food or
+                                            liquid</label><br>
+
+                                        <input type="checkbox" name="09" id="09-m">
+                                        <label for="09-m">Swallowing difficulties due to gagging</label><br>
+
+                                        <input type="checkbox" name="09" id="09-n">
+                                        <label for="09-n">Telangiectasia (choose all that apply):</label><br>
+
+                                        <!--<div class="checkbox NoMargin">-->
+                                            <!--<input type="checkbox" name="09-n" id="09-n-a">-->
+                                            <!--<label for="09-n-a">Eyes</label><br>-->
+                                            <!--<input type="checkbox" name="09-n" id="09-n-b">-->
+                                            <!--<label for="09-n-b">Skin</label><br>-->
+                                        <!--</div>-->
+
+                                        <input type="checkbox" name="09" id="09-o">
+                                        <label for="09-o">Frequent infections (choose all that apply):</label><br>
+
+                                        <!--<div class="checkbox NoMargin">-->
+                                            <!--<input type="checkbox" name="09-o" id="09-o-a">-->
+                                            <!--<label for="09-o-a">Lung</label><br>-->
+                                            <!--<input type="checkbox" name="09-o" id="09-o-b">-->
+                                            <!--<label for="09-o-b">Sinus</label><br>-->
+                                            <!--<input type="checkbox" name="09-o" id="09-o-c">-->
+                                            <!--<label for="09-o-c">Other</label><br>-->
+                                        <!--</div>-->
+
+                                        <input type="checkbox" name="09" id="09-p">
+                                        <label for="09-p">Skin conditions (choose all that apply):</label><br>
+
+                                        <!--<div class="checkbox NoMargin">-->
+                                            <!--<input type="checkbox" name="09-p" id="09-p-a">-->
+                                            <!--<label for="09-p-a">Vitiligo</label><br>-->
+                                            <!--<input type="checkbox" name="09-p" id="09-p-b">-->
+                                            <!--<label for="09-p-b">Granulomas</label><br>-->
+                                            <!--<input type="checkbox" name="09-p" id="09-p-c">-->
+                                            <!--<label for="09-p-c">Other</label><br>-->
+                                        <!--</div>-->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<label for="09_01" class="FormItem-label Wizard-questions Bold">9.1. If you selected-->
+                                <!--“Telangiectasia – Eyes” above, at what age did the symptom appear?</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="09_01">-->
+
+                            <!--<label for="09_02" class="FormItem-label Wizard-questions Bold">9.2. If you selected-->
+                                <!--“Telangiectasia – Skin” above, at what age did the symptom appear?</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="09_02">-->
+
+                            <!--<label for="09_03" class="FormItem-label Wizard-questions Bold">9.3. If you selected-->
+                                <!--“Frequent infections – Other” above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="09_03">-->
+
+                            <!--<label for="09_04" class="FormItem-label Wizard-questions Bold">9.4. If you selected “Skin-->
+                                <!--conditions – Other” above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="09_04">-->
+
+                            <div class="Wizard-questions"><span class="Bold">10. Other symptoms or conditions: </span>Please select all other symptoms or conditions that the participant currently has or has had in the past, even if treating with medication:</div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="10" id="10-a">
+                                        <label for="10-a">Allergies</label><br>
+
+                                        <input type="checkbox" name="10" id="10-b">
+                                        <label for="10-b">Arthritis</label><br>
+
+                                        <input type="checkbox" name="10" id="10-c">
+                                        <label for="10-c">Asthma</label><br>
+
+                                        <input type="checkbox" name="10" id="10-d">
+                                        <label for="10-d">Frequent infections (lung)</label><br>
+
+                                        <input type="checkbox" name="10" id="10-e">
+                                        <label for="10-e">High cholesterol</label><br>
+
+                                        <input type="checkbox" name="10" id="10-f">
+                                        <label for="10-f">High pulse rate</label><br>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="10" id="10-g">
+                                        <label for="10-g">Leg cramps</label><br>
+
+                                        <input type="checkbox" name="10" id="10-h">
+                                        <label for="10-h">Incontinence (please select one):</label><br>
+
+                                        <!--<div class="checkbox NoMargin">-->
+                                            <!--<input type="checkbox" name="10-h" id="10-h-a">-->
+                                            <!--<label for="10-h-a">Occasional (up to two times per week)</label><br>-->
+                                            <!--<input type="checkbox" name="10-h" id="10-h-b">-->
+                                            <!--<label for="10-h-b">Frequent (more than two times per week)</label><br>-->
+                                        <!--</div>-->
+
+                                        <input type="checkbox" name="10" id="10-i">
+                                        <label for="10-i">Liver issues</label><br>
+
+                                        <input type="checkbox" name="10" id="10-j">
+                                        <label for="10-j">Osteoporosis</label><br>
+
+                                        <input type="checkbox" name="10" id="10-k">
+                                        <label for="10-k">Renal or kidney issues</label><br>
+
+                                        <input type="checkbox" name="10" id="10-l">
+                                        <label for="10-l">Thyroid issues</label><br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<label for="10_01" class="FormItem-label Wizard-questions Bold">10.1. If you selected-->
+                                <!--“Allergies” above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="10_01">-->
+
+                            <!--<label for="10_02" class="FormItem-label Wizard-questions Bold">10.2. If you selected “High-->
+                                <!--cholesterol” above, what is the participant’s cholesterol level?</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="10_02">-->
+
+                            <!--<label for="10_03" class="FormItem-label Wizard-questions Bold">10.3. If you selected “Liver-->
+                                <!--issues” above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="10_03">-->
+
+                            <!--<label for="10_04" class="FormItem-label Wizard-questions Bold">10.4. If you selected “Renal-->
+                                <!--or kidney issues” above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="10_04">-->
+
+                            <!--<label for="10_05" class="FormItem-label Wizard-questions Bold">10.5. If you selected-->
+                                <!--“Thyroid issues” above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="10_05">-->
+
+                        </form>
+                        <hr class="Wizard-contentLine">
+                    </div>
+
+                    <div class="tab-pane" id="tab5">
+                        <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
+
+                        <form>
+                            <div class="Wizard-questions Bold">11. (Females only) Has the participant experienced onset
+                                of period?
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="11" id="11-a">
+                                <label for="11-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="11" id="11-b">
+                                <label for="11-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="11" id="11-c">
+                                <label for="11-c">Don't know</label>
+                            </div>
+
+                            <!--<label for="11_01" class="FormItem-label Wizard-questions Bold">11.1. If you selected “Yes”-->
+                                <!--above, at what age did the participant experience the onset of their period?</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="11_01">-->
+
+                            <div class="Wizard-questions Bold">12. (Females only) Has the participant ever been
+                                pregnant?
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="12" id="12-a">
+                                <label for="12-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="12" id="12-b">
+                                <label for="12-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="12" id="12-c">
+                                <label for="12-c">Don't know</label>
+                            </div>
+
+                            <div class="FormItem-label Wizard-questions"><span class="Bold">13. Has the participant ever had any of the following infectious diseases?</span>
+                                Select all that apply.
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="13" id="13-a">
+                                        <label for="13-a">Chicken pox</label><br>
+
+                                        <input type="checkbox" name="13" id="13-b">
+                                        <label for="13-b">Measles</label><br>
+
+                                        <input type="checkbox" name="13" id="13-c">
+                                        <label for="13-c">Mumps</label><br>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="13" id="13-d">
+                                        <label for="13-d">MRSA</label><br>
+
+                                        <input type="checkbox" name="13" id="13-e">
+                                        <label for="13-e">Warts</label><br>
+
+                                        <input type="checkbox" name="13" id="13-f">
+                                        <label for="13-f">Molluscum contagiosum</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Wizard-questions Bold">14. Does the participant have immunodeficiency?</div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="14" id="14-a">
+                                <label for="14-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="14" id="14-b">
+                                <label for="14-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="14" id="14-c">
+                                <label for="14-c">Don't know</label>
+                            </div>
+
+                            <!--<div class="FormItem-label Wizard-questions Bold">14.1. If you selected “Yes” above, please-->
+                                <!--specify:-->
+                            <!--</div>-->
+                            <!--<div class="checkbox">-->
+                                <!--<input type="checkbox" name="14_01" id="14_01-a">-->
+                                <!--<label for="14_01-a">IgA deficiency</label><br>-->
+
+                                <!--<input type="checkbox" name="14_01" id="14_01-b">-->
+                                <!--<label for="14_01-b">Receiving gamma globulin (IgG) infusions – IVIG</label><br>-->
+
+                                <!--<input type="checkbox" name="14_01" id="14_01-c">-->
+                                <!--<label for="14_01-c">Receiving gamma globulin (IgG) infusions – Subcutaneous-->
+                                    <!--IG</label><br>-->
+
+                                <!--<input type="checkbox" name="14_01" id="14_01-d">-->
+                                <!--<label for="14_01-d">Taking prophylactic (preventative) antibiotics</label><br>-->
+
+                                <!--<input type="checkbox" name="14_01" id="14_01-e">-->
+                                <!--<label for="14_01-e">Not receiving any immunodeficiency treatment</label><br>-->
+                            <!--</div>-->
+
+                            <div class="Wizard-questions"><span class="Bold">15. Has participant ever acquired an infection from an immunization?</span>
+                                (Example: acquired chicken pox from the varicella vaccine)
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="15" id="15-a">
+                                <label for="15-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="15" id="15-b">
+                                <label for="15-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="15" id="15-c">
+                                <label for="15-c">Don't know</label>
+                            </div>
+
+                            <!--<label for="15_01" class="FormItem-label Wizard-questions Bold">15.1. If you selected “Yes”-->
+                                <!--above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="15_01">-->
+                        </form>
+                        <hr class="Wizard-contentLine">
+                    </div>
+
+                    <div class="tab-pane" id="tab6">
+                        <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
+                        <form>
+                            <div class="FormItem-label Wizard-questions"><span class="Bold">16. Surgeries.</span> Select
+                                all that apply.
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="16" id="16-a">
+                                        <label for="16-a">No surgeries</label><br>
+
+                                        <input type="checkbox" name="16" id="16-b">
+                                        <label for="16-b">G-tube or other type of feeding tube</label><br>
+
+                                        <input type="checkbox" name="16" id="16-c">
+                                        <label for="16-c">Eye surgery</label><br>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="16" id="16-d">
+                                        <label for="16-d">Heel cord lengthening</label><br>
+
+                                        <input type="checkbox" name="16" id="16-e">
+                                        <label for="16-e">Rod placement in the back</label><br>
+
+                                        <input type="checkbox" name="16" id="16-f">
+                                        <label for="16-f">Other surgery</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<label for="16_01" class="FormItem-label Wizard-questions Bold">16.1. If you selected-->
+                                <!--“G-tube or other type of feeding tube” above, please specify the participant’s age at-->
+                                <!--the time of surgery:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="16_01">-->
+
+                            <!--<label for="16_02" class="FormItem-label Wizard-questions Bold">16.2. If you selected “Eye-->
+                                <!--surgery” above, please specify the participant’s age at the time of surgery:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="16_02">-->
+
+                            <!--<label for="16_03" class="FormItem-label Wizard-questions Bold">16.3. If you selected “Heel-->
+                                <!--cord lengthening” above, please specify the participant’s age at the time of-->
+                                <!--surgery:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="16_03">-->
+
+                            <!--<label for="16_04" class="FormItem-label Wizard-questions Bold">16.4. If you selected “Rod-->
+                                <!--placement in the back” above, please specify the participant’s age at the time of-->
+                                <!--surgery:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="16_04">-->
+
+                            <!--<label for="16_05" class="FormItem-label Wizard-questions Bold">16.5. If you selected “Other-->
+                                <!--surgery” above, please specify the type of surgery:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="16_05">-->
+
+                            <!--<label for="16_06" class="FormItem-label Wizard-questions Bold">16.6. If you selected “Other-->
+                                <!--surgery” above, please specify the participant’s age at the time of surgery:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="16_06">-->
+
+                            <div class="Wizard-questions Bold">17. Medications: Has participant ever taken any
+                                medications in the following categories?
+                            </div>
+                            <table id="17" class="display Wizard-table">
+                                <thead>
+                                <tr class="row">
+                                    <th class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-th">Medication Type</th>
+                                    <th class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-th">Medication Name</th>
+                                    <th class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-th">Begin taking at
+                                        age
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-a">
+                                            <label for="17-a">Anti-seizure medication</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-a01" name="17-a01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-a02" name="17-a02"></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-b">
+                                            <label for="17-b">Anti-drooling medication</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-b01" name="17-b01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-b02" name="17-b02"></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-c">
+                                            <label for="17-c">Diabetes medication</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-c01" name="17-c01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-c02" name="17-c02"></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-d">
+                                            <label for="17-d">Anti-depressants</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-d01" name="17-d01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-d02" name="17-d02"></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-e">
+                                            <label for="17-e">Steroids</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-e01" name="17-e01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-e02" name="17-e02"></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-f">
+                                            <label for="17-f">Birth control</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-f01" name="17-f01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-f02" name="17-f02"></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-g">
+                                            <label for="17-g">Other medication</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-g01" name="17-g01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-g02" name="17-g02"></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-h">
+                                            <label for="17-h">Other medication</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-inpu Wizard-table-input"
+                                               id="17-h01" name="17-h01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-h02" name="17-h02"></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4 Wizard-table-td">
+                                        <div class="checkbox NoMargin">
+                                            <input type="checkbox" name="17" id="17-i">
+                                            <label for="17-i">Other medication</label>
+                                        </div>
+                                    </td>
+                                    <td class="col-lg-5 col-md-5 col-sm-5 col-xs-5 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-i01" name="17-i01"></td>
+                                    <td class="col-lg-3 col-md-3 col-sm-3 col-xs-3 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="17-i02" name="17-i02"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="Wizard-questions Bold">18. Does the participant currently take any
+                                over-the-counter nutritional supplements?
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="18" id="18-a">
+                                <label for="18-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="18" id="18-b">
+                                <label for="18-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="18" id="18-c">
+                                <label for="18-c">Don't know</label>
+                            </div>
+
+                            <!--<label for="18_01" class="FormItem-label Wizard-questions Bold">18.1. If you selected “Yes”-->
+                                <!--above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="18_01">-->
+                        </form>
+                    </div>
+
+                    <div class="tab-pane" id="tab7">
+                        <h2 class="Subtitle Wizard-subtitle">Family History</h2>
+
+                        <form>
+                            <div class="Wizard-questions"><span class="Bold">19. Are the participant’s parents consanguineous? </span>(closely
+                                related, for example: first cousins)
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="19" id="19-a">
+                                <label for="19-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="19" id="19-b">
+                                <label for="19-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="19" id="19-c">
+                                <label for="19-c">Don't know</label>
+                            </div>
+
+                            <div class="Wizard-questions Bold">20. Participant's siblings</div>
+                            <table id="20" class="display Wizard-table">
+                                <thead>
+                                <tr class="row">
+                                    <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-th"><span class="Bold">Sibling</span>
+                                    </th>
+                                    <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-th"><span class="Bold">Sex </span><br>(M/F/Other)
+                                    </th>
+                                    <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-th"><span class="Bold">Age </span><br>(current)
+                                    </th>
+                                    <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-th"><span class="Bold">Age of death </span><br>(if
+                                        applicable)
+                                    </th>
+                                    <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-th"><span class="Bold">A-T Diagnosis </span><br>(Y/N/Unknown)
+                                    </th>
+                                    <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-th"><span class="Bold">A-T Carrier </span><br>(Y/N/Unknown)
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="row">
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">Sibling 01</td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-a01" name="20-a01">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-a02" name="20-a02">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-a03" name="20-a03">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-a04" name="20-a04">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-a05" name="20-a05">
+                                    </td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">Sibling 02</td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-b01" name="20-b01">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-b02" name="20-b02">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-b03" name="20-b03">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-b04" name="20-b04">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-b05" name="20-b05">
+                                    </td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">Sibling 03</td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-c01" name="20-c01">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-c02" name="20-c02">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-c03" name="20-c03">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-c04" name="20-c04">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-c05" name="20-c05">
+                                    </td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">Sibling 04</td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-d01" name="20-d01">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-d02" name="20-d02">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-d03" name="20-d03">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-d04" name="20-d04">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-d05" name="20-d05">
+                                    </td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">Sibling 05</td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-e01" name="20-e01">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-e02" name="20-e02">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-e03" name="20-e03">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-e04" name="20-e04">
+                                    </td>
+                                    <td class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Wizard-table-td">
+                                        <input type="text" class="form-control FormItem-input Wizard-table-input"
+                                               id="20-e05" name="20-e05">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="Wizard-questions"><span class="Bold">21. Has the participant previously participated in any clinical trials related to their rare disease? </span>(Examples:
+                                Baclofen Trial, Oxidative Stress Clinical Trial, Inositol Trial, L-Dopa Treatment Trial,
+                                etc)
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="21" id="21-a">
+                                <label for="21-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="21" id="21-b">
+                                <label for="21-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="21" id="21-c">
+                                <label for="21-c">Don't know</label>
+                            </div>
+
+                            <!--<label for="21_01" class="FormItem-label Wizard-questions Bold">21.1. If you selected “Yes”-->
+                                <!--above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="21_01">-->
+
+                            <div class="Wizard-questions"><span class="Bold">22. Does the participant currently participate in any clinical trials related to their rare disease?</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="22" id="22-a">
+                                <label for="22-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="22" id="22-b">
+                                <label for="22-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="22" id="22-c">
+                                <label for="22-c">Don't know</label>
+                            </div>
+
+                            <!--<label for="22_01" class="FormItem-label Wizard-questions Bold">22.1. If you selected “Yes”-->
+                                <!--above, please specify:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="22_01">-->
+
+                            <div class="Wizard-questions"><span class="Bold">23. Has the participant previously donated a sample of blood, tissue, or other biospecimen for research?</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" class="FormItem-radio" name="23" id="23-a">
+                                <label for="23-a" style="margin-right: 35px;">Yes</label>
+
+                                <input type="radio" class="FormItem-radio" name="23" id="23-b">
+                                <label for="23-b" style="margin-right: 35px;">No</label>
+
+                                <input type="radio" class="FormItem-radio" name="23" id="23-c">
+                                <label for="23-c">Don't know</label>
+                            </div>
+
+                            <!--<div class="Wizard-questions Bold">23.1. If you selected “Yes” above, please indicate:</div>-->
+                            <!--<div class="Wizard-questions Bold">Sample A. Type of Biospecimen:</div>-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<input type="checkbox" name="23_01" id="23_01-a">-->
+                                        <!--<label for="23_01-a">Blood</label><br>-->
+
+                                        <!--<input type="checkbox" name="23_01" id="23_01-b">-->
+                                        <!--<label for="23_01-b">Urine</label><br>-->
+
+                                        <!--<input type="checkbox" name="23_01" id="23_01-c">-->
+                                        <!--<label for="23_01-c">Saliva/cheek swab</label><br>-->
+
+                                        <!--<input type="checkbox" name="23_01" id="23_01-d">-->
+                                        <!--<label for="23_01-d">Other bodily fluid</label><br>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
+                                    <!--<div class="checkbox">-->
+                                        <!--<input type="checkbox" name="23_01" id="23_01-e">-->
+                                        <!--<label for="23_01-e">Skin punch biopsy</label><br>-->
+
+                                        <!--<input type="checkbox" name="23_01" id="23_01-f">-->
+                                        <!--<label for="23_01-f">Tissue</label><br>-->
+
+                                        <!--<input type="checkbox" name="23_01" id="23_01-g">-->
+                                        <!--<label for="23_01-g">Unknown</label>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <!--<div class="Wizard-questions"><span class="Bold">Is the location of Biospecimen “A”donation known?</span>-->
+                            <!--</div>-->
+                            <!--<div class="radio">-->
+                                <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-a">-->
+                                <!--<label for="23_02-a" style="margin-right: 35px;">Yes</label>-->
+
+                                <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-b">-->
+                                <!--<label for="23_02-b" style="margin-right: 35px;">No</label>-->
+
+                                <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-c">-->
+                                <!--<label for="23_02-c">Don't know</label>-->
+                            <!--</div>-->
+
+                            <!--<div class="Wizard-questions Bold">If you selected “Yes” above, please indicate:</div>-->
+                            <!--<label for="23_03-a"-->
+                                   <!--class="FormItem-label Wizard-questions--minor">Hospital/Institution:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="23_03-a">-->
+
+                            <!--<div class="row">-->
+                                <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                                    <!--<label for="23_03-b" class="FormItem-label Wizard-questions--minor">City, Town or-->
+                                        <!--Village:</label>-->
+                                    <!--<input type="text" class="form-control FormItem-input" id="23_03-b">-->
+                                <!--</div>-->
+                                <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                                    <!--<label for="23_03-c" class="FormItem-label Wizard-questions--minor">State:</label>-->
+                                    <!--<input type="text" class="form-control FormItem-input" id="23_03-c">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </form>
+
+                        <!--<a href="#" class="Wizard-pagerConsent BtnFilled BtnFilled--green">Sign & Consent</a>-->
+                        <!--<a href="#" class="Wizard-pagerNotConsent BtnFilled BtnFilled--gray">Do not Consent</a>-->
+                    </div>
+
+                    <ul class="pager wizard Wizard-pager">
+                        <li class="previous"><a href="#" class="BtnBordered BtnBordered--blue"><span
+                                class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Prev</a></li>
+                        <li class="next"><a href="#" class="BtnBordered BtnBordered--blue">Next<span
+                                class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+                        <li><a href="#" class="Wizard-pagerSave BtnBordered BtnBordered--gray">Save</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="Footer">
+    <hr class="Footer-line">
+    <div class="Footer-logo">
+        <img src="images/color-logo.png" alt="A-T Portal Logo">
+    </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bootstrap.wizard.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-pills'});
+        window.prettyPrint && prettyPrint()
+    });
+</script>
+</body>
+</html>

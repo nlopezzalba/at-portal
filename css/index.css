@@ -45,7 +45,7 @@ b{
 }
 
 .Bold{
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 .CenterAligned{
@@ -82,6 +82,10 @@ b{
 
 .NoMargin{
     margin: 0!important;
+}
+
+.AlignedLeft{
+    text-align: left !important;
 }
 
 /*******************************************************/
@@ -213,6 +217,19 @@ b{
 .BtnBordered--green:active{
     border-color: #5C7A36 !important;
     color: #5C7A36;
+}
+
+.BtnBordered--black,
+.BtnBordered--black:focus{
+    margin-top: 25px;
+    border-color: #333333 !important;
+    color: #333333;
+}
+
+.BtnBordered--black:hover,
+.BtnBordered--black:active{
+    border-color: #ffffff !important;
+    color: #ffffff;
 }
 
 .BtnBordered--gray,
@@ -668,6 +685,35 @@ b{
 
 .Wizard-contentLine{
     border-color: #cccccc;
+}
+
+.Wizard-questions{
+    font-size: 16px !important;
+    padding: 15px 0 0 0;
+}
+
+.Wizard-questions--minor{
+    padding: 10px 0 0 0;
+}
+
+.Wizard-table{
+    width: 100%;
+    border-spacing: 5px;
+}
+
+.Wizard-table-input{
+    font-size: 14px;
+    height: 30px;
+}
+
+.Wizard-table-td{
+    padding: 2px !important;
+}
+
+.Wizard-table-th{
+    padding: 10px 2px 2px 2px !important;
+    font-style: italic;
+    font-weight: 500!important;
 }
 
 .Wizard-pager{
