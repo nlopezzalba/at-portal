@@ -124,14 +124,15 @@
                     <li class="Wizard-item"><a href="#tab4" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
                     <li class="Wizard-item"><a href="#tab5" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
                     <li class="Wizard-item"><a href="#tab6" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
-                    <li class="Wizard-item--last"><a href="#tab7" class="Wizard-itemDot NoPadding" data-toggle="tab"></a></li>
+                    <li class="Wizard-item--last"><a href="#tab7" class="Wizard-itemDot NoPadding"
+                                                     data-toggle="tab"></a></li>
                 </ul>
 
                 <div class="tab-content Wizard-content">
                     <div class="tab-pane" id="tab1">
                         <h2 class="Subtitle Wizard-subtitle">Instructions:</h2>
                         <span class="ParagraphText">
-                            Thank you for taking the time to enroll. This module will ask you questions specific to your Ataxia-Telangiectasia (A-T) diagnosis. The questions below were developed in partnership with the A-T Children’s Project. Please note this module:
+                            Thank you for taking the time to enroll. This module will ask you questions specific to your Ataxia-Telangiectasia (A-T) diagnosis. The questions below were developed in partnership with the A-T Children’s Project. <br>Please note this module:
                             <ul class="Wizard-list">
                                 <li>Takes approximately 30 minutes to complete.</li>
                                 <li>Will refer to the person with the A-T diagnosis as “the participant”.</li>
@@ -139,7 +140,12 @@
                                 <li>Once per year, we will ask you to update your module.</li>
                             </ul>
                         </span>
-                        <span class="FormItem-message">If you have any questions while completing this form, please send an email to support@atfamilies.org or call USA 954.481.6611 and ask to speak with one of the A-T Children’s Project study staff about this initiative and the data platform.</span>
+
+                        <div class="Wizard-message">If you have any questions while completing this questionnaire,
+                            please send an email to <span class="Bold">support@atfamilies.org</span> or call <span
+                                    class="Bold">USA 954.481.6611</span> and ask to speak with one of the A-T Children’s
+                            Project study staff.
+                        </div>
                         <hr class="Wizard-contentLine">
                     </div>
 
@@ -155,12 +161,12 @@
                                 participant’s first symptom observed?</label>
                             <input type="text" class="form-control FormItem-input" id="02">
 
-                            <label for="03" class="FormItem-label Wizard-questions Bold">3. At what age a neurologic
+                            <label for="03" class="FormItem-label Wizard-questions Bold">3. At what age a neurological
                                 problem was first suspected?</label>
                             <input type="text" class="form-control FormItem-input" id="03">
 
-                            <div class="FormItem-label Wizard-questions"><span class="Bold">4. How was the diagnosis of A-T determined?</span>
-                                Select all that apply
+                            <div class="FormItem-label Wizard-questions"><span class="Bold">4. How was the diagnosis of A-T determined? </span>
+                                (Select all that apply)
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -209,14 +215,21 @@
                             </div>
 
                             <!--<label for="04_01" class="FormItem-label Wizard-questions Bold">4.1. If you indicated-->
-                                <!--“Other” above, please specify:</label>-->
+                            <!--“Other” above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="04_01">-->
 
-                            <!--<label for="04_02" class="FormItem-label Wizard-questions Bold">4.2. If the exact ATM-->
-                                <!--mutation has been determined, please provide:</label>-->
-                            <!--<input type="text" class="form-control FormItem-input" id="04_02">-->
+                            <label for="04_02" class="FormItem-label Wizard-questions Bold">5. If the exact ATM
+                            mutation has been determined, please provide:</label>
+                            <input type="text" class="form-control FormItem-input" id="04_02">
+                        </form>
+                        <hr class="Wizard-contentLine">
+                    </div>
 
-                            <div class="Wizard-questions Bold">5. Who made the diagnosis?</div>
+                    <div class="tab-pane" id="tab3">
+                        <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
+
+                        <form>
+                            <div class="Wizard-questions Bold">6. Who made the diagnosis?</div>
                             <div class="row">
                                 <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                                     <label for="05-a" class="FormItem-label Wizard-questions--minor">Physician
@@ -230,7 +243,7 @@
                                 </div>
                             </div>
 
-                            <div class="Wizard-questions Bold">6. Where was the diagnosis made?</div>
+                            <!--<div class="Wizard-questions Bold">7. Where was the diagnosis made?</div>-->
                             <div class="row">
                                 <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                                     <label for="06-a" class="FormItem-label Wizard-questions--minor">Hospital/Institution:</label>
@@ -252,13 +265,7 @@
                                     <input type="text" class="form-control FormItem-input" id="06-d">
                                 </div>
                             </div>
-                        </form>
-                        <hr class="Wizard-contentLine">
-                    </div>
 
-                    <div class="tab-pane" id="tab3">
-                        <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
-                        <form>
                             <div class="Wizard-questions Bold">7. Does the participant have a history of cancer?</div>
                             <div class="radio">
                                 <input type="radio" class="FormItem-radio" name="07" id="07-a">
@@ -272,52 +279,52 @@
                             </div>
 
                             <!--<label for="07_01" class="FormItem-label Wizard-questions Bold">7.1. At what age was the-->
-                                <!--participant diagnosed with Cancer?</label>-->
+                            <!--participant diagnosed with Cancer?</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="07_01">-->
 
                             <!--<div class="FormItem-label Wizard-questions Bold">7.2. Please select the type of Cancer:-->
                             <!--</div>-->
                             <!--<div class="row">-->
-                                <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
-                                    <!--<div class="checkbox">-->
-                                        <!--<input type="checkbox" name="07_02" id="07_02-a">-->
-                                        <!--<label for="07_02-a">Leukemia</label><br>-->
+                            <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
+                            <!--<div class="checkbox">-->
+                            <!--<input type="checkbox" name="07_02" id="07_02-a">-->
+                            <!--<label for="07_02-a">Leukemia</label><br>-->
 
-                                        <!--<input type="checkbox" name="07_02" id="07_02-b">-->
-                                        <!--<label for="07_02-b">Non-Hodgkin’s Lymphoma</label><br>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
-                                    <!--<div class="checkbox">-->
-                                        <!--<input type="checkbox" name="07_02" id="07_02-c">-->
-                                        <!--<label for="07_02-c">Hodgkin’s Lymphoma</label><br>-->
+                            <!--<input type="checkbox" name="07_02" id="07_02-b">-->
+                            <!--<label for="07_02-b">Non-Hodgkin’s Lymphoma</label><br>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
+                            <!--<div class="checkbox">-->
+                            <!--<input type="checkbox" name="07_02" id="07_02-c">-->
+                            <!--<label for="07_02-c">Hodgkin’s Lymphoma</label><br>-->
 
-                                        <!--<input type="checkbox" name="checkbox1" id="07_02-d">-->
-                                        <!--<label for="07_02-d">Other</label><br>-->
-                                    <!--</div>-->
-                                <!--</div>-->
+                            <!--<input type="checkbox" name="checkbox1" id="07_02-d">-->
+                            <!--<label for="07_02-d">Other</label><br>-->
+                            <!--</div>-->
+                            <!--</div>-->
                             <!--</div>-->
 
                             <!--<label for="07_03" class="FormItem-label Wizard-questions Bold">7.3. If you indicated-->
-                                <!--“Other” above, please specify:</label>-->
+                            <!--“Other” above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="07_03">-->
 
                             <!--<div class="FormItem-label Wizard-questions"><span class="Bold">7.4. Please indicate the status of the participant’s condition</span>-->
-                                <!--(Select one):-->
+                            <!--(Select one):-->
                             <!--</div>-->
                             <!--<div class="radio">-->
-                                <!--<input type="radio" name="07_03" id="07_03-a">-->
-                                <!--<label for="07_03-a">Currently has cancer and is not or is no longer undergoing-->
-                                    <!--treatment</label><br>-->
+                            <!--<input type="radio" name="07_03" id="07_03-a">-->
+                            <!--<label for="07_03-a">Currently has cancer and is not or is no longer undergoing-->
+                            <!--treatment</label><br>-->
 
-                                <!--<input type="radio" name="07_03" id="07_03-b">-->
-                                <!--<label for="07_03-b">Currently has cancer and is undergoing treatment</label><br>-->
+                            <!--<input type="radio" name="07_03" id="07_03-b">-->
+                            <!--<label for="07_03-b">Currently has cancer and is undergoing treatment</label><br>-->
 
-                                <!--<input type="radio" name="07_03" id="07_03-c">-->
-                                <!--<label for="07_03-c">Currently in remission</label><br>-->
+                            <!--<input type="radio" name="07_03" id="07_03-c">-->
+                            <!--<label for="07_03-c">Currently in remission</label><br>-->
 
-                                <!--<input type="radio" name="07_03" id="07_03-d">-->
-                                <!--<label for="07_03-d">Cancer has recently recurred</label><br>-->
+                            <!--<input type="radio" name="07_03" id="07_03-d">-->
+                            <!--<label for="07_03-d">Cancer has recently recurred</label><br>-->
                             <!--</div>-->
 
                             <div class="FormItem-label Wizard-questions Bold">8. Ambulation: Please select the most
@@ -343,12 +350,12 @@
                             </div>
 
                             <!--<label for="08_01" class="FormItem-label Wizard-questions Bold">8.1. If participant is no-->
-                                <!--longer fully ambulatory, at what age did the he/she begin using a wheelchair?</label>-->
+                            <!--longer fully ambulatory, at what age did the he/she begin using a wheelchair?</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="08_01">-->
 
                             <!--<label for="08_02" class="FormItem-label Wizard-questions Bold">8.2. If the participant is-->
-                                <!--no longer fully ambulatory, at what age did he/she depend completely on a-->
-                                <!--wheelchair?</label>-->
+                            <!--no longer fully ambulatory, at what age did he/she depend completely on a-->
+                            <!--wheelchair?</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="08_02">-->
                         </form>
                         <hr class="Wizard-contentLine">
@@ -356,6 +363,7 @@
 
                     <div class="tab-pane" id="tab4">
                         <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
+
                         <form>
                             <div class="Wizard-questions"><span class="Bold">9. Symptoms or conditions associated with A-T: </span>Please
                                 select all symptoms associated with A-T that the participant currently has or has had in
@@ -411,34 +419,34 @@
                                         <label for="09-n">Telangiectasia (choose all that apply):</label><br>
 
                                         <!--<div class="checkbox NoMargin">-->
-                                            <!--<input type="checkbox" name="09-n" id="09-n-a">-->
-                                            <!--<label for="09-n-a">Eyes</label><br>-->
-                                            <!--<input type="checkbox" name="09-n" id="09-n-b">-->
-                                            <!--<label for="09-n-b">Skin</label><br>-->
+                                        <!--<input type="checkbox" name="09-n" id="09-n-a">-->
+                                        <!--<label for="09-n-a">Eyes</label><br>-->
+                                        <!--<input type="checkbox" name="09-n" id="09-n-b">-->
+                                        <!--<label for="09-n-b">Skin</label><br>-->
                                         <!--</div>-->
 
                                         <input type="checkbox" name="09" id="09-o">
                                         <label for="09-o">Frequent infections (choose all that apply):</label><br>
 
                                         <!--<div class="checkbox NoMargin">-->
-                                            <!--<input type="checkbox" name="09-o" id="09-o-a">-->
-                                            <!--<label for="09-o-a">Lung</label><br>-->
-                                            <!--<input type="checkbox" name="09-o" id="09-o-b">-->
-                                            <!--<label for="09-o-b">Sinus</label><br>-->
-                                            <!--<input type="checkbox" name="09-o" id="09-o-c">-->
-                                            <!--<label for="09-o-c">Other</label><br>-->
+                                        <!--<input type="checkbox" name="09-o" id="09-o-a">-->
+                                        <!--<label for="09-o-a">Lung</label><br>-->
+                                        <!--<input type="checkbox" name="09-o" id="09-o-b">-->
+                                        <!--<label for="09-o-b">Sinus</label><br>-->
+                                        <!--<input type="checkbox" name="09-o" id="09-o-c">-->
+                                        <!--<label for="09-o-c">Other</label><br>-->
                                         <!--</div>-->
 
                                         <input type="checkbox" name="09" id="09-p">
                                         <label for="09-p">Skin conditions (choose all that apply):</label><br>
 
                                         <!--<div class="checkbox NoMargin">-->
-                                            <!--<input type="checkbox" name="09-p" id="09-p-a">-->
-                                            <!--<label for="09-p-a">Vitiligo</label><br>-->
-                                            <!--<input type="checkbox" name="09-p" id="09-p-b">-->
-                                            <!--<label for="09-p-b">Granulomas</label><br>-->
-                                            <!--<input type="checkbox" name="09-p" id="09-p-c">-->
-                                            <!--<label for="09-p-c">Other</label><br>-->
+                                        <!--<input type="checkbox" name="09-p" id="09-p-a">-->
+                                        <!--<label for="09-p-a">Vitiligo</label><br>-->
+                                        <!--<input type="checkbox" name="09-p" id="09-p-b">-->
+                                        <!--<label for="09-p-b">Granulomas</label><br>-->
+                                        <!--<input type="checkbox" name="09-p" id="09-p-c">-->
+                                        <!--<label for="09-p-c">Other</label><br>-->
                                         <!--</div>-->
 
                                     </div>
@@ -446,22 +454,25 @@
                             </div>
 
                             <!--<label for="09_01" class="FormItem-label Wizard-questions Bold">9.1. If you selected-->
-                                <!--“Telangiectasia – Eyes” above, at what age did the symptom appear?</label>-->
+                            <!--“Telangiectasia – Eyes” above, at what age did the symptom appear?</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="09_01">-->
 
                             <!--<label for="09_02" class="FormItem-label Wizard-questions Bold">9.2. If you selected-->
-                                <!--“Telangiectasia – Skin” above, at what age did the symptom appear?</label>-->
+                            <!--“Telangiectasia – Skin” above, at what age did the symptom appear?</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="09_02">-->
 
                             <!--<label for="09_03" class="FormItem-label Wizard-questions Bold">9.3. If you selected-->
-                                <!--“Frequent infections – Other” above, please specify:</label>-->
+                            <!--“Frequent infections – Other” above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="09_03">-->
 
                             <!--<label for="09_04" class="FormItem-label Wizard-questions Bold">9.4. If you selected “Skin-->
-                                <!--conditions – Other” above, please specify:</label>-->
+                            <!--conditions – Other” above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="09_04">-->
 
-                            <div class="Wizard-questions"><span class="Bold">10. Other symptoms or conditions: </span>Please select all other symptoms or conditions that the participant currently has or has had in the past, even if treating with medication:</div>
+                            <div class="Wizard-questions"><span class="Bold">10. Other symptoms or conditions: </span>Please
+                                select all other symptoms or conditions that the participant currently has or has had in
+                                the past, even if treating with medication:
+                            </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <div class="checkbox">
@@ -494,10 +505,10 @@
                                         <label for="10-h">Incontinence (please select one):</label><br>
 
                                         <!--<div class="checkbox NoMargin">-->
-                                            <!--<input type="checkbox" name="10-h" id="10-h-a">-->
-                                            <!--<label for="10-h-a">Occasional (up to two times per week)</label><br>-->
-                                            <!--<input type="checkbox" name="10-h" id="10-h-b">-->
-                                            <!--<label for="10-h-b">Frequent (more than two times per week)</label><br>-->
+                                        <!--<input type="checkbox" name="10-h" id="10-h-a">-->
+                                        <!--<label for="10-h-a">Occasional (up to two times per week)</label><br>-->
+                                        <!--<input type="checkbox" name="10-h" id="10-h-b">-->
+                                        <!--<label for="10-h-b">Frequent (more than two times per week)</label><br>-->
                                         <!--</div>-->
 
                                         <input type="checkbox" name="10" id="10-i">
@@ -516,23 +527,23 @@
                             </div>
 
                             <!--<label for="10_01" class="FormItem-label Wizard-questions Bold">10.1. If you selected-->
-                                <!--“Allergies” above, please specify:</label>-->
+                            <!--“Allergies” above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="10_01">-->
 
                             <!--<label for="10_02" class="FormItem-label Wizard-questions Bold">10.2. If you selected “High-->
-                                <!--cholesterol” above, what is the participant’s cholesterol level?</label>-->
+                            <!--cholesterol” above, what is the participant’s cholesterol level?</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="10_02">-->
 
                             <!--<label for="10_03" class="FormItem-label Wizard-questions Bold">10.3. If you selected “Liver-->
-                                <!--issues” above, please specify:</label>-->
+                            <!--issues” above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="10_03">-->
 
                             <!--<label for="10_04" class="FormItem-label Wizard-questions Bold">10.4. If you selected “Renal-->
-                                <!--or kidney issues” above, please specify:</label>-->
+                            <!--or kidney issues” above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="10_04">-->
 
                             <!--<label for="10_05" class="FormItem-label Wizard-questions Bold">10.5. If you selected-->
-                                <!--“Thyroid issues” above, please specify:</label>-->
+                            <!--“Thyroid issues” above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="10_05">-->
 
                         </form>
@@ -558,7 +569,7 @@
                             </div>
 
                             <!--<label for="11_01" class="FormItem-label Wizard-questions Bold">11.1. If you selected “Yes”-->
-                                <!--above, at what age did the participant experience the onset of their period?</label>-->
+                            <!--above, at what age did the participant experience the onset of their period?</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="11_01">-->
 
                             <div class="Wizard-questions Bold">12. (Females only) Has the participant ever been
@@ -618,24 +629,24 @@
                             </div>
 
                             <!--<div class="FormItem-label Wizard-questions Bold">14.1. If you selected “Yes” above, please-->
-                                <!--specify:-->
+                            <!--specify:-->
                             <!--</div>-->
                             <!--<div class="checkbox">-->
-                                <!--<input type="checkbox" name="14_01" id="14_01-a">-->
-                                <!--<label for="14_01-a">IgA deficiency</label><br>-->
+                            <!--<input type="checkbox" name="14_01" id="14_01-a">-->
+                            <!--<label for="14_01-a">IgA deficiency</label><br>-->
 
-                                <!--<input type="checkbox" name="14_01" id="14_01-b">-->
-                                <!--<label for="14_01-b">Receiving gamma globulin (IgG) infusions – IVIG</label><br>-->
+                            <!--<input type="checkbox" name="14_01" id="14_01-b">-->
+                            <!--<label for="14_01-b">Receiving gamma globulin (IgG) infusions – IVIG</label><br>-->
 
-                                <!--<input type="checkbox" name="14_01" id="14_01-c">-->
-                                <!--<label for="14_01-c">Receiving gamma globulin (IgG) infusions – Subcutaneous-->
-                                    <!--IG</label><br>-->
+                            <!--<input type="checkbox" name="14_01" id="14_01-c">-->
+                            <!--<label for="14_01-c">Receiving gamma globulin (IgG) infusions – Subcutaneous-->
+                            <!--IG</label><br>-->
 
-                                <!--<input type="checkbox" name="14_01" id="14_01-d">-->
-                                <!--<label for="14_01-d">Taking prophylactic (preventative) antibiotics</label><br>-->
+                            <!--<input type="checkbox" name="14_01" id="14_01-d">-->
+                            <!--<label for="14_01-d">Taking prophylactic (preventative) antibiotics</label><br>-->
 
-                                <!--<input type="checkbox" name="14_01" id="14_01-e">-->
-                                <!--<label for="14_01-e">Not receiving any immunodeficiency treatment</label><br>-->
+                            <!--<input type="checkbox" name="14_01" id="14_01-e">-->
+                            <!--<label for="14_01-e">Not receiving any immunodeficiency treatment</label><br>-->
                             <!--</div>-->
 
                             <div class="Wizard-questions"><span class="Bold">15. Has participant ever acquired an infection from an immunization?</span>
@@ -653,7 +664,7 @@
                             </div>
 
                             <!--<label for="15_01" class="FormItem-label Wizard-questions Bold">15.1. If you selected “Yes”-->
-                                <!--above, please specify:</label>-->
+                            <!--above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="15_01">-->
                         </form>
                         <hr class="Wizard-contentLine">
@@ -661,6 +672,7 @@
 
                     <div class="tab-pane" id="tab6">
                         <h2 class="Subtitle Wizard-subtitle">Diagnosis</h2>
+
                         <form>
                             <div class="FormItem-label Wizard-questions"><span class="Bold">16. Surgeries.</span> Select
                                 all that apply.
@@ -693,30 +705,30 @@
                             </div>
 
                             <!--<label for="16_01" class="FormItem-label Wizard-questions Bold">16.1. If you selected-->
-                                <!--“G-tube or other type of feeding tube” above, please specify the participant’s age at-->
-                                <!--the time of surgery:</label>-->
+                            <!--“G-tube or other type of feeding tube” above, please specify the participant’s age at-->
+                            <!--the time of surgery:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="16_01">-->
 
                             <!--<label for="16_02" class="FormItem-label Wizard-questions Bold">16.2. If you selected “Eye-->
-                                <!--surgery” above, please specify the participant’s age at the time of surgery:</label>-->
+                            <!--surgery” above, please specify the participant’s age at the time of surgery:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="16_02">-->
 
                             <!--<label for="16_03" class="FormItem-label Wizard-questions Bold">16.3. If you selected “Heel-->
-                                <!--cord lengthening” above, please specify the participant’s age at the time of-->
-                                <!--surgery:</label>-->
+                            <!--cord lengthening” above, please specify the participant’s age at the time of-->
+                            <!--surgery:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="16_03">-->
 
                             <!--<label for="16_04" class="FormItem-label Wizard-questions Bold">16.4. If you selected “Rod-->
-                                <!--placement in the back” above, please specify the participant’s age at the time of-->
-                                <!--surgery:</label>-->
+                            <!--placement in the back” above, please specify the participant’s age at the time of-->
+                            <!--surgery:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="16_04">-->
 
                             <!--<label for="16_05" class="FormItem-label Wizard-questions Bold">16.5. If you selected “Other-->
-                                <!--surgery” above, please specify the type of surgery:</label>-->
+                            <!--surgery” above, please specify the type of surgery:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="16_05">-->
 
                             <!--<label for="16_06" class="FormItem-label Wizard-questions Bold">16.6. If you selected “Other-->
-                                <!--surgery” above, please specify the participant’s age at the time of surgery:</label>-->
+                            <!--surgery” above, please specify the participant’s age at the time of surgery:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="16_06">-->
 
                             <div class="Wizard-questions Bold">17. Medications: Has participant ever taken any
@@ -877,9 +889,10 @@
                             </div>
 
                             <!--<label for="18_01" class="FormItem-label Wizard-questions Bold">18.1. If you selected “Yes”-->
-                                <!--above, please specify:</label>-->
+                            <!--above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="18_01">-->
                         </form>
+                        <hr class="Wizard-contentLine">
                     </div>
 
                     <div class="tab-pane" id="tab7">
@@ -1054,7 +1067,7 @@
                             </div>
 
                             <!--<label for="21_01" class="FormItem-label Wizard-questions Bold">21.1. If you selected “Yes”-->
-                                <!--above, please specify:</label>-->
+                            <!--above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="21_01">-->
 
                             <div class="Wizard-questions"><span class="Bold">22. Does the participant currently participate in any clinical trials related to their rare disease?</span>
@@ -1071,7 +1084,7 @@
                             </div>
 
                             <!--<label for="22_01" class="FormItem-label Wizard-questions Bold">22.1. If you selected “Yes”-->
-                                <!--above, please specify:</label>-->
+                            <!--above, please specify:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="22_01">-->
 
                             <div class="Wizard-questions"><span class="Bold">23. Has the participant previously donated a sample of blood, tissue, or other biospecimen for research?</span>
@@ -1090,68 +1103,68 @@
                             <!--<div class="Wizard-questions Bold">23.1. If you selected “Yes” above, please indicate:</div>-->
                             <!--<div class="Wizard-questions Bold">Sample A. Type of Biospecimen:</div>-->
                             <!--<div class="row">-->
-                                <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
-                                    <!--<div class="checkbox">-->
-                                        <!--<input type="checkbox" name="23_01" id="23_01-a">-->
-                                        <!--<label for="23_01-a">Blood</label><br>-->
+                            <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
+                            <!--<div class="checkbox">-->
+                            <!--<input type="checkbox" name="23_01" id="23_01-a">-->
+                            <!--<label for="23_01-a">Blood</label><br>-->
 
-                                        <!--<input type="checkbox" name="23_01" id="23_01-b">-->
-                                        <!--<label for="23_01-b">Urine</label><br>-->
+                            <!--<input type="checkbox" name="23_01" id="23_01-b">-->
+                            <!--<label for="23_01-b">Urine</label><br>-->
 
-                                        <!--<input type="checkbox" name="23_01" id="23_01-c">-->
-                                        <!--<label for="23_01-c">Saliva/cheek swab</label><br>-->
+                            <!--<input type="checkbox" name="23_01" id="23_01-c">-->
+                            <!--<label for="23_01-c">Saliva/cheek swab</label><br>-->
 
-                                        <!--<input type="checkbox" name="23_01" id="23_01-d">-->
-                                        <!--<label for="23_01-d">Other bodily fluid</label><br>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
-                                    <!--<div class="checkbox">-->
-                                        <!--<input type="checkbox" name="23_01" id="23_01-e">-->
-                                        <!--<label for="23_01-e">Skin punch biopsy</label><br>-->
+                            <!--<input type="checkbox" name="23_01" id="23_01-d">-->
+                            <!--<label for="23_01-d">Other bodily fluid</label><br>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">-->
+                            <!--<div class="checkbox">-->
+                            <!--<input type="checkbox" name="23_01" id="23_01-e">-->
+                            <!--<label for="23_01-e">Skin punch biopsy</label><br>-->
 
-                                        <!--<input type="checkbox" name="23_01" id="23_01-f">-->
-                                        <!--<label for="23_01-f">Tissue</label><br>-->
+                            <!--<input type="checkbox" name="23_01" id="23_01-f">-->
+                            <!--<label for="23_01-f">Tissue</label><br>-->
 
-                                        <!--<input type="checkbox" name="23_01" id="23_01-g">-->
-                                        <!--<label for="23_01-g">Unknown</label>-->
-                                    <!--</div>-->
-                                <!--</div>-->
+                            <!--<input type="checkbox" name="23_01" id="23_01-g">-->
+                            <!--<label for="23_01-g">Unknown</label>-->
+                            <!--</div>-->
+                            <!--</div>-->
                             <!--</div>-->
 
                             <!--<div class="Wizard-questions"><span class="Bold">Is the location of Biospecimen “A”donation known?</span>-->
                             <!--</div>-->
                             <!--<div class="radio">-->
-                                <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-a">-->
-                                <!--<label for="23_02-a" style="margin-right: 35px;">Yes</label>-->
+                            <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-a">-->
+                            <!--<label for="23_02-a" style="margin-right: 35px;">Yes</label>-->
 
-                                <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-b">-->
-                                <!--<label for="23_02-b" style="margin-right: 35px;">No</label>-->
+                            <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-b">-->
+                            <!--<label for="23_02-b" style="margin-right: 35px;">No</label>-->
 
-                                <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-c">-->
-                                <!--<label for="23_02-c">Don't know</label>-->
+                            <!--<input type="radio" class="FormItem-radio" name="23_02" id="23_02-c">-->
+                            <!--<label for="23_02-c">Don't know</label>-->
                             <!--</div>-->
 
                             <!--<div class="Wizard-questions Bold">If you selected “Yes” above, please indicate:</div>-->
                             <!--<label for="23_03-a"-->
-                                   <!--class="FormItem-label Wizard-questions--minor">Hospital/Institution:</label>-->
+                            <!--class="FormItem-label Wizard-questions--minor">Hospital/Institution:</label>-->
                             <!--<input type="text" class="form-control FormItem-input" id="23_03-a">-->
 
                             <!--<div class="row">-->
-                                <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-                                    <!--<label for="23_03-b" class="FormItem-label Wizard-questions--minor">City, Town or-->
-                                        <!--Village:</label>-->
-                                    <!--<input type="text" class="form-control FormItem-input" id="23_03-b">-->
-                                <!--</div>-->
-                                <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-                                    <!--<label for="23_03-c" class="FormItem-label Wizard-questions--minor">State:</label>-->
-                                    <!--<input type="text" class="form-control FormItem-input" id="23_03-c">-->
-                                <!--</div>-->
+                            <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                            <!--<label for="23_03-b" class="FormItem-label Wizard-questions--minor">City, Town or-->
+                            <!--Village:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="23_03-b">-->
+                            <!--</div>-->
+                            <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                            <!--<label for="23_03-c" class="FormItem-label Wizard-questions--minor">State:</label>-->
+                            <!--<input type="text" class="form-control FormItem-input" id="23_03-c">-->
+                            <!--</div>-->
                             <!--</div>-->
                         </form>
+                        <hr class="Wizard-contentLine">
 
-                        <!--<a href="#" class="Wizard-pagerConsent BtnFilled BtnFilled--green">Sign & Consent</a>-->
-                        <!--<a href="#" class="Wizard-pagerNotConsent BtnFilled BtnFilled--gray">Do not Consent</a>-->
+                        <a href="#" class="Wizard-pagerConsent BtnFilled BtnFilled--green">Save & Submit</a>
                     </div>
 
                     <ul class="pager wizard Wizard-pager">

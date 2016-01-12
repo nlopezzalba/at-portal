@@ -38,12 +38,14 @@
                 <h2 class="Subtitle Subtitle--light">Every A-T patient can become a member of our research initiative. Enroll here and become a partner with leading researchers by sharing your medical and possibly genetic information for the study of this disease.</h2>
             </div>
         </div>
+
         <div class="row NoMargin">
             <a href="register.html" class="col-lg-2 col-md-2 col-sm-3 col-xs-6 BtnBordered BtnBordered--green BtnBordered--big">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                 Add Member
             </a>
         </div>
+
     </div>
 </div>
 
@@ -54,7 +56,15 @@
     </div>
 </footer>
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $(".Table-tr").click(function() {
+            window.document.location = $(this).data("href");
+        });
+    });
+</script>
 </body>
 </html>

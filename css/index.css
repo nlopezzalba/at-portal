@@ -44,8 +44,18 @@ b{
     padding-left: 5px;
 }
 
+.glyphicon-ok{
+    padding-right: 7px;
+    color: #7BA946;
+    font-size: 14px !important;
+}
+
 .Bold{
     font-weight: 700 !important;
+}
+
+.Italic{
+    font-style: italic !important;
 }
 
 .CenterAligned{
@@ -316,6 +326,19 @@ b{
     background: #333333;
 }
 
+.BtnFilled--grayCancel{
+    background: #afafaf !important;
+    color: #666666 !important;
+}
+
+.BtnFilled--grayCancel:hover{
+    background: #d8d8d8 !important;
+}
+
+.BtnFilled--grayCancel:active{
+    background: #d8d8d8 !important;
+}
+
 .BtnFilled--white{
     margin-top: 25px;
     background: #FFFFFF;
@@ -522,6 +545,7 @@ b{
 
 .FormItem-buttonsCancel{
     margin: 15px 15px 0 0 !important;
+    color: #ffffff!important;
 }
 
 .FormItem-line{
@@ -696,6 +720,14 @@ b{
     padding: 10px 0 0 0;
 }
 
+.Wizard-message{
+    margin-top: 15px !important;
+    padding: 20px !important;
+    background: #cccccc;
+    font-size: 15px;
+    text-align: center;
+}
+
 .Wizard-table{
     width: 100%;
     border-spacing: 5px;
@@ -744,4 +776,111 @@ b{
 .Wizard-pagerNotConsent{
     margin-right: 15px;
 }
+
+.Table{
+    width: 100%;
+    border-spacing: 5px;
+}
+
+/*.Table-tr{*/
+    /*cursor: pointer;*/
+    /*transition: background-color 0.3s ease;*/
+/*}*/
+
+/*.Table-tr:hover{*/
+    /*border-radius: 3px;*/
+    /*background-color: rgba(123, 169, 70, 0.2);*/
+    /*}*/
+
+.Table-th{
+    padding: 10px 2px 8px 2px !important;
+    font-size: 18px !important;
+    font-weight: 700!important;
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+.Table-td{
+    position: relative;
+    padding: 0 2px 10px !important;
+    vertical-align: bottom;
+    border-bottom: 1px solid #eeeeee !important;
+    transition: background 0.3s ease;
+}
+
+.Table-td--inactive{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: default;
+}
+
+.Table-td--completed div{
+    background: rgba(123, 169, 70, 1) !important;
+}
+
+.Table-td--pending div{
+    background: rgba(123, 169, 70, 0.5) !important;
+}
+
+.Table-td--inProgress div{
+    background: rgba(123, 169, 70, 0.5) !important;
+}
+
+/*.Table-td--completed,*/
+/*.Table-td--pending,*/
+/*.Table-td--inProgress{*/
+    /*font-weight: 700!important;*/
+/*}*/
+
+.Table-td--completed{
+    font-weight: 700!important;
+}
+
+.Table-td--completed:hover,
+.Table-td--pending:hover,
+.Table-td--inProgress:hover{
+    background: rgba(123, 169, 70, 0.3) !important;
+    cursor: pointer;
+}
+
+.Table-td--completed:hover span,
+.Table-td--pending:hover span,
+.Table-td--inProgress:hover span{
+    display: none;
+}
+
+.Table-td--pending:hover:before{
+    content: "Start";
+}
+
+.Table-td--completed:hover:before{
+    content: "Edit";
+}
+
+.Table-td--inProgress:hover:before{
+    content: "Resume";
+}
+
+.Table-status{
+    width: 100%;
+    height: 5px;
+    background: #999999;
+    margin-bottom: 10px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+}
+
+/*.Table-status--active{*/
+    /*font-weight: 700!important;*/
+/*}*/
+
+/*.Table-status--active div{*/
+    /*background: #7BA946 !important;*/
+/*}*/
+
+/*.Table-status--inactive{*/
+    /*opacity: 0.4;*/
+    /*filter: alpha(opacity=40);*/
+    /*cursor: default;*/
+/*}*/
 
