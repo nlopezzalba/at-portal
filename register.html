@@ -108,17 +108,17 @@
             <form>
                 <div class="row">
                     <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                        <label for="UserName" class="FormItem-label">Patient First Name*</label>
+                        <label for="UserName" class="FormItem-label">Participant First Name*</label>
                         <input type="text" class="form-control FormItem-input" id="UserName">
                     </div>
                     <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                        <label for="UserMiddleName" class="FormItem-label">Patient Middle Name*</label>
+                        <label for="UserMiddleName" class="FormItem-label">Participant Middle Name*</label>
                         <input type="text" class="form-control FormItem-input" id="UserMiddleName">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                        <label for="UserLastName" class="FormItem-label">Patient Last Name*</label>
+                        <label for="UserLastName" class="FormItem-label">Participant Last Name*</label>
                         <input type="text" class="form-control FormItem-input" id="UserLastName">
                     </div>
                     <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
@@ -128,21 +128,34 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
-                        <label for="DOB" class="FormItem-label">Patient DOB*</label>
+                        <label class="FormItem-label">Participant Gender*</label>
+                        <!--<input type="text" class="form-control FormItem-input" id="Gender">-->
+                    <!--</div>-->
+                        <select class="form-control FormItem-select">
+                            <option value="volvo">Choose gender...</option>
+                            <option value="saab">Male</option>
+                            <option value="mercedes">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
+                        <label for="DOB" class="FormItem-label">Participant DOB*</label>
                         <input type="text" class="form-control FormItem-input" id="DOB">
                     </div>
-                    <div class="form-group col-lg-8 col-md-8 col-sm-12 col-xs-12 FormItem">
-                        <label for="Address" class="FormItem-label">Patient Address*</label>
+                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
+                        <label for="Phone" class="FormItem-label">Participant Phone*</label>
+                        <input type="text" class="form-control FormItem-input" id="Phone">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 FormItem">
+                        <label for="Address" class="FormItem-label">Participant Address*</label>
                         <input type="text" class="form-control FormItem-input" id="Address">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
-                        <label for="Phone" class="FormItem-label">Patient Phone</label>
-                        <input type="text" class="form-control FormItem-input" id="Phone">
-                    </div>
-                    <div class="form-group col-lg-8 col-md-8 col-sm-12 col-xs-12 FormItem">
-                        <label for="Email" class="FormItem-label">Patient Email</label>
+                    <div class="form-group col-lg-12 col-md-12
+                     col-sm-12 col-xs-12 FormItem">
+                        <label for="Email" class="FormItem-label">Participant Email</label>
                         <input type="text" class="form-control FormItem-input" id="Email">
                     </div>
                 </div>
@@ -151,7 +164,7 @@
                     <div class="checkbox">
                         <input type="checkbox" name="checkbox1" id="checkbox1">
                         <label for="checkbox1">
-                            This patient was diagnosed with Ataxia-Telangiectasia
+                            This participant was diagnosed with Ataxia-Telangiectasia
                         </label>
                     </div>
                 </fieldset>
