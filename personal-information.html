@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/build.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet'
-    type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700FormItem-label--lighter,400FormItem-label--lighter,300,300FormItem-label--lighter' rel='stylesheet'
+          type='text/css'>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -21,176 +21,160 @@
 
 <body>
 
-<header class="Header GreenBackground">
-    <a href="index.html"><img src="images/at-portal-logo.png" alt="A-T Portal Logo" class="Header-logo"></a>
+<header class="Header BlueBackground">
+    <a href="index.html"><img src="images/original-logo-white.png" alt="A-T Portal Logo" class="Header-logo"></a>
     <nav class="Header-nav">
         <ul>
-            <li class="Header-item"><a href="#" class="Header-itemLink Header-itemLink--blueHo">Learn more</a></li>
-            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--blueHo">Sign Out</a></li>
+            <li class="Header-item"><a href="#" class="Header-itemLink Header-itemLink--greenHo">Learn more</a></li>
+            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--greenHo">Your members</a></li>
+            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--greenHo">Sign Out</a></li>
         </ul>
     </nav>
 </header>
 <div class="Wrapper">
     <div class="MainContainer">
-        <div class="row NoMargin">
-            <img src="images/profile-pic02.png" alt="Default Profile Picture" class="ProfileImg">
-            <h1 class="MainTitle MainTitle--middleAlign">Member Name Enrollment Process</h1>
+        <div class="row MainTitle">
+            <h1 class="MainTitle-text">Member's Name Dashboard</h1>
         </div>
-    </div>
 
-    <div class="row MainContainer SameHeightContainers">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 SideNav NoPadding">
-            <a href="" class="SideNav-item SideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
-                <div class="SideNav-itemWrapper SameHeightContainers">
-                    <div class="SideNav-itemMarker"></div>
-                    <div class="SideNav-itemNumber">1</div>
-                    <div class="SideNav-itemTitle">Registration
-                        <small class="SideNav-itemStatus">In Progress</small>
+        <div class="row SameHeightContainers NoMargin">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 SideNav NoPadding list-group panel">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <a href="#profile" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 SideNav-item SideNav-itemMain" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="profile">
+                        <div class="SideNav-itemMainTitle">Profile
+                            <span class="SideNav-itemMainIcon glyphicon glyphicon-chevron-up"></span>
+                        </div>
+                    </a>
+                    <div class="collapse in" id="profile">
+                        <a href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 SideNav-itemWrapper SideNav-itemWrapper--selected NoPadding">
+                            <div class="SideNav-itemMarker"></div>
+                            <div class=" SideNav-itemTitle">Personal Information</div>
+                        </a>
+                        <a href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 SideNav-itemWrapper NoPadding">
+                            <div class="SideNav-itemMarker"></div>
+                            <div class=" SideNav-itemTitle">Consent</div>
+                        </a>
+                        <a href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 SideNav-itemWrapper NoPadding">
+                            <div class="SideNav-itemMarker"></div>
+                            <div class=" SideNav-itemTitle">Eligibility</div>
+                        </a>
                     </div>
                 </div>
-                <hr class="NoMargin">
-            </a>
 
-            <a href="" class="SideNav-item SideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
-                <div class="SideNav-itemWrapper SameHeightContainers">
-                    <div class="SideNav-itemMarker"></div>
-                    <div class="SideNav-itemNumber">2</div>
-                    <div class="SideNav-itemTitle">Consent
-                        <small class="SideNav-itemStatus">Not started</small>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <a href="#studies" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 SideNav-item SideNav-itemMain" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="studies">
+                        <div class="SideNav-itemMainTitle">Studies
+                            <span class="SideNav-itemMainIcon glyphicon glyphicon-chevron-up"></span>
+                        </div>
+                    </a>
+                    <div class="collapse" id="studies">
+                        <a href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 SideNav-itemWrapper SideNav-itemWrapper--studies NoPadding">
+                            <div class="SideNav-itemMarker"></div>
+                            <div class="SideNav-itemTitle">Medical History
+                                <small class="SideNav-itemStatus">Completed</small>
+                            </div>
+                        </a>
+                        <a href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 SideNav-itemWrapper SideNav-itemWrapper--studies NoPadding">
+                            <div class="SideNav-itemMarker"></div>
+                            <div class=" SideNav-itemTitle">Genome Study
+                                <small class="SideNav-itemStatus">Not started</small>
+                            </div>
+                        </a>
+                        <a href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 SideNav-itemWrapper SideNav-itemWrapper--studies NoPadding">
+                            <div class="SideNav-itemMarker"></div>
+                            <div class=" SideNav-itemTitle">New Study
+                                <small class="SideNav-itemStatus">Not started</small>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <hr class="NoMargin">
-            </a>
-
-            <a href="" class="SideNav-item SideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
-                <div class="SideNav-itemWrapper SameHeightContainers">
-                    <div class="SideNav-itemMarker"></div>
-                    <div class="SideNav-itemNumber">3</div>
-                    <div class="SideNav-itemTitle">Eligibility
-                        <small class="SideNav-itemStatus">Not started</small>
-                    </div>
-                </div>
-                <hr class="NoMargin">
-            </a>
-
-            <a href="" class="SideNav-item SideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
-                <div class="SideNav-itemWrapper SameHeightContainers">
-                    <div class="SideNav-itemMarker"></div>
-                    <div class="SideNav-itemNumber">4</div>
-                    <div class="SideNav-itemTitle">Medical History
-                        <small class="SideNav-itemStatus">Not started</small>
-                    </div>
-                </div>
-                <hr class="NoMargin">
-            </a>
-
-            <a href="" class="SideNav-item SideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
-                <div class="SideNav-itemWrapper SameHeightContainers">
-                    <div class="SideNav-itemMarker"></div>
-                    <div class="SideNav-itemNumber">5</div>
-                    <div class="SideNav-itemTitle">Genome Study
-                        <small class="SideNav-itemStatus">Not started</small>
-                    </div>
-                </div>
-                <hr class="NoMargin">
-            </a>
-
-            <a href="" class="SideNav-item SideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
-                <div class="SideNav-itemWrapper SameHeightContainers">
-                    <div class="SideNav-itemMarker"></div>
-                    <div class="SideNav-itemNumber">6</div>
-                    <div class="SideNav-itemTitle">Review/Submission
-                        <small class="SideNav-itemStatus">Not started</small>
-                    </div>
-                </div>
-                <hr class="NoMargin">
-            </a>
-        </div>
+            </div>
 
         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 SideContent">
-            <h1 class="MainTitle GreenColor">1. Registration</h1>
-            <h2 class="Subtitle Subtitle--light">Some short text describing this step of the process.</h2>
-            <form>
-                <div class="row">
-                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                        <label for="UserName" class="FormItem-label">Member's First Name*</label>
-                        <input type="text" class="form-control FormItem-input" id="UserName">
+            <div class="row NoMargin">
+                <h1 class="Title BlueColor">Personal Information</h1>
+                <h2 class="Subtitle Subtitle--light"></h2>
+                <form>
+                    <div class="row NoMargin">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
+                            <div class="FormItem-label FormItem-label--lighter">First Name</div>
+                            <hr class="FormItem-line--small">
+                            <div class="FormItem-content">Content</div>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
+                            <div class="FormItem-label FormItem-label--lighter">Middle Name</div>
+                            <hr class="FormItem-line--small">
+                            <div class="FormItem-content">Content</div>
+                        </div>
                     </div>
-                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                        <label for="UserMiddleName" class="FormItem-label">Member's Middle Name*</label>
-                        <input type="text" class="form-control FormItem-input" id="UserMiddleName">
+                    <div class="row NoMargin">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
+                            <div class="FormItem-label FormItem-label--lighter">Last Name</div>
+                            <hr class="FormItem-line--small">
+                            <div class="FormItem-content">Content</div>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
+                            <div class="FormItem-label FormItem-label--lighter">Prefix/Suffix</div>
+                            <hr class="FormItem-line--small">
+                            <div class="FormItem-content">Content</div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                        <label for="UserLastName" class="FormItem-label">Member's Last Name*</label>
-                        <input type="text" class="form-control FormItem-input" id="UserLastName">
+                    <div class="row NoMargin">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
+                            <div class="FormItem-label FormItem-label--lighter">Gender</div>
+                            <hr class="FormItem-line--small">
+                            <div class="FormItem-content">Content</div>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
+                            <div class="FormItem-label FormItem-label--lighter">DOB</div>
+                            <hr class="FormItem-line--small">
+                            <div class="FormItem-content">Content</div>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
+                            <div class="FormItem-label FormItem-label--lighter">Phone</div>
+                                <hr class="FormItem-line--small">
+                                <div class="FormItem-content">Content</div>
+                            </div>
                     </div>
-                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                        <label for="PrefixSuffix" class="FormItem-label">Prefix/Suffix</label>
-                        <input type="text" class="form-control FormItem-input" id="PrefixSuffix">
+                    <div class="row NoMargin">
+                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 FormItem">
+                            <div class="FormItem-label FormItem-label--lighter">Address</div>
+                            <hr class="FormItem-line--small">
+                            <div class="FormItem-content">Content</div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
-                        <label class="FormItem-label">Member's Gender*</label>
-                        <select class="form-control FormItem-select">
-                            <option value="volvo">Choose gender...</option>
-                            <option value="saab">Male</option>
-                            <option value="mercedes">Female</option>
-                        </select>
+                    <div class="row NoMargin">
+                        <div class="form-group col-lg-12 col-md-12
+                         col-sm-12 col-xs-12 FormItem">
+                            <div class="FormItem-label FormItem-label--lighter">Email</div>
+                            <hr class="FormItem-line--small">
+                            <div class="FormItem-content">Content</div>
+                        </div>
                     </div>
-                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
-                        <label for="DOB" class="FormItem-label">Member's DOB*</label>
-                        <input type="text" class="form-control FormItem-input" id="DOB">
+                    <fieldset>
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox1" id="checkbox1" checked disabled>
+                            <label for="checkbox1">
+                                This participant was diagnosed with Ataxia-Telangiectasia
+                            </label>
+                        </div>
+                    </fieldset>
+                    <hr class="FormItem-line">
+                    <div class="row NoMargin">
+                        <a href="consent.html" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons BtnFilled BtnFilled--blue">
+                            <span class="glyphicon glyphicon-download"></span>Download Review
+                        </a>
+                        <a href="" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons FormItem-buttonsCancel BtnFilled BtnFilled--blue">
+                            <span class="glyphicon glyphicon-pencil"></span>Update Information
+                        </a>
                     </div>
-                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
-                        <label for="Phone" class="FormItem-label">Member's Phone*</label>
-                        <input type="text" class="form-control FormItem-input" id="Phone">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 FormItem">
-                        <label for="Address" class="FormItem-label">Member's Address*</label>
-                        <input type="text" class="form-control FormItem-input" id="Address">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-lg-12 col-md-12
-                     col-sm-12 col-xs-12 FormItem">
-                        <label for="Email" class="FormItem-label">Member's Email</label>
-                        <input type="text" class="form-control FormItem-input" id="Email">
-                    </div>
-                </div>
-                <div class="row FormItem">
-                    <img src="images/profile-pic02.png" alt="Default Profile Picture" class="ProfileImg ProfileImg--upload">
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FileUpload BtnBordered BtnBordered--blue">
-                        <span class="glyphicon glyphicon-upload BlueColor"></span>Upload a Photo
-                        <input type="file" class="FileUpload-input" />
-                    </div>
-                </div>
-                <fieldset>
-                    <div class="checkbox">
-                        <input type="checkbox" name="checkbox1" id="checkbox1">
-                        <label for="checkbox1">
-                            This participant was diagnosed with Ataxia-Telangiectasia
-                        </label>
-                    </div>
-                </fieldset>
-                <hr class="FormItem-line">
-                <p class="FormItem-message FormItem-message--absolute">*Required field</p>
-                <div class="row">
-                    <a href="consent.html" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons BtnFilled BtnFilled--green">Register</a>
-                    <a href="console.html" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons FormItem-buttonsCancel BtnFilled BtnFilled--grayCancel ">Cancel</a>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
 
-
 <footer class="Footer">
-    <!--<hr class="Footer-line">-->
     <div class="Footer-logo">
         <img src="images/color-logo.png" alt="A-T Portal Logo">
     </div>

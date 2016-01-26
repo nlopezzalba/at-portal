@@ -12,7 +12,7 @@
     <link href="css/index.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet'
-    type='text/css'>
+          type='text/css'>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -38,34 +38,34 @@
 
         <div class="row SameHeightContainers NoMargin">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 EnrollSideNav NoPadding">
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href="register.html" class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
-                        <div class="EnrollSideNav-itemNumber">1</div>
+                        <div class="EnrollSideNav-itemNumber"><span class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
                         <div class="EnrollSideNav-itemTitle">Registration
-                            <small class="EnrollSideNav-itemStatus">In Progress</small>
+                            <small class="EnrollSideNav-itemStatus">Complete</small>
                         </div>
                     </div>
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href="consent.html" class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
-                        <div class="EnrollSideNav-itemNumber">2</div>
+                        <div class="EnrollSideNav-itemNumber"><span class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
                         <div class="EnrollSideNav-itemTitle">Consent
-                            <small class="EnrollSideNav-itemStatus">Not started</small>
+                            <small class="EnrollSideNav-itemStatus">Complete</small>
                         </div>
                     </div>
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href="" class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">3</div>
                         <div class="EnrollSideNav-itemTitle">Contacting Physician
-                            <small class="EnrollSideNav-itemStatus">Not started</small>
+                            <small class="EnrollSideNav-itemStatus">In progress</small>
                         </div>
                     </div>
                     <hr class="NoMargin">
@@ -107,76 +107,63 @@
 
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 SideContent">
                 <div class="row NoMargin">
-                    <h1 class="Title GreenColor">1. Registration</h1>
-                    <h2 class="Subtitle Subtitle--light">Please complete the following information regarding the enrolled participant with A-T:</h2>
+                    <h1 class="Title GreenColor">3. Contacting Physician</h1>
+                    <h2 class="Subtitle Subtitle--light">Our staff may contact ParticipantName's doctor (if you so consented) to confirm the A-T diagnosis. To enable that, please complete the following form with ParticipantName's physician information.</h2>
                     <form>
                         <div class="row NoMargin">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
-                                <label for="UserName" class="FormItem-label">Participant's First Name*</label>
-                                <input type="text" class="form-control FormItem-input" id="UserName" required>
+                                <label for="PhysicianName" class="FormItem-label">Physician's First Name</label>
+                                <input type="text" class="form-control FormItem-input" id="PhysicianName" required>
                             </div>
                             <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                                <label for="UserMiddleName" class="FormItem-label">Participant's Middle Name</label>
-                                <input type="text" class="form-control FormItem-input" id="UserMiddleName">
-                            </div>
-                        </div>
-                        <div class="row NoMargin">
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
-                                <label for="UserLastName" class="FormItem-label">Participant's Last Name*</label>
-                                <input type="text" class="form-control FormItem-input" id="UserLastName" required>
-                            </div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
-                                <label for="PrefixSuffix" class="FormItem-label">Participant's Prefix/Suffix</label>
-                                <input type="text" class="form-control FormItem-input" id="PrefixSuffix">
-                            </div>
-                        </div>
-                        <div class="row NoMargin">
-                            <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
-                                <label class="FormItem-label">Participant's Gender*</label>
-                                <select class="form-control FormItem-select" required>
-                                    <option value="volvo">Choose gender...</option>
-                                    <option value="saab">Male</option>
-                                    <option value="mercedes">Female</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
-                                <label for="DOB" class="FormItem-label">Participant's DOB*</label>
-                                <input type="text" class="form-control FormItem-input" id="DOB" required>
-                            </div>
-                            <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
-                                <label for="Phone" class="FormItem-label">Participant's Phone*</label>
-                                <input type="text" class="form-control FormItem-input" id="Phone" required>
+                                <label for="PhysicianLastName" class="FormItem-label">Physician's Last Name*</label>
+                                <input type="text" class="form-control FormItem-input" id="PhysicianLastName">
                             </div>
                         </div>
                         <div class="row NoMargin">
                             <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 FormItem">
-                                <label for="Address" class="FormItem-label">Participant's Address*</label>
-                                <input type="text" class="form-control FormItem-input" id="Address" required>
+                                <label for="PhysicianAddress" class="FormItem-label">Physician's Address*</label>
+                                <input type="text" class="form-control FormItem-input" id="PhysicianAddress" required>
                             </div>
                         </div>
                         <div class="row NoMargin">
-                            <div class="form-group col-lg-12 col-md-12
-                             col-sm-12 col-xs-12 FormItem">
-                                <label for="Email" class="FormItem-label">Participant's Email</label>
-                                <input type="text" class="form-control FormItem-input" id="Email">
+                            <div class="form-group col-lg-5 col-md-5 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
+                                <label for="PhysicianPhone" class="FormItem-label">Physician's Phone*</label>
+                                <input type="text" class="form-control FormItem-input" id="PhysicianPhone" required>
+                            </div>
+                            <div class="form-group col-lg-7 col-md-7 col-sm-12 col-xs-12 FormItem">
+                                <label for="PhysicianEmail" class="FormItem-label">Physician's Email</label>
+                                <input type="text" class="form-control FormItem-input" id="PhysicianEmail">
                             </div>
                         </div>
                         <fieldset>
                             <div class="checkbox">
                                 <input type="checkbox" name="checkbox1" id="checkbox1">
                                 <label for="checkbox1">
-                                    This participant was diagnosed with Ataxia-Telangiectasia
+                                    ParticipantName has been evaluated at the A-T Clinical Center at Johns Hopkins Hospital
                                 </label>
                             </div>
                         </fieldset>
+
+                        <div class="row NoMargin">
+                            <div class="Subtitle Subtitle--largerMargin">Confirmation of Diagnosis Files</div>
+                            <span>If you have a letter or other document provided by a clinician that confirms ParticipantName's A-T diagnosis, you may choose to upload it in the section below. This is not required but may expedite the process of confirming ParticipantName's eligibility to participate in this research study.</span>
+                        </div>
+                        <div class="row NoMargin">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 FileUpload BtnBordered BtnBordered--green">
+                                <input type="file" name="file" id="file" class="FileUpload-input"/>
+                                <label for="file" class="FileUpload-label"><span class="glyphicon glyphicon-upload"></span>Upload files</label>
+                            </div>
+                        </div>
                         <hr class="FormItem-line">
                         <p class="FormItem-message FormItem-message--absolute">*Required field</p>
+
                         <div class="row NoMargin">
-                            <a href="consent.html" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons BtnFilled BtnFilled--green">Register</a>
-                            <a href="" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--green">Save</a>
-                            <a href="console.html" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--gray">Cancel</a>
+                            <a href="" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons BtnFilled BtnFilled--green">Save & Submit</a>
+                            <a href="" class="col-lg-2 col-md-2 col-sm-4 col-xs-6 FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--green">Save</a>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -188,7 +175,7 @@
         </div>
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
