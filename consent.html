@@ -42,6 +42,12 @@
 
         <div class="row SameHeightContainers NoMargin">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 EnrollSideNav NoPadding">
+                <!--
+                  IMPORTANT: classes in following div should change according to the status of the step.
+                  Step Not started: EnrollSideNav-item--disabled
+                  Step In progress or selected: EnrollSideNav--selected
+                  Step Complete: EnrollSideNav--enabled + an <span> with glyphicon-ok instead of the step number inside EnrollSideNav-itemNumber class>
+                -->
                 <a href="register.html"
                    class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
@@ -108,7 +114,7 @@
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">6</div>
-                        <div class="EnrollSideNav-itemTitle">Review/Submission
+                        <div class="EnrollSideNav-itemTitle">Review & Submission
                             <small class="EnrollSideNav-itemStatus">Not started</small>
                         </div>
                     </div>
@@ -159,8 +165,7 @@
                     </ul>
 
                     <div class="tab-content Wizard-content">
-
-                        <ul class="pager wizard Wizard-pager">
+                        <ul class="pager wizard BottomNavigation">
                             <hr class="Wizard-contentLine">
                             <li class="previous"><a href="#" class="BtnBordered BtnBordered--green"><span
                                     class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Prev</a></li>
@@ -374,11 +379,12 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="pager Wizard-lastPager">
+                            <div class="pager BottomNavigation--lastPage">
                                 <a href="contacting-physician.html"
-                                   class="Wizard-pagerConsent BtnFilled BtnFilled--green">Sign & Consent</a>
-                                <a href="#" class="Wizard-pagerNotConsent BtnFilled BtnFilled--gray">Do not Consent</a>
-                                <a href="#" class="Wizard-pagerSave BtnBordered BtnBordered--neutral">Save</a>
+                                   class="BottomNavigation--Consent BtnFilled BtnFilled--green">Sign & Consent</a>
+                                <a href="#" class="BottomNavigation--Save BtnBordered BtnBordered--neutral">Save</a>
+                                <a href="#" class="BottomNavigation--NotConsent BtnBordered BtnBordered--red">Do not
+                                    Consent</a>
                             </div>
                         </div>
 

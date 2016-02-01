@@ -76,6 +76,10 @@ b {
     font-style: italic !important;
 }
 
+.Normal {
+    font-weight: normal;
+}
+
 .CenterAligned {
     text-align: center !important;
 }
@@ -392,28 +396,41 @@ b {
 }
 
 .FileUpload {
-    position: relative;
-    overflow: hidden;
-    margin: 20px 0 10px 0;
-    cursor: pointer !important;
-}
-
-.FileUpload input[type="file"]{
-    cursor: pointer !important;
-}
-
-.FileUpload input.FileUpload-input {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
+    width: 0.1px;
+    height: 0.1px;
     opacity: 0;
-    filter: alpha(opacity=0);
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
-.FileUpload-label{
-    margin: 0!important;
+.FileUpload + label {
+    max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 7px 20px 9px 20px;
+    border-radius: 3px;
+    border: 1px solid !important;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    transition: border 0.3s ease, color 0.3s ease;
+}
+
+.FileUpload--green + label,
+.FileUpload--green:focus + label,
+.FileUpload--green.has-focus + label{
+    margin-top: 15px;
+    border-color: #7BA946 !important;
+    color: #7BA946;
+}
+
+.FileUpload--green + label:hover {
+    border-color: #93C453 !important;
+    color: #93C453;
 }
 
 .ArrowSeparator {
@@ -491,6 +508,21 @@ b {
 .Steps-text {
     font-size: 16px;
     margin-top: 10px;
+}
+
+.List{
+    padding-left: 20px !important;
+}
+
+.Comment{
+    padding: 10px 0 0 0;
+}
+
+.Comment--highlight{
+    background: #eeeeee;
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
 }
 
 .Wrapper {
@@ -847,6 +879,11 @@ b {
     padding: 30px !important;
 }
 
+.SideContent-container{
+    position: relative;
+    min-height: 550px;
+}
+
 .FormItem {
     padding:  0 !important;
 }
@@ -1074,25 +1111,31 @@ b {
     font-weight: 500 !important;
 }
 
-.Wizard-pager {
+.BottomNavigation{
     margin-bottom: 0;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.Wizard-lastPager{
+.BottomNavigation--notAbsolute{
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.BottomNavigation--lastPage{
     margin-bottom: 0;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.Wizard-pager .next{
+.BottomNavigation .next{
     right: 30px;
 }
 
-.Wizard-pager li a {
+.BottomNavigation li a{
     border-radius: 3px !important;
     background: transparent !important;
     margin-top: 0 !important;
@@ -1100,32 +1143,31 @@ b {
     padding: 7px 20px 9px 20px;
 }
 
-.Wizard-pager .disabled a {
+.BottomNavigation .disabled a {
     visibility: hidden;
     display: none;
 }
 
-.Wizard-pagerSave,
-.Wizard-pagerConsent,
-.Wizard-pagerNotConsent {
+.BottomNavigation--Save,
+.BottomNavigation--Consent,
+.BottomNavigation--NotConsent {
     float: right;
     margin-top: 0;
 }
 
-.Wizard-pager .Wizard-pagerSave,
-.Wizard-pager .Wizard-pagerConsent,
-.Wizard-pager .Wizard-pagerNotConsent{
+.BottomNavigation .BottomNavigation--Save,
+.BottomNavigation .BottomNavigation--Consent,
+.BottomNavigation .BottomNavigation--NotConsent{
     z-index: 2000000;
     cursor: pointer !important;
 }
 
-.Wizard-pagerConsent,
-.Wizard-pagerNotConsent{
+.BottomNavigation--Consent,
+.BottomNavigation--NotConsent{
     z-index: 100000;
 }
 
-.Wizard-pagerSave,
-.Wizard-pagerNotConsent {
+.BottomNavigation--Save,
+.BottomNavigation--NotConsent {
     margin-right: 15px;
 }
-

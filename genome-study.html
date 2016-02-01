@@ -86,10 +86,11 @@
                 </a>
 
                 <a href="medical-history.html"
-                   class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                   class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
-                        <div class="EnrollSideNav-itemNumber">4</div>
+                        <div class="EnrollSideNav-itemNumber"><span
+                                class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
                         <div class="EnrollSideNav-itemTitle">Medical History
                             <small class="EnrollSideNav-itemStatus">Complete</small>
                         </div>
@@ -97,13 +98,13 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href=""
-                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href="genome-study.html"
+                   class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">5</div>
                         <div class="EnrollSideNav-itemTitle">Genome Study
-                            <small class="EnrollSideNav-itemStatus">Not started</small>
+                            <small class="EnrollSideNav-itemStatus">In progress</small>
                         </div>
                     </div>
                     <hr class="NoMargin">
@@ -124,29 +125,65 @@
 
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 SideContent">
                 <div class="row NoMargin SideContent-container">
-                    <h1 class="Title BlueColor">4. Medical History</h1>
+                    <h1 class="Title BlueColor">5. Genome Study</h1>
 
-                    <div class="Subtitle Subtitle--light">This module will ask you questions specific to your
-                        ataxia-telangiectasia (A-T) diagnosis.
-                    </div>
-                    <div class="Comment">Please note that this module:</div>
-                    <ul class="List">
-                        <li>Takes approximately 30 minutes to complete.</li>
-                        <li>Will refer to the person with the A-T diagnosis as “the participant.”</li>
-                        <li>Can be resumed and updated at any time before you submit the survey.</li>
-                    </ul>
-                    <div>Once per year, we will ask you to update your module.</div>
-                    <br>
-                    <span class="Italic">Note: If you are a parent or guardian of an ataxia-telangiectasia patient, the words “you" and "your” below refer to your child.</span>
+                    <h2 class="Subtitle Subtitle--light">If you wish to participate in the whole genome sequencing
+                        study, we will send you a saliva sample collection kit to the shipping address that you provide
+                        to us below.<br><br>
+                        We recommend that you provide the saliva collection in the presence of a healthcare professional
+                        if possible. This will help make sure that the saliva sample is collected properly, which in
+                        turn should result in high quality genome sequencing.
+                    </h2>
 
                     <div class="Comment--highlight">
                         If you have any questions, please contact us at <b>+1 954-481-6611 - support@atfamilies.org</b>
                     </div>
-                    <div class="row NoMargin BottomNavigation">
-                        <hr class="FormItem-line">
-                        <a href="genome-study.html"
-                           class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons BtnFilled BtnFilled--green">Start/Resume</a>
-                    </div>
+                    <form>
+                        <fieldset>
+                            <div class="checkbox">
+                                <input type="checkbox" name="checkbox1" id="checkbox1" checked>
+                                <label for="checkbox1">
+                                    Please send me a saliva sample collection kit so I can provide a sample for whole
+                                    genome sequencing.
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="row NoMargin">
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 FormItem">
+                                <label for="ShippingAddress" class="FormItem-label">Shipping Address*</label>
+                                <input type="text" class="form-control FormItem-input" id="ShippingAddress" required
+                                       placeholder="Address logged in registration page">
+                            </div>
+                        </div>
+
+                        <div class="row NoMargin">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
+                                <label class="FormItem-label">Participant's Gender*</label>
+                                <select class="form-control FormItem-select" required>
+                                    <option value="">Choose gender...</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem">
+                                <label class="FormItem-label">Participant's Ethnicity</label>
+                                <select class="form-control FormItem-select">
+                                    <option value="">Choose ethnicity...</option>
+                                    <option value="tbd">TBD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row NoMargin BottomNavigation">
+                            <hr class="FormItem-line">
+                            <p class="FormItem-message FormItem-message--absolute">*Required field</p>
+                            <a href="review-submission.html" class="FormItem-buttons BtnFilled BtnFilled--green">Save
+                                & Submit</a>
+                            <a href="" class="FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--neutral">Save</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

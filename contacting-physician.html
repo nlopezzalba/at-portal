@@ -25,8 +25,10 @@
     <nav class="Header-nav">
         <ul>
             <li class="Header-item"><a href="#" class="Header-itemLink Header-itemLink--greenHo">Learn more</a></li>
-            <li class="Header-item"><a href="console.html" class="Header-itemLink Header-itemLink--greenHo">Your participants</a></li>
-            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--greenHo">Sign Out</a></li>
+            <li class="Header-item"><a href="console.html" class="Header-itemLink Header-itemLink--greenHo">Your
+                participants</a></li>
+            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--greenHo">Sign Out</a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -38,10 +40,18 @@
 
         <div class="row SameHeightContainers NoMargin">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 EnrollSideNav NoPadding">
-                <a href="register.html" class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <!--
+                  IMPORTANT: classes in following div should change according to the status of the step.
+                  Step Not started: EnrollSideNav-item--disabled
+                  Step In progress or selected: EnrollSideNav--selected
+                  Step Complete: EnrollSideNav--enabled + an <span> with glyphicon-ok instead of the step number inside EnrollSideNav-itemNumber class>
+                -->
+                <a href="register.html"
+                   class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
-                        <div class="EnrollSideNav-itemNumber"><span class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
+                        <div class="EnrollSideNav-itemNumber"><span
+                                class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
                         <div class="EnrollSideNav-itemTitle">Registration
                             <small class="EnrollSideNav-itemStatus">Complete</small>
                         </div>
@@ -49,10 +59,12 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="consent.html" class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href="consent.html"
+                   class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
-                        <div class="EnrollSideNav-itemNumber"><span class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
+                        <div class="EnrollSideNav-itemNumber"><span
+                                class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
                         <div class="EnrollSideNav-itemTitle">Consent
                             <small class="EnrollSideNav-itemStatus">Complete</small>
                         </div>
@@ -60,7 +72,8 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">3</div>
@@ -71,7 +84,8 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">4</div>
@@ -82,7 +96,8 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">5</div>
@@ -93,11 +108,12 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">6</div>
-                        <div class="EnrollSideNav-itemTitle">Review/Submission
+                        <div class="EnrollSideNav-itemTitle">Review & Submission
                             <small class="EnrollSideNav-itemStatus">Not started</small>
                         </div>
                     </div>
@@ -106,9 +122,13 @@
             </div>
 
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 SideContent">
-                <div class="row NoMargin">
+                <div class="row NoMargin SideContent-container">
                     <h1 class="Title BlueColor">3. Contacting Physician</h1>
-                    <h2 class="Subtitle Subtitle--light">Our staff may contact ParticipantName's doctor with information about ParticipantName's data (if you so consented) or to confirm the A-T diagnosis. To enable that, please complete the following form with ParticipantName's physician information.</h2>
+
+                    <h2 class="Subtitle Subtitle--light">Our staff may contact ParticipantName's doctor with information
+                        about ParticipantName's data (if you so consented) or to confirm the A-T diagnosis. To enable
+                        that, please complete the following form with ParticipantName's physician information.</h2>
+
                     <form>
                         <div class="row NoMargin">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
@@ -140,30 +160,30 @@
                             <div class="checkbox">
                                 <input type="checkbox" name="checkbox1" id="checkbox1">
                                 <label for="checkbox1">
-                                    ParticipantName has been evaluated at the A-T Clinical Center at Johns Hopkins Hospital.
+                                    ParticipantName has been evaluated at the A-T Clinical Center at Johns Hopkins
+                                    Hospital.
                                 </label>
                             </div>
                         </fieldset>
 
                         <div class="row NoMargin">
-                            <div class="Subtitle Subtitle--largerMargin">Files to Confirm Diagnosis <span class="Italic">(optional)</span></div>
+                            <div class="Subtitle Subtitle--largerMargin">Files to Confirm Diagnosis <span
+                                    class="Normal Italic">(optional)</span></div>
                             <span>If you have a letter or other document provided by a clinician that confirms ParticipantName's A-T diagnosis, you may choose to upload it in the section below. This is not required but may expedite the process of confirming ParticipantName's eligibility to participate in this research study.</span>
                         </div>
                         <div class="row NoMargin">
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 FileUpload BtnBordered BtnBordered--green">
-                                <input type="file" name="file" id="file" class="FileUpload-input"/>
-                                <label for="file" class="FileUpload-label"><span class="glyphicon glyphicon-upload"></span>Upload files</label>
-                            </div>
+                            <input type="file" name="file" id="file" class="FileUpload FileUpload--green"/>
+                            <label for="file"><span class="glyphicon glyphicon-upload"></span>Upload files</label>
                         </div>
-                        <hr class="FormItem-line">
-                        <p class="FormItem-message FormItem-message--absolute">*Required field</p>
 
-                        <div class="row NoMargin">
-                            <a href="" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 FormItem-buttons BtnFilled BtnFilled--green">Save & Submit</a>
-                            <a href="" class="col-lg-2 col-md-2 col-sm-4 col-xs-6 FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--neutral">Save</a>
+                        <div class="row NoMargin BottomNavigation--notAbsolute">
+                            <hr class="FormItem-line">
+                            <p class="FormItem-message FormItem-message--absolute">*Required field</p>
+                            <a href="medical-history.html" class="FormItem-buttons BtnFilled BtnFilled--green">Save &
+                                Submit</a>
+                            <a href="" class="FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--neutral">Save</a>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>

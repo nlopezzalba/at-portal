@@ -12,7 +12,7 @@
     <link href="css/index.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet'
-    type='text/css'>
+          type='text/css'>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -25,20 +25,29 @@
     <nav class="Header-nav">
         <ul>
             <li class="Header-item"><a href="#" class="Header-itemLink Header-itemLink--greenHo">Learn more</a></li>
-            <li class="Header-item"><a href="console.html" class="Header-itemLink Header-itemLink--greenHo">Your participants</a></li>
-            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--greenHo">Sign Out</a></li>
+            <li class="Header-item"><a href="console.html" class="Header-itemLink Header-itemLink--greenHo">Your
+                participants</a></li>
+            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--greenHo">Sign Out</a>
+            </li>
         </ul>
     </nav>
 </header>
 <div class="Wrapper">
     <div class="MainContainer">
         <div class="row MainTitle">
-            <h1 class="MainTitle-text">ParticipantName's Enrollment Process</h1>
+            <h1 class="MainTitle-text">Enrollment for Each Person Who Has A-T</h1>
         </div>
 
         <div class="row SameHeightContainers NoMargin">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 EnrollSideNav NoPadding">
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <!--
+                  IMPORTANT: classes in following div should change according to the status of the step.
+                  Step Not started: EnrollSideNav-item--disabled
+                  Step In progress or selected: EnrollSideNav--selected
+                  Step Complete: EnrollSideNav--enabled + an <span> with glyphicon-ok instead of the step number inside EnrollSideNav-itemNumber class>
+                -->
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">1</div>
@@ -49,7 +58,8 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">2</div>
@@ -60,7 +70,8 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">3</div>
@@ -71,7 +82,8 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">4</div>
@@ -82,7 +94,8 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">5</div>
@@ -93,11 +106,12 @@
                     <hr class="NoMargin">
                 </a>
 
-                <a href="" class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
                     <div class="EnrollSideNav-itemWrapper SameHeightContainers">
                         <div class="EnrollSideNav-itemMarker"></div>
                         <div class="EnrollSideNav-itemNumber">6</div>
-                        <div class="EnrollSideNav-itemTitle">Review/Submission
+                        <div class="EnrollSideNav-itemTitle">Review & Submission
                             <small class="EnrollSideNav-itemStatus">Not started</small>
                         </div>
                     </div>
@@ -106,9 +120,12 @@
             </div>
 
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 SideContent">
-                <div class="row NoMargin">
+                <div class="row NoMargin SideContent-container">
                     <h1 class="Title BlueColor">1. Registration</h1>
-                    <h2 class="Subtitle Subtitle--light">Please complete the following information regarding the enrolled participant with A-T:</h2>
+
+                    <h2 class="Subtitle Subtitle--light">Please complete the following information regarding the
+                        enrolled participant with A-T:</h2>
+
                     <form>
                         <div class="row NoMargin">
                             <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
@@ -134,9 +151,9 @@
                             <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
                                 <label class="FormItem-label">Participant's Gender*</label>
                                 <select class="form-control FormItem-select" required>
-                                    <option value="volvo">Choose gender...</option>
-                                    <option value="saab">Male</option>
-                                    <option value="mercedes">Female</option>
+                                    <option value="">Choose gender...</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
                                 </select>
                             </div>
                             <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem FormItem--firstColumn">
@@ -145,7 +162,7 @@
                             </div>
                             <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 FormItem">
                                 <label for="Phone" class="FormItem-label">Participant's Phone</label>
-                                <input type="text" class="form-control FormItem-input" id="Phone" required>
+                                <input type="text" class="form-control FormItem-input" id="Phone">
                             </div>
                         </div>
                         <div class="row NoMargin">
@@ -157,24 +174,30 @@
                         <div class="row NoMargin">
                             <div class="form-group col-lg-12 col-md-12
                              col-sm-12 col-xs-12 FormItem">
-                                <label for="Email" class="FormItem-label">Participant's Email</label>
+                                <label for="Email" class="FormItem-label">Participant's Email <span class="Italic">(optional)</span></label>
                                 <input type="text" class="form-control FormItem-input" id="Email">
                             </div>
                         </div>
                         <fieldset>
                             <div class="checkbox">
-                                <input type="checkbox" name="checkbox1" id="checkbox1">
+                                <input type="checkbox" name="checkbox1" id="checkbox1" required>
                                 <label for="checkbox1">
                                     This patient has been diagnosed with ataxia-telangiectasia.
                                 </label>
                             </div>
+                            <br>
                         </fieldset>
-                        <hr class="FormItem-line">
-                        <p class="FormItem-message FormItem-message--absolute">*Required field</p>
-                        <div class="row NoMargin">
-                            <a href="consent.html" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons BtnFilled BtnFilled--green">Register</a>
-                            <a href="" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--neutral">Save</a>
-                            <a href="console.html" class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--red">Cancel</a>
+
+
+                        <div class="row NoMargin BottomNavigation--notAbsolute">
+                            <hr class="FormItem-line">
+                            <p class="FormItem-message FormItem-message--absolute">*Required field</p>
+                            <a href="consent.html"
+                               class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons BtnFilled BtnFilled--green">Register</a>
+                            <a href=""
+                               class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--neutral">Save</a>
+                            <a href="console.html"
+                               class="col-lg-2 col-md-2 col-sm-3 col-xs-4 FormItem-buttons FormItem-buttonsCancel BtnBordered BtnBordered--red">Cancel</a>
                         </div>
                     </form>
                 </div>
@@ -188,7 +211,7 @@
         </div>
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
