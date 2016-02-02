@@ -127,7 +127,7 @@ b {
 /*******************************************************/
 
 .Header {
-    height: 80px;
+    min-height: 80px;
     width: 100%;
     padding: 0 50px 0 50px;
     margin-bottom: 15px;
@@ -137,7 +137,7 @@ b {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(34, 34, 34, 0.2);
+    background-color: rgba(34, 34, 34, 0.3);
 }
 
 .Header-logo {
@@ -174,15 +174,18 @@ b {
 }
 
 .HomeBackground {
+    position: relative;
+    width: 100%;
+}
+
+.HomeBackground-image{
     max-width: 100%;
-    display: block;
-    height: auto;
 }
 
 .MessageSection--first {
     position: absolute;
-    top: 175px;
     left: 60px;
+    bottom: 150px;
 }
 
 .Message-Section {
@@ -198,7 +201,7 @@ b {
 
 .MessageSection--titleFirst {
     padding: 0 !important;
-    text-align: center !important;
+    text-align: left;
 }
 
 .MessageSection-text {
@@ -210,7 +213,29 @@ b {
 
 .MessageSection--textFirst {
     padding: 15px 0 0 0 !important;
-    text-align: center !important;
+    text-align: left;
+}
+
+.OverLine{
+    position: relative;
+    margin: 50px 0 40px 0;
+}
+
+.OverLine-comment{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    background: #ffffff;
+    padding: 0 10px;
+    margin-left: -22px;
+}
+
+.OverLine-line{
+    margin: 0!important;
+}
+
+.Line--dark{
+    border-color: #afafaf;
 }
 
 .BtnBordered {
@@ -268,6 +293,10 @@ b {
     margin-top: 25px;
     border-color: #7f7f7f;
     color: #7f7f7f;
+}
+
+.BtnBordered--neutralNoMargin{
+    margin-top: -5px !important;
 }
 
 .BtnBordered--neutral:hover {
@@ -339,6 +368,19 @@ b {
 
 .BtnFilled--green:active {
     background: #5C7A36;
+}
+
+.BtnFilled--red {
+    margin-top: 15px;
+    background: #DB2C2C;
+}
+
+.BtnFilled--red:hover {
+    background: #559BE0;
+}
+
+.BtnFilled--red:active {
+    background: #DB2C2C;
 }
 
 .BtnFilled--gray {
@@ -537,7 +579,7 @@ b {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 102px;
+    min-height: 102px;
 }
 
 .Footer-line {
@@ -625,7 +667,7 @@ b {
 }
 
 .Table-headerRow{
-    height: 40px;
+    min-height: 40px;
     font-style: italic;
     font-size: 15px;
     color: #7f7f7f;
@@ -674,7 +716,7 @@ b {
 }
 
 .EnrollSideNave-item {
-    height: 70px;
+    min-height: 70px;
     width: 100%;
     cursor: default !important;
 }
@@ -689,14 +731,14 @@ b {
 }
 
 .EnrollSideNav-itemWrapper {
-    height: 70px;
+    min-height: 70px;
     width: 100%;
 }
 
 .EnrollSideNav-itemMarker {
     float: left;
-    height: 70px;
-    width: 10px;
+    min-height: 70px;
+    min-width: 10px;
     display: inline;
     margin-right: 15px;
     transition: background 0.3s ease;
@@ -720,7 +762,7 @@ b {
 }
 
 .EnrollSideNav-itemNumber {
-    height: 70px;
+    min-height: 70px;
     display: inline;
     line-height: 58px;
     margin-right: 20px;
@@ -779,78 +821,57 @@ b {
 
 .SideNav {
     border: 1px solid #eeeeee;
+    min-width: 65px;
 }
 
-.SideNav-item {
-    height: 50px;
+.SideNave-item {
+    min-height: 50px;
     width: 100%;
-    cursor: pointer !important;
-    transition: color 0.3s ease, background 0.3s ease;
+    cursor: default !important;
 }
 
-.SideNav-itemMain {
+.SideNav-item--selected {
     cursor: pointer !important;
-    background:#7BA946;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(238, 238, 238, 1);
+}
+
+.SideNav-item--enabled .SideNav-itemWrapper{
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .SideNav-itemWrapper {
-    height: 50px;
+    min-height: 50px;
     width: 100%;
-    transition: background 0.3s ease;
-}
-
-.SideNav-itemWrapper--selected{
-    background: rgba(147, 196, 83, 0.2);
-}
-
-.SideNav-itemWrapper--studies{
-    height: 70px!important;
-}
-
-.SideNav-itemWrapper:hover{
-    background: rgba(238, 238, 238, 0.5);
 }
 
 .SideNav-itemMarker {
     float: left;
-    height: 50px;
-    width: 10px;
+    min-height: 50px;
+    min-width: 10px;
     display: inline;
     margin-right: 15px;
     transition: background 0.3s ease;
+}
+
+.SideNav-item--selected .SideNav-itemMarker {
+    background: #7BA946 !important;
+}
+
+.SideNav-item--enabled .SideNav-itemMarker {
     background: #ffffff;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.SideNav-itemWrapper--selected .SideNav-itemMarker{
-    background:#7BA946;
-}
-
-.SideNav-itemWrapper--studies .SideNav-itemMarker{
-    height: 70px!important;
-}
-
-.SideNav-itemWrapper:hover .SideNav-itemMarker{
+.SideNav-item--enabled:hover .SideNav-itemMarker {
     background: #93C453;
-}
-
-.SideNav-itemMainTitle{
-    font-size: 20px !important;
-    font-weight: 700;
-    padding: 12px 0 0 5px;
-    color: #FFFFFF;
-}
-
-.SideNav-itemMainIcon{
-    float: right;
-    padding-top:2px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .SideNav-itemTitle {
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-weight: 700;
-    padding: 14px 20px 10px 20px;
-    color: #7BA946;
+    padding-top: 12px;
+    display: inline;
     transition: color 0.3s ease;
 }
 
@@ -858,21 +879,122 @@ b {
     display: block;
     font-style: italic;
     font-weight: 500;
-    color: #afafaf;
     font-size: 70%;
-    line-height: 20px;
 }
 
-.SideNav-itemWrapper:hover .SideNav-itemTitle,
-.SideNav-itemWrapper:hover .SideNav-itemStatus{
+.SideNav-item--selected .SideNav-itemTitle,
+.SideNav-item--selected .SideNav-itemStatus{
+    color: #7BA946;
+
+}
+
+.SideNav-item--enabled .SideNav-itemTitle,
+.SideNav-item--enabled .SideNav-itemStatus{
+    color: #7BA946;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.SideNav-item--enabled:hover .SideNav-itemTitle,
+.SideNav-item--enabled:hover .SideNav-itemStatus{
     color: #93C453;
 }
 
+/*.SideNav {*/
+    /*border: 1px solid #eeeeee;*/
+/*}*/
 
-.SideNav-itemWrapper--selected .SideNav-itemTitle,
-.SideNav-itemWrapper--selected .SideNav-itemStatus{
-    color: #7BA946;
-}
+/*.SideNav-item {*/
+    /*min-height: 50px;*/
+    /*width: 100%;*/
+    /*cursor: pointer !important;*/
+    /*transition: color 0.3s ease, background 0.3s ease;*/
+/*}*/
+
+/*.SideNav-itemMain {*/
+    /*cursor: pointer !important;*/
+    /*background:#7BA946;*/
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.5);*/
+/*}*/
+
+/*.SideNav-itemWrapper {*/
+    /*min-height: 50px;*/
+    /*width: 100%;*/
+    /*transition: background 0.3s ease;*/
+/*}*/
+
+/*.SideNav-itemWrapper--selected{*/
+    /*background: rgba(147, 196, 83, 0.2);*/
+/*}*/
+
+/*.SideNav-itemWrapper--studies{*/
+    /*min-height: 70px!important;*/
+/*}*/
+
+/*.SideNav-itemWrapper:hover{*/
+    /*background: rgba(238, 238, 238, 0.5);*/
+/*}*/
+
+/*.SideNav-itemMarker {*/
+    /*float: left;*/
+    /*min-height: 50px;*/
+    /*min-width: 10px;*/
+    /*display: inline;*/
+    /*margin-right: 15px;*/
+    /*transition: background 0.3s ease;*/
+    /*background: #ffffff;*/
+/*}*/
+
+/*.SideNav-itemWrapper--selected .SideNav-itemMarker{*/
+    /*background:#7BA946;*/
+/*}*/
+
+/*.SideNav-itemWrapper--studies .SideNav-itemMarker{*/
+    /*min-height: 70px!important;*/
+/*}*/
+
+/*.SideNav-itemWrapper:hover .SideNav-itemMarker{*/
+    /*background: #93C453;*/
+/*}*/
+
+/*.SideNav-itemMainTitle{*/
+    /*font-size: 20px !important;*/
+    /*font-weight: 700;*/
+    /*padding: 12px 0 0 5px;*/
+    /*color: #FFFFFF;*/
+/*}*/
+
+/*.SideNav-itemMainIcon{*/
+    /*float: right;*/
+    /*padding-top:2px;*/
+/*}*/
+
+/*.SideNav-itemTitle {*/
+    /*font-size: 18px !important;*/
+    /*font-weight: 700;*/
+    /*padding: 14px 20px 10px 20px;*/
+    /*color: #7BA946;*/
+    /*transition: color 0.3s ease;*/
+/*}*/
+
+/*.SideNav-itemStatus {*/
+    /*display: block;*/
+    /*font-style: italic;*/
+    /*font-weight: 500;*/
+    /*color: #afafaf;*/
+    /*font-size: 70%;*/
+    /*line-height: 20px;*/
+/*}*/
+
+/*.SideNav-itemWrapper:hover .SideNav-itemTitle,*/
+/*.SideNav-itemWrapper:hover .SideNav-itemStatus{*/
+    /*color: #93C453;*/
+/*}*/
+
+
+/*.SideNav-itemWrapper--selected .SideNav-itemTitle,*/
+/*.SideNav-itemWrapper--selected .SideNav-itemStatus{*/
+    /*color: #7BA946;*/
+/*}*/
 
 .SideContent {
     border: 1px solid #eeeeee;
@@ -881,7 +1003,7 @@ b {
 
 .SideContent-container{
     position: relative;
-    min-height: 550px;
+    min-height: 570px;
 }
 
 .FormItem {
@@ -1053,7 +1175,7 @@ b {
 .Wizard-content {
     margin: 25px 0 0 0;
     position: relative;
-    min-height: 550px;
+    min-height: 570px;
 }
 
 .Wizard-list {
@@ -1091,6 +1213,11 @@ b {
     padding: 20px 0 0 0;
 }
 
+.Wizard-commentButton{
+    text-align: center;
+    margin-top:25px;
+}
+
 .Wizard-table {
     width: 100%;
     border-spacing: 5px;
@@ -1119,6 +1246,7 @@ b {
 }
 
 .BottomNavigation--notAbsolute{
+    position: relative !important;
     margin-bottom: 0;
     bottom: 0;
     width: 100%;
