@@ -238,6 +238,10 @@ b {
     border-color: #afafaf;
 }
 
+.Line--noBottom{
+    margin-bottom: 0!important;
+}
+
 .BtnBordered {
     padding: 7px 20px 9px 20px;
     border-radius: 3px;
@@ -565,6 +569,17 @@ b {
     text-align: center;
     margin: 20px 0;
     padding: 15px;
+}
+
+.SignHelp{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px !important;
+    color: #4274BC;
+}
+
+.SignHelp:hover{
+    color: #559BE0;
 }
 
 .Checkbox-label--smaller{
