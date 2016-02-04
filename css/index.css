@@ -184,8 +184,8 @@ b {
 
 .MessageSection--first {
     position: absolute;
-    left: 60px;
-    bottom: 150px;
+    left: 50px;
+    top: 25%;
 }
 
 .Message-Section {
@@ -201,7 +201,7 @@ b {
 
 .MessageSection--titleFirst {
     padding: 0 !important;
-    text-align: left;
+    color: #ffffff;
 }
 
 .MessageSection-text {
@@ -213,7 +213,7 @@ b {
 
 .MessageSection--textFirst {
     padding: 15px 0 0 0 !important;
-    text-align: left;
+    color: #ffffff;
 }
 
 .OverLine{
@@ -687,7 +687,7 @@ b {
 }
 
 .Table-headerRow{
-    min-height: 40px;
+    height: 40px;
     font-style: italic;
     font-size: 15px;
     color: #7f7f7f;
@@ -1059,15 +1059,6 @@ b {
     z-index: 2000;
     padding: 0!important;
     transition: background 0.3s ease;
-}
-
-.Wizard-itemDotNumber{
-    display: inline;
-    padding-left: 8px;
-    line-height: 26px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
 }
 
 .Wizard-itemDot:active{

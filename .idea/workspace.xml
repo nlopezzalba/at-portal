@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e052b7-ffeb-4e0d-9c00-cc201d21c827" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sign_up.html" />
-      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\at-portal-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\color-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\homepage-image-.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\homepage-image-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\homepage-image-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\profile-pic.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\profile-pic02.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home_image.jpg" />
+      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\homepage-image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\homepage_image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\step01-icon-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\step02-icon-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\step03-icon-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\ATPortal\at-portal\images\step04-icon-mini.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consent.html" afterPath="$PROJECT_DIR$/consent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contacting-physician.html" afterPath="$PROJECT_DIR$/contacting-physician.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genome-study.html" afterPath="$PROJECT_DIR$/genome-study.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/join-us.html" afterPath="$PROJECT_DIR$/join-us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/medical-history.html" afterPath="$PROJECT_DIR$/medical-history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personal-information.html" afterPath="$PROJECT_DIR$/personal-information.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.html" afterPath="$PROJECT_DIR$/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/review-submission.html" afterPath="$PROJECT_DIR$/review-submission.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sign_up.html" afterPath="$PROJECT_DIR$/sign_up.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="at-portal.iws" />
@@ -45,52 +45,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-82.89655" vertical-offset="1336" max-vertical-offset="22219">
-              <caret line="220" column="25" selection-start-line="220" selection-start-column="25" selection-end-line="220" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="join-us.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/join-us.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.846153" vertical-offset="786" max-vertical-offset="1615">
-              <caret line="72" column="184" selection-start-line="71" selection-start-column="16" selection-end-line="72" selection-end-column="184" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.269231" vertical-offset="1330" max-vertical-offset="2142">
-              <caret line="97" column="55" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sign_up.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sign_up.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4285715" vertical-offset="1177" max-vertical-offset="2142">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538" vertical-offset="51" max-vertical-offset="3315">
-              <caret line="32" column="17" selection-start-line="27" selection-start-column="12" selection-end-line="32" selection-end-column="17" />
+            <state vertical-scroll-proportion="-9.827586" vertical-offset="17820" max-vertical-offset="20825">
+              <caret line="1065" column="1" selection-start-line="1065" selection-start-column="1" selection-end-line="1065" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -106,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.527273" vertical-offset="2957" max-vertical-offset="3740">
-              <caret line="208" column="13" selection-start-line="204" selection-start-column="2" selection-end-line="208" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.36306533" vertical-offset="306" max-vertical-offset="3213">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -131,18 +87,19 @@
         <option value="$PROJECT_DIR$/js/jquery.steps.js" />
         <option value="$PROJECT_DIR$/eligibility.html" />
         <option value="$PROJECT_DIR$/console.html" />
-        <option value="$PROJECT_DIR$/genome-study.html" />
-        <option value="$PROJECT_DIR$/contacting-physician.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/medical-history.html" />
-        <option value="$PROJECT_DIR$/review-submission.html" />
-        <option value="$PROJECT_DIR$/consent.html" />
-        <option value="$PROJECT_DIR$/register.html" />
         <option value="$PROJECT_DIR$/personal-information.html" />
-        <option value="$PROJECT_DIR$/join-us.html" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/sign_in.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/join-us.html" />
         <option value="$PROJECT_DIR$/sign_up.html" />
+        <option value="$PROJECT_DIR$/register.html" />
+        <option value="$PROJECT_DIR$/contacting-physician.html" />
+        <option value="$PROJECT_DIR$/genome-study.html" />
+        <option value="$PROJECT_DIR$/review-submission.html" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/consent.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -150,10 +107,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1010" />
+    <option name="width" value="1280" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -286,15 +241,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1280" height="994" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960254" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960254" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25281805" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -562,22 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/genome-study.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.307693" vertical-offset="464" max-vertical-offset="3519">
-          <caret line="40" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacting-physician.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.307693" vertical-offset="412" max-vertical-offset="3519">
-          <caret line="40" column="55" selection-start-line="0" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/console.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.615385" vertical-offset="548" max-vertical-offset="1768">
@@ -594,18 +533,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0" vertical-offset="1160" max-vertical-offset="2125">
+          <caret line="82" column="62" selection-start-line="82" selection-start-column="62" selection-end-line="82" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sign_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.615385" vertical-offset="1207" max-vertical-offset="2210">
+          <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacting-physician.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.192308" vertical-offset="2707" max-vertical-offset="3519">
+          <caret line="184" column="30" selection-start-line="184" selection-start-column="30" selection-end-line="184" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genome-study.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.192308" vertical-offset="2707" max-vertical-offset="3519">
+          <caret line="184" column="30" selection-start-line="184" selection-start-column="30" selection-end-line="184" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/review-submission.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.461538" vertical-offset="1976" max-vertical-offset="2788">
-          <caret line="146" column="10" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
+        <state vertical-scroll-proportion="-17.192308" vertical-offset="1950" max-vertical-offset="2771">
+          <caret line="141" column="26" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.827586" vertical-offset="17820" max-vertical-offset="20825">
+          <caret line="1065" column="1" selection-start-line="1065" selection-start-column="1" selection-end-line="1065" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2181816" vertical-offset="2425" max-vertical-offset="7004">
-          <caret line="166" column="29" selection-start-line="160" selection-start-column="21" selection-end-line="166" selection-end-column="29" />
+        <state vertical-scroll-proportion="1.3027638" vertical-offset="1122" max-vertical-offset="6783">
+          <caret line="127" column="30" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/join-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4949749" vertical-offset="0" max-vertical-offset="1615">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5288945" vertical-offset="2911" max-vertical-offset="3723">
+          <caret line="196" column="106" selection-start-line="196" selection-start-column="106" selection-end-line="196" selection-end-column="106" />
           <folding />
         </state>
       </provider>
@@ -620,53 +619,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538" vertical-offset="51" max-vertical-offset="3315">
-          <caret line="32" column="17" selection-start-line="27" selection-start-column="12" selection-end-line="32" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.36306533" vertical-offset="306" max-vertical-offset="3213">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.527273" vertical-offset="2957" max-vertical-offset="3740">
-          <caret line="208" column="13" selection-start-line="204" selection-start-column="2" selection-end-line="208" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-82.89655" vertical-offset="1336" max-vertical-offset="22219">
-          <caret line="220" column="25" selection-start-line="220" selection-start-column="25" selection-end-line="220" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/join-us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.846153" vertical-offset="786" max-vertical-offset="1615">
-          <caret line="72" column="184" selection-start-line="71" selection-start-column="16" selection-end-line="72" selection-end-column="184" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.269231" vertical-offset="1330" max-vertical-offset="2142">
-          <caret line="97" column="55" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sign_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4285715" vertical-offset="1177" max-vertical-offset="2142">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

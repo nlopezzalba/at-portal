@@ -125,36 +125,23 @@
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 SideContent">
                 <div class="row NoMargin">
                     <h1 class="Title BlueColor">2. Consent</h1>
-                    <a href="" class="FormItem-buttons BtnBordered BtnBordered--neutral BtnBordered--neutralNoMargin"><span class="glyphicon glyphicon-download" aria-hidden="true"></span>Download Complete
+                    <a href=""
+                       class="FormItem-buttons BtnBordered BtnBordered--neutral BtnBordered--neutralNoMargin"><span
+                            class="glyphicon glyphicon-download" aria-hidden="true"></span>Download Complete
                         Consent Form</a>
                 </div>
                 <div id="rootwizard" class="Wizard">
                     <ul class="Wizard-progressBar">
                         <div class="Wizard-progressBarLine"></div>
-                        <li class="Wizard-item"><a href="#tab1" class="Wizard-itemDot" data-toggle="tab">
-                            <div class="Wizard-itemDotNumber">1</div>
-                        </a></li>
-                        <li class="Wizard-item"><a href="#tab2" class="Wizard-itemDot" data-toggle="tab">
-                            <span class="Wizard-itemDotNumber">2</span>
-                        </a></li>
-                        <li class="Wizard-item"><a href="#tab3" class="Wizard-itemDot" data-toggle="tab">
-                            <span class="Wizard-itemDotNumber">3</span>
-                        </a></li>
-                        <li class="Wizard-item"><a href="#tab4" class="Wizard-itemDot" data-toggle="tab">
-                            <span class="Wizard-itemDotNumber">4</span>
-                        </a></li>
-                        <li class="Wizard-item"><a href="#tab5" class="Wizard-itemDot" data-toggle="tab">
-                            <span class="Wizard-itemDotNumber">5</span>
-                        </a></li>
-                        <li class="Wizard-item"><a href="#tab6" class="Wizard-itemDot" data-toggle="tab">
-                            <span class="Wizard-itemDotNumber">6</span>
-                        </a></li>
-                        <li class="Wizard-item"><a href="#tab7" class="Wizard-itemDot" data-toggle="tab">
-                            <span class="Wizard-itemDotNumber">7</span>
-                        </a></li>
-                        <li class="Wizard-item--last"><a href="#tab8" class="Wizard-itemDot" data-toggle="tab">
-                            <span class="Wizard-itemDotNumber">8</span>
-                        </a></li>
+                        <!--IMPORTANT: Once the user went through a step, the class Wizard-itemDone should be added to Wizard-item in the <li>-->
+                        <li class="Wizard-item"><a href="#tab1" class="Wizard-itemDot" data-toggle="tab"></a></li>
+                        <li class="Wizard-item"><a href="#tab2" class="Wizard-itemDot" data-toggle="tab"></a></li>
+                        <li class="Wizard-item"><a href="#tab3" class="Wizard-itemDot" data-toggle="tab"></a></li>
+                        <li class="Wizard-item"><a href="#tab4" class="Wizard-itemDot" data-toggle="tab"></a></li>
+                        <li class="Wizard-item"><a href="#tab5" class="Wizard-itemDot" data-toggle="tab"></a></li>
+                        <li class="Wizard-item"><a href="#tab6" class="Wizard-itemDot" data-toggle="tab"></a></li>
+                        <li class="Wizard-item"><a href="#tab7" class="Wizard-itemDot" data-toggle="tab"></a></li>
+                        <li class="Wizard-item--last"><a href="#tab8" class="Wizard-itemDot" data-toggle="tab"></a></li>
                     </ul>
 
                     <div class="tab-content Wizard-content">
@@ -375,7 +362,7 @@
                             <div class="pager BottomNavigation--lastPage">
                                 <a href="contacting-physician.html"
                                    class="BottomNavigation--Consent BtnFilled BtnFilled--green">Sign & Consent</a>
-                                <a href="#" class="BottomNavigation--Save BtnBordered BtnBordered--neutral">Save</a>
+                                <!--<a href="#" class="BottomNavigation--Save BtnBordered BtnBordered--neutral">Save</a>-->
                                 <a href="#" class="BottomNavigation--NotConsent BtnBordered BtnBordered--red">Do not
                                     Consent</a>
                             </div>
