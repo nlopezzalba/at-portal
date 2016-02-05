@@ -68,6 +68,25 @@ b {
     transition: height 0.6s;
 }
 
+.tooltip-inner{
+    min-width: 300px !important;
+    padding: 10px 10px 10px 15px;
+    color: #346391;
+    text-align: left;
+    background-color: #eeeeee;
+    border-radius: 3px;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+}
+
+.tooltip.top-right .tooltip-arrow {
+    border-top-color: #eeeeee;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #eeeeee;
+}
+
 .Bold {
     font-weight: 700 !important;
 }
@@ -77,11 +96,15 @@ b {
 }
 
 .Normal {
-    font-weight: normal;
+    font-weight: normal !important;
 }
 
 .CenterAligned {
     text-align: center !important;
+}
+
+.PositionRelative{
+    position: relative;
 }
 
 .WhiteColor {
@@ -573,7 +596,7 @@ b {
 
 .SignHelp{
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 10px !important;
     color: #4274BC;
 }
@@ -850,15 +873,6 @@ b {
     cursor: default !important;
 }
 
-.SideNav-item--selected {
-    cursor: pointer !important;
-    background: rgba(238, 238, 238, 1);
-}
-
-.SideNav-item--enabled .SideNav-itemWrapper{
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
 .SideNav-itemWrapper {
     min-height: 50px;
     width: 100%;
@@ -873,26 +887,31 @@ b {
     transition: background 0.3s ease;
 }
 
-.SideNav-item--selected .SideNav-itemMarker {
-    background: #7BA946 !important;
-}
-
-.SideNav-item--enabled .SideNav-itemMarker {
-    background: #ffffff;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.SideNav-item--enabled:hover .SideNav-itemMarker {
-    background: #93C453;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
 .SideNav-itemTitle {
     font-size: 20px !important;
     font-weight: 700;
-    padding-top: 12px;
+    padding: 12px 20px 0 0;
     display: inline;
     transition: color 0.3s ease;
+    width: 100%;
+}
+
+.SideNav-itemIcon{
+    float: right !important;
+    display: inline;
+    padding-top: 2px;
+}
+
+.SideNav-itemWrapper--studies{
+    min-height: 65px;
+    width: 100%;
+    padding: 0!important;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.SideNav-itemWrapper--studies .SideNav-itemTitle{
+    font-size: 18px !important;
+    padding: 12px 0 0 0;
 }
 
 .SideNav-itemStatus {
@@ -902,20 +921,43 @@ b {
     font-size: 70%;
 }
 
-.SideNav-item--selected .SideNav-itemTitle,
-.SideNav-item--selected .SideNav-itemStatus{
-    color: #7BA946;
+.Step-Selected{
+    background: rgba(238, 238, 238, 1);
+    cursor: pointer !important;
 }
 
-.SideNav-item--enabled .SideNav-itemTitle,
-.SideNav-item--enabled .SideNav-itemStatus{
-    color: #7BA946;
+.Step-Selected .SideNav-itemMarker{
+    background: #4274BC !important;
+}
+
+.Step-Selected .SideNav-itemTitle,
+.Step-Selected .SideNav-itemStatus{
+    color: #4274BC;
+}
+
+.Step-Enabled{
+    background: #ffffff;
+    cursor: pointer !important;
+}
+
+.Step-Enabled .SideNav-itemMarker{
+    background: #ffffff;
+    transition: background 0.3s ease;
+}
+
+.Step-Enabled:hover .SideNav-itemMarker{
+    background: #559BE0;
+}
+
+.Step-Enabled .SideNav-itemTitle,
+.Step-Enabled .SideNav-itemStatus{
+    color: #7BA946 !important;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.SideNav-item--enabled:hover .SideNav-itemTitle,
-.SideNav-item--enabled:hover .SideNav-itemStatus{
-    color: #93C453;
+.Step-Enabled:hover .SideNav-itemTitle,
+.Step-Enabled:hover .SideNav-itemStatus{
+    color: #559BE0 !important;
 }
 
 .SideContent {
@@ -949,6 +991,17 @@ b {
 .FormItem-label--lighter{
     font-style: italic;
     color: #afafaf;
+}
+
+.FormItem-help{
+    float: right;
+    color: #559BE0;
+    font-size: 12px;
+    cursor: pointer;
+    font-style: italic;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
 }
 
 .FormItem-input {
@@ -1105,6 +1158,10 @@ b {
     padding: 0 0 15px 5px;
 }
 
+.Wizard-checkbox--marginTop{
+    margin-top: 20px;
+}
+
 .Wizard-contentLine {
     border-color: #cccccc;
 }
@@ -1216,4 +1273,25 @@ b {
 .BottomNavigation--Save,
 .BottomNavigation--NotConsent {
     margin-right: 15px;
+}
+
+.AlertMessage--info{
+    background: #eeeeee;
+    color: #666666;
+    padding: 10px 10px 10px 15px;
+    /*margin: 20px 0 !important;*/
+    border: 1px solid #cccccc;
+    transition: color 0.3s;
+}
+
+.AlertMessage--info:hover{
+    color: #559BE0;
+}
+
+.AlertMessage{
+    width: 100% !important;
+
+}
+.AlertMessage .close{
+    padding-right: 10px;
 }
