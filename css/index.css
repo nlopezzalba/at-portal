@@ -24,6 +24,10 @@ a:focus {
 b {
     font-weight: 700;
 }
+label{
+    vertical-align: top !important;
+    line-height: 20px;
+}
 
 .glyphicon-plus {
     font-size: 13px !important;
@@ -583,6 +587,19 @@ b {
     padding-left: 20px !important;
 }
 
+.List--moreMargin{
+    margin-bottom: 30px;
+}
+
+.List li{
+    margin-bottom: 10px;
+}
+
+.List--noApparence{
+    list-style: none;
+    padding-left: 0px;
+}
+
 .Comment{
     padding: 10px 0 0 0;
 }
@@ -1038,6 +1055,24 @@ b {
     box-shadow: none !important;
 }
 
+.FormItem-radio--aside{
+    /*width: 120px;*/
+}
+
+.FormItem-radio--inline{
+    margin-bottom: 20px;
+    /*display: inline;*/
+}
+
+.FormItem-radio--inline input{
+    padding-top: 5px!important;
+}
+
+.FormItem-radio--inline label{
+    margin-right: 35px;
+    vertical-align: top;
+}
+
 .FormItem-message {
     font-size: 15px;
     font-style: italic;
@@ -1152,6 +1187,10 @@ b {
 
 .Wizard-list {
     padding-left: 20px !important;
+}
+
+.Wizard-list li{
+    margin-bottom: 10px;
 }
 
 .Wizard-checkbox label {
