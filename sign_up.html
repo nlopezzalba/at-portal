@@ -49,37 +49,18 @@
     <div class="MainContainer">
         <div class="row MainTitle--noBottom">
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-10 NoPadding">
-                <h1 class="Title BlueColor">Sign Up</h1>
+                <h1 class="Title BlueColor">Create an Account</h1>
 
-                <h2 class="Subtitle Subtitle--light">You can register into the system with your google account or with
-                    different credentials. This email address will be used by the Data Platform to communicate with you when necessary.
+                <h2 class="Subtitle Subtitle--light">You can log into the Platform with your email address by creating a
+                    password, or with your Google account. We will use this email address to communicate with you
+                    regarding the Global A-T Family Data Platform.
                 </h2>
             </div>
         </div>
         <div class="Content col-lg-5 col-md-5 col-sm-6 col-xs-10 NoPadding">
-            <h2 class="Subtitle Normal">Register with your google account:</h2>
 
-            <div class="form-group">
-                <div class="PositionRelative">
-                    <label for="user_google_email" class="FormItem-label">Google email address</label>
-                    <a href="#" class="FormItem-help" data-toggle="tooltip" data-placement="right" title="If you are a parent/legal guardian of a child(ren) with A-T we recommend to Sign Up with your information. Once in the system you will be able to add them as Participants.">Who's email should I input?</a>
-                </div>
-                <input type="email" id="user_google_email" name="user[email]"
-                       class="form-control FormItem-input">
-            </div>
-            <div class="AlignedCenter">
-                <p class="devise-btn">
-                    <a href="/users/auth/google_oauth2" class="BtnFilled BtnFilled--red" name="commit">Sign Up with
-                        Google</a>
-                </p>
-            </div>
+            <h2 class="Subtitle Normal">Register with your email address</h2>
 
-            <div class="OverLine">
-                <hr class="Line--dark OverLine-line">
-                <div class="OverLine-comment">OR</div>
-            </div>
-
-            <h2 class="Subtitle Normal">Register with a different email account:</h2>
             <form method="post" accept-charset="UTF-8" action="/users/sign_in" id="new_user" class="form"><input
                     type="hidden" value="✓" name="utf8"><input type="hidden"
                                                                value="KqPlDc+2vrJONpreP38B7seUP3p2qPDvXFEYTgGcWHNRAN7cDRGNF4RuGlhTJ64yzAc99U3Ajzjj3IQAYmaYLA=="
@@ -88,13 +69,16 @@
                 <div class="form-group">
                     <div class="PositionRelative">
                         <label for="user_email" class="FormItem-label">Email address</label>
-                        <a href="#" class="FormItem-help" data-toggle="tooltip" data-placement="right" title="If you are a parent/legal guardian of a child(ren) with A-T we recommend to Sign Up with your information. Once in the system you will be able to add them as Participants.">Who's email should I input?</a>
+                        <a href="#" class="FormItem-help" data-toggle="tooltip" data-placement="right"
+                           title="If you are a parent/legal guardian of a child(ren) with A-T, please create the account under your name. Once your account is created, you will be able to register your child(ren) with A-T as Participants.">Whose
+                            email should I enter?</a>
                     </div>
                     <input type="email" id="user_email" name="user[email]"
                            class="form-control FormItem-input">
                 </div>
                 <div class="form-group">
-                    <label for="user_password" class="FormItem-label">Password <span class="Italic">(8 characters min)</span></label>
+                    <label for="user_password" class="FormItem-label">Password <span
+                            class="Italic">(8 characters min)</span></label>
                     <input type="password" id="user_password" name="user[password]"
                            class="form-control FormItem-input" autocomplete="off">
                 </div>
@@ -114,6 +98,31 @@
                     </div>
                 </div>
             </form>
+
+            <div class="OverLine">
+                <hr class="Line--dark OverLine-line">
+                <div class="OverLine-comment">OR</div>
+            </div>
+
+            <h2 class="Subtitle Normal">Register with your Google account</h2>
+
+            <div class="form-group">
+                <div class="PositionRelative">
+                    <label for="user_google_email" class="FormItem-label">Google email address</label>
+                    <a href="#" class="FormItem-help" data-toggle="tooltip" data-placement="right"
+                       title="If you are a parent/legal guardian of a child(ren) with A-T, please create the account under your name. Once your account is created, you will be able to register your child(ren) with A-T as Participants.">Whose
+                        email should I enter?</a>
+                </div>
+                <input type="email" id="user_google_email" name="user[email]"
+                       class="form-control FormItem-input">
+            </div>
+            <div class="AlignedCenter">
+                <p class="devise-btn">
+                    <a href="/users/auth/google_oauth2" class="BtnFilled BtnFilled--red" name="commit">Sign Up with
+                        Google</a>
+                </p>
+            </div>
+
             <hr class="Line--noBottom">
             <div class="SignHelp">
                 <a href="login.html">Already registered? Login here</a>
@@ -122,18 +131,19 @@
     </div>
 </div>
 
-<footer class="Footer">
-    <hr class="Footer-line">
-    <div class="Footer-logo">
-        <img src="images/original-logo-color.png" alt="A-T Portal Logo">
-    </div>
-</footer>
+<!--<footer class="Footer">-->
+    <!--<div class="Footer-logo">-->
+    <!--<img src="images/original-logo-color.png" alt="A-T Portal Logo">-->
+<!--</div>-->
+<!--</footer>-->
+
 
 <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
-</script><script src="js/bootstrap.min.js"></script>
+</script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
