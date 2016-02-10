@@ -12,15 +12,6 @@ body {
     min-height: 100%;
 }
 
-html, body {
-    height: 100%;
-}
-
-body > .Wrapper {
-    height: auto;
-    min-height: 100%;
-}
-
 a,
 a:link,
 a:hover,
