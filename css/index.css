@@ -1584,7 +1584,7 @@ label{
     font-size: 18px;
     text-align: center;
     color: #ffffff !important;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .Assent-button--green {
@@ -1605,6 +1605,30 @@ label{
 
 .Assent-button .glyphicon{
     font-size: 15px !important;
+}
+
+.Assent-button--borderedNeutral {
+    padding: 7px 15px 9px 15px !important;
+    background-color: #ffffff !important;
+    color: #777777!important;
+    border: 3px solid #afafaf;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.Assent-button--borderedNeutral .glyphicon{
+    padding-right: 8px;
+    font-size: 18px !important;
+    line-height: 22px;
+}
+
+.Assent-button--borderedNeutral:hover {
+    background-color: #ffffff !important;
+    color: #559BE0!important;
+    border: 3px solid #559BE0;
+}
+
+.Assent-button--downloadAssent{
+    margin: -10px 0 10px 0;
 }
 
 .Assent-navigation{
