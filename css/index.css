@@ -24,6 +24,7 @@ a:focus {
 b {
     font-weight: 700;
 }
+
 label{
     vertical-align: top !important;
     line-height: 20px;
@@ -83,12 +84,22 @@ label{
     font-size: 13px;
 }
 
-.tooltip.top-right .tooltip-arrow {
+.tooltip.top-right .tooltip-arrow{
     border-top-color: #eeeeee;
 }
 
-.tooltip.right .tooltip-arrow {
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #eeeeee;
+    left: 50%!important;
+}
+
+.tooltip.right .tooltip-arrow,
+.tooltip.bottom .tooltip-arrow{
     border-right-color: #eeeeee;
+}
+
+.tooltip.bottom{
+    left: 0!important;
 }
 
 .Bold {
