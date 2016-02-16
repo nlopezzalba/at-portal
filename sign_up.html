@@ -59,8 +59,7 @@
         </div>
         <div class="Content col-lg-5 col-md-5 col-sm-6 col-xs-10 NoPadding">
 
-            <h2 class="Subtitle Normal">Register with your email address</h2>
-
+            <h2 class="Subtitle Normal">Use your email address:</h2>
             <form method="post" accept-charset="UTF-8" action="/users/sign_in" id="new_user" class="form"><input
                     type="hidden" value="✓" name="utf8"><input type="hidden"
                                                                value="KqPlDc+2vrJONpreP38B7seUP3p2qPDvXFEYTgGcWHNRAN7cDRGNF4RuGlhTJ64yzAc99U3Ajzjj3IQAYmaYLA=="
@@ -93,8 +92,12 @@
                         <label class="Checkbox-label--smaller" for="user_remember_me">Remember me</label>
                     </div>
 
+                    <hr>
                     <div class="AlignedCenter">
-                        <a href="console.html" class="BtnFilled BtnFilled--blue" name="commit">Sign Up</a>
+                        <a href="console.html" class="BtnFilled BtnFilled--blue" name="commit">Create Account</a>
+                    </div>
+                    <div class="SignHelp Italic">
+                        <a href="login.html">Already have an account? Login here</a>
                     </div>
                 </div>
             </form>
@@ -104,7 +107,7 @@
                 <div class="OverLine-comment">OR</div>
             </div>
 
-            <h2 class="Subtitle Normal">Register with your Google account</h2>
+            <h2 class="Subtitle Normal">Use your Google account:</h2>
 
             <div class="form-group">
                 <div class="PositionRelative">
@@ -116,16 +119,13 @@
                 <input type="email" id="user_google_email" name="user[email]"
                        class="form-control FormItem-input">
             </div>
-            <div class="AlignedCenter">
-                <p class="devise-btn">
-                    <a href="/users/auth/google_oauth2" class="BtnFilled BtnFilled--red" name="commit">Sign Up with
-                        Google</a>
-                </p>
-            </div>
 
-            <hr class="Line--noBottom">
-            <div class="SignHelp">
-                <a href="login.html">Already registered? Login here</a>
+            <hr>
+            <div class="AlignedCenter">
+                <a href="/users/auth/google_oauth2" class="BtnFilled BtnFilled--red" name="commit">Create Account using Google</a>
+            </div>
+            <div class="SignHelp Italic">
+                <a href="login.html">Already have an account? Login here</a>
             </div>
         </div>
     </div>

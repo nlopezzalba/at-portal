@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A-T Portal Console</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/build.css">
+    <link href="css/index.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=McLaren' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+
+<body>
+<header class="Header BlueBackground">
+    <a href="index.html"><img src="images/original-logo-white.png" alt="A-T Portal Logo" class="Header-logo"></a>
+    <nav class="Header-nav">
+        <ul>
+            <li class="Header-item"><a href="#" class="Header-itemLink Header-itemLink--greenHo">Learn more</a></li>
+            <li class="Header-item"><a href="console.html" class="Header-itemLink Header-itemLink--greenHo">Your
+                participants</a></li>
+            <li class="Header-item"><a href="index.html" class="Header-itemLink Header-itemLink--greenHo">Sign Out</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="Wrapper">
+    <div class="MainContainer">
+        <div class="row MainTitle">
+            <h1 class="MainTitle-text">ParticipantName's Enrollment Process</h1>
+        </div>
+
+        <div class="row SameHeightContainers NoMargin">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 EnrollSideNav NoPadding">
+                <!--
+                  IMPORTANT: classes in following div should change according to the status of the step.
+                  Step Not started: EnrollSideNav-item--disabled
+                  Step In progress or selected: EnrollSideNav--selected
+                  Step Complete: EnrollSideNav--enabled + an <span> with glyphicon-ok instead of the step number inside EnrollSideNav-itemNumber class>
+                -->
+                <a href="register.html"
+                   class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <div class="EnrollSideNav-itemWrapper SameHeightContainers">
+                        <div class="EnrollSideNav-itemMarker"></div>
+                        <div class="EnrollSideNav-itemNumber"><span
+                                class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
+                        <div class="EnrollSideNav-itemTitle">Registration
+                            <small class="EnrollSideNav-itemStatus">Complete</small>
+                        </div>
+                    </div>
+                    <hr class="NoMargin">
+                </a>
+
+                <a href="consent.html"
+                   class="EnrollSideNav-item EnrollSideNav-item--enabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <div class="EnrollSideNav-itemWrapper SameHeightContainers">
+                        <div class="EnrollSideNav-itemMarker"></div>
+                        <div class="EnrollSideNav-itemNumber"><span
+                                class="glyphicon glyphicon-ok EnrollSideNav-itemIcon"></span></div>
+                        <div class="EnrollSideNav-itemTitle">Consent
+                            <small class="EnrollSideNav-itemStatus">Complete</small>
+                        </div>
+                    </div>
+                    <hr class="NoMargin">
+                </a>
+
+                <a href="assent.html"
+                   class="EnrollSideNav-item EnrollSideNav-item--selected col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <div class="EnrollSideNav-itemWrapper SameHeightContainers">
+                        <div class="EnrollSideNav-itemMarker"></div>
+                        <div class="EnrollSideNav-itemNumber">3</div>
+                        <div class="EnrollSideNav-itemTitle">Assent for Kids
+                            <small class="EnrollSideNav-itemStatus">In progress</small>
+                        </div>
+                    </div>
+                    <hr class="NoMargin">
+                </a>
+
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <div class="EnrollSideNav-itemWrapper SameHeightContainers">
+                        <div class="EnrollSideNav-itemMarker"></div>
+                        <div class="EnrollSideNav-itemNumber">4</div>
+                        <div class="EnrollSideNav-itemTitle">Contacting Physician
+                            <small class="EnrollSideNav-itemStatus">Not started</small>
+                        </div>
+                    </div>
+                    <hr class="NoMargin">
+                </a>
+
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <div class="EnrollSideNav-itemWrapper SameHeightContainers">
+                        <div class="EnrollSideNav-itemMarker"></div>
+                        <div class="EnrollSideNav-itemNumber">5</div>
+                        <div class="EnrollSideNav-itemTitle">Medical History
+                            <small class="EnrollSideNav-itemStatus">Not started</small>
+                        </div>
+                    </div>
+                    <hr class="NoMargin">
+                </a>
+
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <div class="EnrollSideNav-itemWrapper SameHeightContainers">
+                        <div class="EnrollSideNav-itemMarker"></div>
+                        <div class="EnrollSideNav-itemNumber">6</div>
+                        <div class="EnrollSideNav-itemTitle">Genome Study
+                            <small class="EnrollSideNav-itemStatus">Not started</small>
+                        </div>
+                    </div>
+                    <hr class="NoMargin">
+                </a>
+
+                <a href=""
+                   class="EnrollSideNav-item EnrollSideNav-item--disabled col-lg-12 col-md-12 col-sm-12 col-xs-12 NoPadding">
+                    <div class="EnrollSideNav-itemWrapper SameHeightContainers">
+                        <div class="EnrollSideNav-itemMarker"></div>
+                        <div class="EnrollSideNav-itemNumber">7</div>
+                        <div class="EnrollSideNav-itemTitle">Review & Submission
+                            <small class="EnrollSideNav-itemStatus">Not started</small>
+                        </div>
+                    </div>
+                    <hr class="NoMargin">
+                </a>
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 SideContent">
+                <div class="row NoMargin">
+                    <h1 class="Title Assent-title BlueColor">3. Assent for Kids</h1>
+                    <!--<a href=""-->
+                       <!--class="FormItem-buttons BtnBordered BtnBordered--neutral BtnBordered--neutralNoMargin"><span-->
+                            <!--class="glyphicon glyphicon-download" aria-hidden="true"></span>Download Complete-->
+                        <!--Consent Form</a>-->
+
+                    <div id="assent" class="Assent">
+                        <ul class="Assent-progressBar">
+                            <div class="Assent-progressBarLine"></div>
+                            <!--IMPORTANT: Once the user went through a step, the class Assent-itemDone should be added to Assent-item in the <li>-->
+                            <li class="Assent-item">
+                                <a href="#step1" class="Assent-itemDot Assent-itemDot--purple" data-toggle="tab"></a>
+                            </li>
+                            <li class="Assent-item">
+                                <a href="#step2" class="Assent-itemDot Assent-itemDot--orange" data-toggle="tab"></a>
+                            </li>
+                            <li class="Assent-item">
+                                <a href="#step3" class="Assent-itemDot Assent-itemDot--green" data-toggle="tab"></a>
+                            </li>
+                            <li class="Assent-item">
+                                <a href="#step4" class="Assent-itemDot Assent-itemDot--red" data-toggle="tab"></a>
+                            </li>
+                            <li class="Assent-item">
+                                <a href="#step5" class="Assent-itemDot Assent-itemDot--yellow" data-toggle="tab"></a>
+                            </li>
+                            <li class="Assent-item">
+                                <a href="#step6" class="Assent-itemDot Assent-itemDot--blue" data-toggle="tab"></a>
+                            </li>
+                            <li class="Assent-item--last">
+                                <a href="#step7" class="Assent-itemDot Assent-itemDot--pink" data-toggle="tab"></a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content Assent-content">
+                            <ul class="pager wizard Assent-navigation">
+                                <hr class="Assent-contentLine">
+                                <li class="previous"><a href="#" class="Assent-button Assent-button--green">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Prev
+                                </a></li>
+                                <li class="next"><a href="#" class="Assent-button Assent-button--green">Next
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                </a></li>
+                                <li class="cancel"><a href="contacting-physician.html" class="Assent-button Assent-button--neutral">Continue later</a></li>
+                            </ul>
+
+                            <div class="tab-pane" id="step1">
+                                <h2 class="Subtitle Assent-subtitle PurpleColor">What is a research study?</h2>
+                            <span class="Assent-text">
+                                Research studies help us learn new things. We can test new ideas. First, we ask a question. Then we try to find the answer.<br>
+                                This paper talks about our research and the choice that you have to take part in it. We want you to ask us any questions that you have. You can ask questions any time.<br>
+                                Important things to know…<br>
+                            </span>
+                                <ul class="Assent-list Assent-list--purple">
+                                    <li><p>You get to decide if you want to take part.</p></li>
+                                    <li><p>You can say "<span class="RedColor">No</span>" or you can say "<span
+                                            class="GreenColor">Yes</span>."</p></li>
+                                    <li><p>No one will be upset if you say "<span class="RedColor">No</span>."</p></li>
+                                    <li><p>If you say "<span class="GreenColor">Yes</span>," you can always say "<span
+                                            class="RedColor">No</span>" later.</p></li>
+                                    <li><p>You can say "<span class="RedColor">No</span>" anytime.</p></li>
+                                    <li><p>Your doctor would still take good care of you no matter what you decide.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane" id="step2">
+                                <h2 class="Subtitle Assent-subtitle OrangeColor">You do not have to be in the study if you
+                                    don’t want to.</h2>
+                            <span class="Assent-text">
+                                You can ask the researchers questions before you make up your mind. You can also talk to your mom or dad or anyone you want to about the study. You can ask to read the information the doctor gives your mom or dad about this study.
+                            </span>
+
+                                <h2 class="Subtitle Assent-subtitle OrangeColor">Why are we doing this research?</h2>
+                            <span class="Assent-text">
+                                We are doing this research to find out more about your health issues so doctors and scientists may find ways to make medicines to treat it.
+                            </span>
+
+                                <h2 class="Subtitle Assent-subtitle OrangeColor">What would happen if I join this
+                                    research?</h2>
+                            <span class="Assent-text">
+                                If you decide to be in the research, we would ask you to do the following:<br>
+                            </span>
+                                <ul class="Assent-list Assent-list--orange">
+                                    <li><p>Questions: We would ask you to read questions, then you would mark your answers
+                                        on the paper.</p></li>
+                                    <li><p>If you agree, your doctor could send information about your health to the people
+                                        doing the research.</p></li>
+                                    <li><p>Spit in a tube: If you agree, we would ask you to spit in a tube and send it to
+                                        us. This may help doctors and scientists learn about why your body has specific
+                                        health issues.</p></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane" id="step3">
+                                <h2 class="Subtitle Assent-subtitle GreenColor">What would happen if I join this
+                                    research?</h2>
+                            <span class="Assent-text">
+                                The people doing this research want to use your spit to look at your genes. Genes are things in your body that make you different from anyone else. Genes are often called “DNA.” Some genes control things like the color of your hair or eyes. Other genes might make you more likely to get certain health issues.<br>
+                                Some researchers want to look at your spit to learn more about your health issues. This is called a “genetics research study.” <br>
+                            </span>
+                            <span class="Assent-text">
+                                The researchers want to know if it is okay to run some tests on the genes in your spit. The researchers might also do more testing on your genes in the future. You can say “yes” or “no” to this.<br>
+                                Right now, the people doing the research cannot tell you the results of testing on your genes. But this could be possible in the future. You can say whether or not you would like to get the results in the future.
+                            </span>
+                            </div>
+
+                            <div class="tab-pane" id="step4">
+                                <h2 class="Subtitle Assent-subtitle RedColor">Could bad things happen if I join this
+                                    research?</h2>
+                            <span class="Assent-text">
+                                Some of the tests might make you uncomfortable or the questions might be hard to answer. We will try to make sure that no bad things happen.<br>
+                                You can say ‘no’ to what we ask you to do for the research at any time and we will stop.<br>
+                                What researchers find out about your genes is private. But if the results of the gene tests got into the wrong hands, some of your privacy may be lost. Genes can tell a lot about you and your health. The people doing this study will to try to make sure that only people involved with the study find out anything about your genes.<br>
+                            </span>
+                            <span class="Assent-text">
+                                Be aware that what researchers learn about your genes may also show things about the genes of people in your family.
+                            </span>
+
+                                <h2 class="Subtitle Assent-subtitle RedColor">Could the research help me?</h2>
+                            <span class="Assent-text">
+                                This research is may or may not help you. We do hope to learn something from this research though. And someday we hope it will help other kids who have health issues like you do.
+                            </span>
+                            </div>
+
+                            <div class="tab-pane" id="step5">
+                                <h2 class="Subtitle Assent-subtitle YellowColor">What else should I know about this
+                                    research?</h2>
+                            <span class="Assent-text">
+                                If you don’t want to be in the study, you don’t have to be.<br>
+                                It is also OK to say yes and change your mind later. You can stop being in the research at any time. If you want to stop, please tell the research doctors.<br>
+                                You will not be paid to be in the study. It will not cost you or your parents if you participate in this study.<br>
+                            </span>
+
+                                <h2 class="Subtitle Assent-subtitle YellowColor">Who can I talk to about this study?</h2>
+                            <span class="Assent-text">
+                                You can ask questions about the study at any time. You can call the researcher at any time. The researcher’s phone number is on the first page.<br>
+                                If you want to ask questions about what it means to be in a research study, you or your mom or dad can call Quorum Review at 1-888-776-9115 (toll free).
+                            </span>
+                            </div>
+
+                            <div class="tab-pane" id="step6">
+                                <h2 class="Subtitle Assent-subtitle BlueColor">Is there anything else?</h2>
+                            <span class="Assent-text">
+                                If you want to be in the research, please write your name below. This shows you understand what we explained about the research and that you want to take part. But remember: You don’t have to be in this study if you don’t want to.<br>
+                                You can say “yes” or “no” to parts of the research. Please mark “yes” or “no” below. If you say “no” to some things, you can still be in the study.<br>
+                            </span>
+
+                                <fieldset>
+                                    <div class="row SameHeightContainers Assent-radioCols">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 NoPadding">
+                                            <label class="Assent-radioButtons Assent-radioButtons--yes GreenColor"
+                                                   for="assent1_yes">
+                                                <input type="radio" name="assent1" id="assent1_yes">
+                                                <span>Yes</span>
+                                            </label>
+                                            <label class="Assent-radioButtons Assent-radioButtons--no RedColor"
+                                                   for="assent1_no">
+                                                <input type="radio" name="assent1" id="assent1_no">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 Assent-radioLegend NoPadding">
+                                            You can contact me later with more questions or information about future
+                                            research. I do not have to answer these questions or take part in future
+                                            research.
+                                        </div>
+                                    </div>
+
+                                    <hr class="Assent-line">
+                                    <div class="row SameHeightContainers Assent-radioCols">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 NoPadding">
+                                            <label class="Assent-radioButtons Assent-radioButtons--yes GreenColor"
+                                                   for="assent2_yes">
+                                                <input type="radio" name="assent2" id="assent2_yes">
+                                                <span>Yes</span>
+                                            </label>
+                                            <label class="Assent-radioButtons Assent-radioButtons--no RedColor"
+                                                   for="assent2_no">
+                                                <input type="radio" name="assent2" id="assent2_no">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 Assent-radioLegend NoPadding">
+                                            You can do tests on the genes in my spit.
+                                        </div>
+                                    </div>
+
+                                    <hr class="Assent-line">
+                                    <div class="row SameHeightContainers Assent-radioCols">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 NoPadding">
+                                            <label class="Assent-radioButtons Assent-radioButtons--yes GreenColor"
+                                                   for="assent3_yes">
+                                                <input type="radio" name="assent3" id="assent3_yes">
+                                                <span>Yes</span>
+                                            </label>
+                                            <label class="Assent-radioButtons Assent-radioButtons--no RedColor"
+                                                   for="assent3_no">
+                                                <input type="radio" name="assent3" id="assent3_no">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 Assent-radioLegend NoPadding">
+                                            You may ask my doctor or hospital to share information about my health.
+                                        </div>
+                                    </div>
+
+                                    <hr class="Assent-line">
+                                    <div class="row SameHeightContainers Assent-radioCols">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 NoPadding">
+                                            <label class="Assent-radioButtons Assent-radioButtons--yes GreenColor"
+                                                   for="assent4_yes">
+                                                <input type="radio" name="assent4" id="assent4_yes">
+                                                <span>Yes</span>
+                                            </label>
+                                            <label class="Assent-radioButtons Assent-radioButtons--no RedColor"
+                                                   for="assent4_no">
+                                                <input type="radio" name="assent4" id="assent4_no">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 Assent-radioLegend NoPadding">
+                                            Later, it might be possible to get the results of the tests on my genes. Please
+                                            let me know if this becomes possible.
+                                        </div>
+                                    </div>
+
+                                    <hr class="Assent-line">
+                                    <div class="row SameHeightContainers Assent-radioCols">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 NoPadding">
+                                            <label class="Assent-radioButtons Assent-radioButtons--yes GreenColor"
+                                                   for="assent5_yes">
+                                                <input type="radio" name="assent5" id="assent5_yes">
+                                                <span>Yes</span>
+                                            </label>
+                                            <label class="Assent-radioButtons Assent-radioButtons--no RedColor"
+                                                   for="assent5_no">
+                                                <input type="radio" name="assent5" id="assent5_no">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 Assent-radioLegend NoPadding">
+                                            If the researchers learn something about my health issues by testing my genes,
+                                            please tell my doctor about this.
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="tab-pane" id="step7">
+                                <h2 class="Subtitle Assent-subtitle PinkColor">Signature</h2>
+
+                                <div class="row">
+                                    <div class="form-group col-lg-8 col-md-8 col-sm-8 col-xs-12 Assent-input">
+                                        <label for="ParticipantName" class="FormItem-label">Signature of
+                                            Participant*</label>
+                                        <input type="text" class="form-control FormItem-input" id="ParticipantName">
+                                    </div>
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12 Assent-input">
+                                        <label for="ParticipantDOB" class="FormItem-label">DOB of Participant*</label>
+                                        <input type="text" class="form-control FormItem-input" id="ParticipantDOB">
+                                    </div>
+                                </div>
+                                <div class="Assent-text Assent-text--largerMargins">
+                                    I attest that the participant named above had enough time to consider this information,
+                                    had an opportunity to ask questions, and voluntarily agreed to be in this study.<br>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-8 col-md-8 col-sm-8 col-xs-12 Assent-input">
+                                        <label for="LegalGuardianName" class="FormItem-label">Signature of Person Explaining
+                                            Assent</label>
+                                        <input type="text" class="form-control FormItem-input" id="LegalGuardianName">
+                                    </div>
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12 Assent-input">
+                                        <label for="Date" class="FormItem-label">Date*</label>
+                                        <input type="text" class="form-control FormItem-input" id="Date">
+                                    </div>
+                                </div>
+
+                                <div class="pager Assent-navigation--lastPage">
+                                    <a href="contacting-physician.html"
+                                       class="Assent-navigationButton Assent-button Assent-button--green">Sign & Consent</a>
+                                    <a href="#"
+                                       class="Assent-navigationButton Assent-navigationButton--marginRight Assent-button Assent-button--red">Do
+                                        not Consent</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="Footer">
+    <div class="Footer-logo">
+        <img src="images/original-logo-color.png" alt="A-T Portal Logo">
+    </div>
+</footer>
+
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bootstrap.wizard.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-pills'});
+        $('#assent').bootstrapWizard({'tabClass': 'nav nav-pills'});
+        window.prettyPrint && prettyPrint()
+    });
+</script>
+</body>
+</html>

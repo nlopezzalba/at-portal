@@ -50,28 +50,11 @@
         <div class="row MainTitle--noBottom">
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-10 NoPadding">
                 <h1 class="Title BlueColor">Login</h1>
-
-                <h2 class="Subtitle Subtitle--light">You can log into the system with your google account or with
-                    different credentials. </h2>
+                <h2 class="Subtitle Subtitle--light">You can log into the Global A-T Family Data Platform using your email address or with your Google account.</h2>
             </div>
         </div>
         <div class="Content col-lg-5 col-md-5 col-sm-6 col-xs-10 NoPadding">
-            <h2 class="Subtitle Subtitle--light AlignedCenter">Login with your google account:</h2>
-
-            <div class="AlignedCenter">
-                <p class="devise-btn">
-                    <a href="/users/auth/google_oauth2" class="BtnFilled BtnFilled--red" name="commit">Login with
-                        Google</a>
-                </p>
-            </div>
-
-            <div class="OverLine">
-                <hr class="Line--dark OverLine-line">
-                <div class="OverLine-comment">OR</div>
-            </div>
-
-            <h2 class="Subtitle Subtitle--light AlignedCenter">Login with a different email account:</h2>
-
+            <h2 class="Subtitle Normal">Use your email address:</h2>
             <form method="post" accept-charset="UTF-8" action="/users/sign_in" id="new_user" class="form"><input
                     type="hidden" value="✓" name="utf8"><input type="hidden"
                                                                value="KqPlDc+2vrJONpreP38B7seUP3p2qPDvXFEYTgGcWHNRAN7cDRGNF4RuGlhTJ64yzAc99U3Ajzjj3IQAYmaYLA=="
@@ -90,17 +73,38 @@
                     <div class="checkbox">
                         <input type="hidden" value="0" name="user[remember_me]">
                         <input type="checkbox" name="user[remember_me]" id="user_remember_me" value="1">
-                        <label class="Checkbox-label--smaller" for="user_remember_me">Remember me</label>
+                        <label class="Checkbox-label--smaller" for="user_remember_me">Remember my password</label>
                     </div>
-
+                    <hr>
                     <div class="AlignedCenter">
-                        <a href="" class="BtnFilled BtnFilled--blue" name="commit">Login</a>
+                        <a href="console.html" class="BtnFilled BtnFilled--blue" name="commit">Login</a>
+                    </div>
+                    <div class="SignHelp Italic">
+                        <a href="/users/password/new">Forgot your password?</a>
                     </div>
                 </div>
             </form>
-            <hr class="Line--noBottom">
-            <div class="SignHelp">
-               <a href="/users/password/new">Forgot your password?</a>
+
+            <div class="OverLine">
+                <hr class="Line--dark OverLine-line">
+                <div class="OverLine-comment">OR</div>
+            </div>
+
+            <h2 class="Subtitle Normal">Use your Google account:</h2>
+
+            <div class="form-group">
+                <div class="PositionRelative">
+                    <label for="user_google_email" class="FormItem-label">Google email address</label>
+                </div>
+                <input type="email" id="user_google_email" name="user[email]"
+                       class="form-control FormItem-input">
+            </div>
+            <hr>
+            <div class="AlignedCenter">
+                <a href="/users/auth/google_oauth2" class="BtnFilled BtnFilled--red" name="commit">Login with Google</a>
+            </div>
+            <div class="SignHelp Italic">
+                <a href="/users/password/new">Forgot your password?</a>
             </div>
         </div>
     </div>

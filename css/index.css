@@ -103,10 +103,6 @@ label{
     font-weight: normal !important;
 }
 
-.CenterAligned {
-    text-align: center !important;
-}
-
 .PositionRelative{
     position: relative;
 }
@@ -131,9 +127,70 @@ label{
     background-color: #4274BC;
 }
 
+.BlueHoverColor {
+    color: #559BE0;
+}
+
+.BlueHoverBackground {
+    background-color: #559BE0;
+}
+
 .LightGrayBackground {
     background-color: #eeeeee;
 }
+
+.GrayBackground {
+    background-color: #afafaf;
+}
+
+.RedColor{
+    color: #DB2C2C;
+}
+
+.RedBackground{
+    background-color: #DB2C2C;
+}
+
+.GreenHoverColor{
+    color: #93C453;
+}
+
+.GreenHoverBackground{
+    background-color: #93C453;
+}
+
+.OrangeColor{
+    color: #D8963F;
+}
+
+.OrangeBackground{
+    background-color: #D8963F;
+}
+
+.PurpleColor{
+    color: #945CC6;
+}
+
+.PurpleBackground{
+    background-color: #945CC6;
+}
+
+.YellowColor{
+    color: #E0C62D;
+}
+
+.YellowBackground{
+    background-color: #E0C62D;
+}
+
+.PinkColor{
+    color: #DD57B7;
+}
+
+.PinkBackground{
+    background-color: #DD57B7;
+}
+
 
 .NoPadding {
     padding: 0 !important;
@@ -149,6 +206,10 @@ label{
 
 .AlignedCenter{
     text-align: center;
+}
+
+.AlignedRight{
+    text-align: right;
 }
 
 /*******************************************************/
@@ -290,6 +351,7 @@ label{
 .BtnBordered--blue:hover{
     border-color: #559BE0 !important;
     color: #559BE0;
+    background-color: transparent!important;
 }
 
 .BtnBordered--green,
@@ -303,6 +365,7 @@ label{
 .BtnBordered--green:hover{
     border-color: #93C453 !important;
     color: #93C453;
+    background-color: transparent!important;
 }
 
 .BtnBordered--black,
@@ -316,6 +379,7 @@ label{
 .BtnBordered--black:hover {
     border-color: #ffffff !important;
     color: #ffffff;
+    background-color: transparent!important;
 }
 
 .BtnBordered--neutral,
@@ -333,6 +397,7 @@ label{
 .BtnBordered--neutral:hover {
     border-color: #559BE0 !important;
     color: #559BE0;
+    background-color: transparent!important;
 }
 
 .BtnBordered--white,
@@ -346,6 +411,7 @@ label{
 .BtnBordered--white:hover {
     border-color: #93C453 !important;
     color: #93C453 !important;
+    background-color: transparent!important;
 }
 
 .BtnBordered--red,
@@ -358,6 +424,7 @@ label{
 .BtnBordered--red:hover{
     border-color: #E08585;
     color: #E08585;
+    background-color: transparent!important;
 }
 
 .BtnBordered--big {
@@ -595,9 +662,9 @@ label{
     margin-bottom: 10px;
 }
 
-.List--noApparence{
+.List--noAppearance{
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .Comment{
@@ -614,7 +681,7 @@ label{
 .SignHelp{
     text-align: center;
     font-size: 13px;
-    margin-top: 10px !important;
+    padding-top: 15px!important;
     color: #4274BC;
 }
 
@@ -1127,7 +1194,7 @@ label{
     right: 24px;
     height: 4px;
     background-color: #cccccc;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .Wizard-item {
@@ -1145,7 +1212,7 @@ label{
     height: 26px;
     border-radius: 13px !important;
     background: #cccccc;
-    z-index: 2000;
+    z-index: 2;
     padding: 0!important;
     transition: background 0.3s ease;
 }
@@ -1253,6 +1320,322 @@ label{
     font-weight: 500 !important;
 }
 
+.Assent {
+    width: 100%;
+    border-radius: 3px;
+    padding: 20px 0 0 0;
+}
+
+.Assent-progressBar {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+.Assent-progressBarLine {
+    position: absolute;
+    top: 12px;
+    left: 24px;
+    right: 24px;
+    height: 4px;
+    background-color: #559BE0;
+    z-index: 1000;
+}
+
+.Assent-item {
+    width: 16.6%;
+    margin: 0 -5px 0 0!important;
+}
+
+.Assent-item--last {
+    width: 26px;
+    float: right !important;
+}
+
+.Assent-itemDot {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px !important;
+    background: #eeeeee;
+    z-index: 2000;
+    padding: 0!important;
+    transition: background 0.3s ease;
+    border: 3px solid #559BE0;
+}
+
+.Assent-item.active>.Assent-itemDot--red,
+.Assent-itemDone .Assent-itemDot--red{
+    background-color: #DB2C2C !important;
+}
+
+.Assent-item.active>.Assent-itemDot--green,
+.Assent-itemDone .Assent-itemDot--green{
+    background-color: #93C453 !important;
+}
+
+.Assent-item.active>.Assent-itemDot--orange,
+.Assent-itemDone .Assent-itemDot--orange{
+    background-color: #D8963F !important;
+}
+
+.Assent-item.active>.Assent-itemDot--purple,
+.Assent-itemDone .Assent-itemDot--purple{
+    background-color: #945CC6 !important;
+}
+
+.Assent-item.active>.Assent-itemDot--yellow,
+.Assent-itemDone .Assent-itemDot--yellow {
+    background-color: #E0C62D !important;
+}
+
+.Assent-item.active>.Assent-itemDot--blue,
+.Assent-itemDone .Assent-itemDot--blue {
+    background-color: #4274BC !important;
+}
+
+.Assent-item--last.active>.Assent-itemDot--pink,
+.Assent-itemDone .Assent-itemDot--pink{
+    background-color: #DD57B7 !important;
+}
+
+.Assent-itemDot:hover {
+    background-color: #559BE0 !important;
+}
+
+.Assent-item--disabled {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: default;
+}
+
+.Assent-title {
+    font-family: 'McLaren', cursive;
+    font-size: 23px!important;
+}
+
+.Assent-subtitle {
+    font-family: 'McLaren', cursive;
+    margin: 15px 0 5px 0 !important;
+    font-size: 18px!important;
+}
+
+.Assent-content {
+    margin: 25px 0 0 0;
+    position: relative;
+    height: auto!important;
+    padding-bottom: 90px !important;
+}
+
+.Assent-contentLine{
+    border-color: #cccccc;
+}
+
+.Assent-text {
+    font-family: 'McLaren', cursive !important;
+    font-size: 16px;
+}
+
+.Assent-text--largerMargins{
+    margin: 15px 0 10px 0 !important;
+}
+
+.Assent-text br{
+    line-height: 35px;
+}
+
+.Assent-list {
+    padding-left: 20px !important;
+}
+
+.Assent-list li{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-family: 'McLaren', cursive !important;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+.Assent-list--orange li{
+    color: #D8963F;
+}
+
+.Assent-list--purple li{
+    color: #945CC6;
+}
+
+.Assent-list li p{
+    color: #000000;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.Assent-radioCols {
+    margin: 10px 0 0 0;
+}
+
+.Assent-radioButtons input[type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px; margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.Assent-radioButtons {
+    cursor: pointer;
+    font-family: 'McLaren', cursive;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 3px 30px 0 0;
+}
+
+.Assent-radioButtons input[type="radio"] + span {
+    display: block;
+}
+
+.Assent-radioButtons input[type="radio"] + span:before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.25em;
+    border-radius: 1em;
+    border: 0.125em solid #fff;
+    margin-right: 0.75em;
+    transition: 0.5s ease all;
+}
+
+.Assent-radioButtons--yes input[type="radio"] + span:before {
+    box-shadow: 0 0 0 0.15em #7BA946;
+}
+
+.Assent-radioButtons--no input[type="radio"] + span:before {
+    box-shadow: 0 0 0 0.15em #DB2C2C;
+}
+
+.Assent-radioButtons--yes input[type="radio"]:checked + span:before {
+    background: #7BA946;
+    box-shadow: 0 0 0 0.25em #7BA946;
+}
+
+.Assent-radioButtons--no input[type="radio"]:checked + span:before {
+    background: #DB2C2C;
+    box-shadow: 0 0 0 0.25em #DB2C2C;
+}
+
+.Assent-radioButtons[type="radio"]:focus + span:after {
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.Assent-radioLegend{
+    font-family: 'McLaren', cursive !important;
+}
+
+.Assent-commentBox{
+    margin: 30px 50px;
+    padding: 15px;
+}
+
+.Assent-line{
+    margin: 7px 0 9px 0!important;
+}
+
+/*TBD*/
+/*.Assent-illustrations{*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*margin-right: 10px;*/
+/*}*/
+
+.Assent-input{
+    font-family: 'McLaren', cursive !important;
+}
+
+.Assent-input label{
+    font-size: 14px;
+    color: #666666;
+}
+
+.Assent-input .form-control{
+    height: 45px;
+    font-size: 16px;
+}
+
+.Assent-button {
+    padding: 10px 20px 12px 20px !important;
+    border-radius: 5px !important;
+    font-family: 'McLaren', cursive !important;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff !important;
+    transition: background-color 0.3s ease;
+}
+
+.Assent-button--green {
+    background-color: #93C453 !important;
+}
+
+.Assent-button--red {
+    background-color: #DB2C2C !important;
+}
+
+.Assent-button--neutral {
+    background-color: #afafaf !important;
+}
+
+.Assent-button:hover{
+    background-color: #559BE0 !important;
+}
+
+.Assent-button .glyphicon{
+    font-size: 15px !important;
+}
+
+.Assent-navigation{
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.Assent-navigation--lastPage{
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ffffff !important;
+    padding-top: 10px;
+}
+
+.Assent-navigation .next{
+    right: 30px;
+}
+
+.Assent-navigation .cancel{
+    float: right;
+    margin-right: 10px;
+}
+
+.Assent-navigationButton {
+    float: right;
+    margin-top: 0;
+    z-index: 100000;
+}
+
+.Assent-navigation .Assent-navigationButton{
+    z-index: 2000000;
+    cursor: pointer !important;
+}
+
+.Assent-navigationButton--marginRight{
+    margin-right: 15px;
+}
+
 .BottomNavigation{
     margin-bottom: 0;
     position: absolute;
@@ -1280,7 +1663,6 @@ label{
 
 .BottomNavigation li a{
     border-radius: 3px !important;
-    background: transparent !important;
     margin-top: 0 !important;
     font-weight: 700;
     padding: 7px 20px 9px 20px;
@@ -1319,7 +1701,6 @@ label{
     background: #eeeeee;
     color: #666666;
     padding: 10px 10px 10px 15px;
-    /*margin: 20px 0 !important;*/
     border: 1px solid #cccccc;
     transition: color 0.3s;
 }
